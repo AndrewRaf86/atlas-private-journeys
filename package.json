@@ -1,0 +1,20 @@
+{
+  "name": "atlas-private-journeys",
+  "version": "1.0.0",
+  "description": "ATLAS PRIVATE JOURNEYS - Personal South America Travel Support",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": [
+    "travel",
+    "south-america",
+    "luxury-travel"
+  ],
+  "author": "Andrew Rafalovitch",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^1.3.1"
+  }
+}
