@@ -84,7 +84,7 @@
     }
 
     .glass-nav {
-      background-color: rgba(249, 249, 249, 0.88);
+      background-color: rgba(249, 249, 249, 0.92);
       backdrop-filter: blur(14px);
     }
 
@@ -94,7 +94,6 @@
 
     .brand-logo {
       object-fit: contain;
-      mix-blend-mode: multiply;
     }
   </style>
 </head>
@@ -102,12 +101,17 @@
 <body class="bg-background text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
 
 <header class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/30">
-  <nav class="flex justify-between items-center px-6 md:px-8 py-3 max-w-7xl mx-auto">
-    <a href="#" class="flex items-center gap-3 group">
-      <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo h-12 md:h-14 w-auto max-w-[210px] md:max-w-[260px] transition-transform duration-300 group-hover:scale-[1.02]"/>
+  <nav class="flex justify-between items-center px-6 md:px-10 py-3 max-w-7xl mx-auto">
+    
+    <a href="#" class="flex items-center shrink-0">
+      <img 
+        src="AtlasPrivateJourneysLogo.jpeg" 
+        alt="Atlas Private Journeys logo" 
+        class="brand-logo h-16 md:h-20 lg:h-24 w-auto max-w-[220px] md:max-w-[300px] lg:max-w-[360px]"
+      />
     </a>
 
-    <div class="hidden lg:flex gap-7 items-center">
+    <div class="hidden lg:flex gap-7 items-center ml-10">
       <a class="font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a>
       <a class="font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#transport">Transport</a>
       <a class="font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#destinations">Moments</a>
@@ -116,14 +120,14 @@
       <a class="font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#ayahuasca">Ayahuasca</a>
     </div>
 
-    <a class="bg-primary text-on-primary px-5 md:px-6 py-3 rounded font-label text-[10px] md:text-xs uppercase tracking-widest hover:bg-primary-container transition-all" href="#plan">
+    <a class="hidden sm:inline-flex bg-primary text-on-primary px-6 py-3 rounded font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-all ml-6" href="#plan">
       Plan Your Journey
     </a>
   </nav>
 </header>
 
 <main>
-  <section class="relative min-h-screen flex items-center pt-24">
+  <section class="relative min-h-screen flex items-center pt-32">
     <div class="absolute inset-0 z-0">
       <img class="w-full h-full object-cover" alt="Luxury South America travel experience" src="living room airbnb.png"/>
       <div class="absolute inset-0 hero-gradient"></div>
@@ -131,8 +135,6 @@
 
     <div class="relative z-10 w-full max-w-7xl mx-auto px-8">
       <div class="max-w-3xl bg-surface/92 backdrop-blur-md p-10 md:p-16 border-l-8 border-secondary rounded-r-lg shadow-2xl">
-        <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo h-20 md:h-24 w-auto mb-8"/>
-
         <span class="font-label text-sm uppercase tracking-[0.3em] text-secondary mb-4 block font-bold">Your Local Partner</span>
 
         <h1 class="font-headline text-5xl md:text-7xl text-primary leading-tight mb-6">
@@ -158,7 +160,6 @@
   <section class="py-24 bg-surface" id="services">
     <div class="max-w-7xl mx-auto px-8">
       <div class="text-center mb-16">
-        <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo h-16 w-auto mx-auto mb-8 opacity-90"/>
         <h2 class="font-headline text-4xl text-primary mb-4">The Art of Seamless Travel</h2>
         <p class="text-on-surface-variant max-w-2xl mx-auto">We take the stress out of South American logistics so you can focus on the experience.</p>
       </div>
@@ -323,8 +324,6 @@
     <div class="max-w-7xl mx-auto px-8">
       <div class="grid md:grid-cols-2 gap-16 items-center">
         <div>
-          <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo h-16 w-auto mb-8 opacity-90"/>
-
           <span class="font-label text-sm uppercase tracking-widest text-secondary font-bold mb-4 block">For Serious Travelers</span>
           <h2 class="font-headline text-4xl text-primary mb-6 leading-tight">Ayahuasca in Peru</h2>
 
@@ -357,10 +356,6 @@
         </div>
 
         <div class="bg-primary text-on-primary rounded-2xl p-10 md:p-12 shadow-xl">
-          <div class="bg-white rounded-xl p-6 mb-8">
-            <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo w-full h-auto"/>
-          </div>
-
           <span class="material-symbols-outlined text-secondary-fixed-dim text-5xl mb-6">eco</span>
           <h3 class="font-headline text-3xl mb-6">A Respectful Referral, Not a Party Add-On</h3>
 
@@ -379,7 +374,6 @@
   <section class="py-24 bg-surface" id="plan">
     <div class="max-w-4xl mx-auto px-8">
       <div class="text-center mb-12">
-        <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo h-16 w-auto mx-auto mb-8 opacity-90"/>
         <h2 class="font-headline text-4xl text-primary mb-4">Plan Your Journey</h2>
         <p class="text-on-surface-variant">Share a few details with us to get started on your personal itinerary.</p>
       </div>
