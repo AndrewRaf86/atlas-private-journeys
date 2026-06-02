@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -76,16 +77,24 @@
       }
     }
   </script>
+
   <style>
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
+
     .glass-nav {
-      background-color: rgba(249, 249, 249, 0.8);
-      backdrop-filter: blur(12px);
+      background-color: rgba(249, 249, 249, 0.88);
+      backdrop-filter: blur(14px);
     }
+
     .hero-gradient {
       background: linear-gradient(to bottom, rgba(0, 17, 58, 0.32), rgba(0, 17, 58, 0.12));
+    }
+
+    .brand-logo {
+      object-fit: contain;
+      mix-blend-mode: multiply;
     }
   </style>
 </head>
@@ -93,9 +102,12 @@
 <body class="bg-background text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
 
 <header class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/30">
-  <nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-    <div class="text-xl font-headline tracking-tight text-primary font-bold">ATLAS PRIVATE JOURNEYS</div>
-    <div class="hidden md:flex gap-8 items-center">
+  <nav class="flex justify-between items-center px-6 md:px-8 py-3 max-w-7xl mx-auto">
+    <a href="#" class="flex items-center gap-3 group">
+      <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo h-12 md:h-14 w-auto max-w-[210px] md:max-w-[260px] transition-transform duration-300 group-hover:scale-[1.02]"/>
+    </a>
+
+    <div class="hidden lg:flex gap-7 items-center">
       <a class="font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a>
       <a class="font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#transport">Transport</a>
       <a class="font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#destinations">Moments</a>
@@ -103,27 +115,34 @@
       <a class="font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#process">Process</a>
       <a class="font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#ayahuasca">Ayahuasca</a>
     </div>
-    <a class="bg-primary text-on-primary px-6 py-2 rounded font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-all" href="#plan">
+
+    <a class="bg-primary text-on-primary px-5 md:px-6 py-3 rounded font-label text-[10px] md:text-xs uppercase tracking-widest hover:bg-primary-container transition-all" href="#plan">
       Plan Your Journey
     </a>
   </nav>
 </header>
 
 <main>
-  <section class="relative h-screen flex items-center pt-16">
+  <section class="relative min-h-screen flex items-center pt-24">
     <div class="absolute inset-0 z-0">
       <img class="w-full h-full object-cover" alt="Luxury South America travel experience" src="living room airbnb.png"/>
       <div class="absolute inset-0 hero-gradient"></div>
     </div>
+
     <div class="relative z-10 w-full max-w-7xl mx-auto px-8">
-      <div class="max-w-3xl bg-surface/90 backdrop-blur-md p-10 md:p-16 border-l-8 border-secondary rounded-r-lg shadow-2xl">
+      <div class="max-w-3xl bg-surface/92 backdrop-blur-md p-10 md:p-16 border-l-8 border-secondary rounded-r-lg shadow-2xl">
+        <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo h-20 md:h-24 w-auto mb-8"/>
+
         <span class="font-label text-sm uppercase tracking-[0.3em] text-secondary mb-4 block font-bold">Your Local Partner</span>
+
         <h1 class="font-headline text-5xl md:text-7xl text-primary leading-tight mb-6">
           Private South America, Made Easy
         </h1>
+
         <p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10">
           Personal travel support across Brazil, Colombia, and Peru. We help you plan a smooth, private, and memorable trip from start to finish.
         </p>
+
         <div class="flex flex-col sm:flex-row gap-4">
           <a class="bg-primary text-on-primary px-10 py-4 rounded-md font-label text-sm uppercase tracking-widest text-center hover:shadow-lg transition-all" href="#plan">
             Plan Your Journey
@@ -139,20 +158,24 @@
   <section class="py-24 bg-surface" id="services">
     <div class="max-w-7xl mx-auto px-8">
       <div class="text-center mb-16">
+        <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo h-16 w-auto mx-auto mb-8 opacity-90"/>
         <h2 class="font-headline text-4xl text-primary mb-4">The Art of Seamless Travel</h2>
         <p class="text-on-surface-variant max-w-2xl mx-auto">We take the stress out of South American logistics so you can focus on the experience.</p>
       </div>
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div class="bg-surface-container-low p-10 rounded-xl hover:shadow-md transition-shadow">
           <span class="material-symbols-outlined text-secondary text-4xl mb-6">concierge</span>
           <h3 class="font-headline text-2xl text-primary mb-4">Personal Support</h3>
           <p class="text-on-surface-variant leading-relaxed">Your own personal gatekeeper to the continent. We curate itineraries that reflect your specific tastes and needs.</p>
         </div>
+
         <div class="bg-surface-container-low p-10 rounded-xl hover:shadow-md transition-shadow">
           <span class="material-symbols-outlined text-secondary text-4xl mb-6">local_shipping</span>
           <h3 class="font-headline text-2xl text-primary mb-4">Smooth Logistics</h3>
           <p class="text-on-surface-variant leading-relaxed">From private transport to airport assistance, we manage every detail. Relax as we navigate the complexities for you.</p>
         </div>
+
         <div class="bg-surface-container-low p-10 rounded-xl hover:shadow-md transition-shadow">
           <span class="material-symbols-outlined text-secondary text-4xl mb-6">visibility</span>
           <h3 class="font-headline text-2xl text-primary mb-4">Local Expertise</h3>
@@ -200,6 +223,7 @@
         </div>
       </div>
     </div>
+
     <div class="max-w-7xl mx-auto px-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
         <div class="md:col-span-8 group relative overflow-hidden rounded-xl h-[500px]">
@@ -208,6 +232,7 @@
             <h3 class="font-headline text-2xl">Modern Living</h3>
           </div>
         </div>
+
         <div class="md:col-span-4 flex flex-col gap-6">
           <div class="group relative overflow-hidden rounded-xl flex-1 min-h-[238px]">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Private suite bedroom" src="bedroom 1.png"/>
@@ -215,6 +240,7 @@
               <h3 class="font-headline text-lg">Private Suites</h3>
             </div>
           </div>
+
           <div class="group relative overflow-hidden rounded-xl flex-1 min-h-[238px]">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Elegant entryway with local character" src="entrance airbnb.png"/>
             <div class="absolute bottom-4 left-4 text-white">
@@ -231,15 +257,18 @@
       <h2 class="font-headline text-4xl text-primary mb-4">Unforgettable Moments</h2>
       <p class="text-on-surface-variant max-w-3xl mx-auto">From private nightlife setups to desert adventures, Atlas is built around real on-the-ground experiences.</p>
     </div>
+
     <div class="max-w-7xl mx-auto px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="space-y-6">
           <img alt="Fidel with guests" class="rounded-xl w-full shadow-lg object-cover h-[240px]" src="fidel thai.jpeg"/>
           <img alt="Desert experience in Peru" class="rounded-xl w-full shadow-lg object-cover h-[240px]" src="peru desert amiga.jpeg"/>
         </div>
+
         <div class="flex flex-col justify-center">
           <img alt="Desert buggy adventure in Peru" class="rounded-xl w-full shadow-lg h-full min-h-[500px] object-cover" src="peru desert fun.jpeg"/>
         </div>
+
         <div class="space-y-6">
           <img alt="Outdoor dining" class="rounded-xl w-full shadow-lg object-cover h-[240px]" src="group eating .png"/>
           <img alt="Social evening with guests" class="rounded-xl w-full shadow-lg object-cover h-[240px]" src="tour guide and friends 1.jpeg"/>
@@ -254,6 +283,7 @@
         <div>
           <span class="font-label text-sm uppercase tracking-widest text-secondary font-bold mb-4 block">Our Approach</span>
           <h2 class="font-headline text-4xl text-primary mb-8 leading-tight">Simple Steps to a Better Trip</h2>
+
           <div class="space-y-10">
             <div class="flex gap-6">
               <div class="bg-primary text-on-primary w-10 h-10 rounded-full flex items-center justify-center font-bold shrink-0">1</div>
@@ -262,6 +292,7 @@
                 <p class="text-on-surface-variant">Tell us what you like and what you need. We listen carefully to create a plan that fits you perfectly.</p>
               </div>
             </div>
+
             <div class="flex gap-6">
               <div class="bg-primary text-on-primary w-10 h-10 rounded-full flex items-center justify-center font-bold shrink-0">2</div>
               <div>
@@ -269,6 +300,7 @@
                 <p class="text-on-surface-variant">We coordinate transport, stays, and local support so the trip feels smooth before you even land.</p>
               </div>
             </div>
+
             <div class="flex gap-6">
               <div class="bg-primary text-on-primary w-10 h-10 rounded-full flex items-center justify-center font-bold shrink-0">3</div>
               <div>
@@ -278,6 +310,7 @@
             </div>
           </div>
         </div>
+
         <div class="relative">
           <img class="rounded-2xl shadow-2xl grayscale w-full object-cover" alt="Boutique kitchen and hospitality interior" src="kitchen.png"/>
           <div class="absolute -top-6 -left-6 w-32 h-32 bg-secondary opacity-20 rounded-full blur-3xl"></div>
@@ -290,6 +323,8 @@
     <div class="max-w-7xl mx-auto px-8">
       <div class="grid md:grid-cols-2 gap-16 items-center">
         <div>
+          <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo h-16 w-auto mb-8 opacity-90"/>
+
           <span class="font-label text-sm uppercase tracking-widest text-secondary font-bold mb-4 block">For Serious Travelers</span>
           <h2 class="font-headline text-4xl text-primary mb-6 leading-tight">Ayahuasca in Peru</h2>
 
@@ -322,11 +357,17 @@
         </div>
 
         <div class="bg-primary text-on-primary rounded-2xl p-10 md:p-12 shadow-xl">
+          <div class="bg-white rounded-xl p-6 mb-8">
+            <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo w-full h-auto"/>
+          </div>
+
           <span class="material-symbols-outlined text-secondary-fixed-dim text-5xl mb-6">eco</span>
           <h3 class="font-headline text-3xl mb-6">A Respectful Referral, Not a Party Add-On</h3>
+
           <p class="text-on-primary/80 leading-relaxed mb-6">
             Atlas helps with travel logistics, transportation, stays, and local coordination. Ayahuasca should be considered separately from nightlife or entertainment planning.
           </p>
+
           <p class="text-on-primary/80 leading-relaxed">
             If this path interests you, take time to research, ask questions, and speak directly with the retreat before making plans.
           </p>
@@ -338,9 +379,11 @@
   <section class="py-24 bg-surface" id="plan">
     <div class="max-w-4xl mx-auto px-8">
       <div class="text-center mb-12">
+        <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo h-16 w-auto mx-auto mb-8 opacity-90"/>
         <h2 class="font-headline text-4xl text-primary mb-4">Plan Your Journey</h2>
         <p class="text-on-surface-variant">Share a few details with us to get started on your personal itinerary.</p>
       </div>
+
       <div class="bg-surface-container-lowest p-4 md:p-8 rounded-2xl shadow-sm border border-outline-variant/30">
         <iframe frameborder="0" height="2000" marginheight="0" marginwidth="0" src="https://docs.google.com/forms/d/e/1FAIpQLSewvtkaR0o_evsgkiUzfQU9ufhOuHo8pyK1n7gPjYYg8dN4ig/viewform?embedded=true" width="100%">Loading…</iframe>
       </div>
@@ -350,8 +393,12 @@
 
 <footer class="bg-primary-container text-on-primary py-16 px-8">
   <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-    <div class="text-2xl font-headline tracking-tight font-bold">ATLAS PRIVATE JOURNEYS</div>
-    <div class="flex gap-10">
+    <div class="bg-white rounded-xl p-4">
+      <img src="AtlasPrivateJourneysLogo.jpeg" alt="Atlas Private Journeys logo" class="brand-logo h-20 w-auto"/>
+    </div>
+
+    <div class="text-center md:text-right">
+      <div class="text-2xl font-headline tracking-tight font-bold mb-3">ATLAS PRIVATE JOURNEYS</div>
       <span class="text-xs uppercase tracking-widest text-on-primary/60">© 2024 ATLAS PRIVATE JOURNEYS.</span>
     </div>
   </div>
