@@ -7,21 +7,25 @@ const services = [
     title: "Airport Pickup",
     body: "Private, punctual pickup from Lima's Jorge Chávez International. No taxis, no guesswork, no waiting. Your driver is there when you land.",
     tag: "From $60",
+    photo: "/assets/van-transfer.jpeg",
   },
   {
     icon: MapPin,
     title: "Private Guide & Local Coordination",
     body: "A local who knows the city, speaks the language, and handles the details — restaurant reservations, venue entry, route planning.",
+    photo: "/assets/tour-guide-friends.jpeg",
   },
   {
     icon: Wine,
     title: "Nightlife & Restaurants",
     body: "Curated nights out in Lima, Cusco, Rio, and São Paulo. VIP tables, safe venues, and local spots you won't find in guidebooks.",
+    photo: "/assets/group-eating.png",
   },
   {
     icon: Route,
     title: "Custom Trip Planning",
     body: "Multi-city itineraries across Peru and Brazil. Transport between destinations, accommodation guidance, and day-by-day structure.",
+    photo: "/assets/peru-desert-fun.jpeg",
   },
 ];
 
@@ -53,22 +57,33 @@ export default function Services() {
           {services.map((s) => (
             <div
               key={s.title}
-              className="service-card bg-pure-white border border-[#e0ddd5] rounded-xl p-8 md:p-10 hover:-translate-y-1 hover:shadow-card transition-all duration-300"
+              className="service-card bg-pure-white border border-[#D9CFBE] rounded-xl overflow-hidden hover:-translate-y-1 hover:shadow-card transition-all duration-300"
             >
-              <div className="w-16 h-16 rounded-full bg-light-primary flex items-center justify-center mb-6">
-                <s.icon className="w-8 h-8 text-teal" strokeWidth={1.5} />
-              </div>
-              <h4 className="font-serif text-[22px] md:text-[28px] font-normal leading-[1.3] tracking-[-0.5px] text-charcoal mb-4">
-                {s.title}
-              </h4>
-              <p className="text-[16px] font-light leading-[1.7] text-charcoal/80 mb-4">
-                {s.body}
-              </p>
-              {s.tag && (
-                <p className="text-[11px] font-normal tracking-[1.5px] uppercase text-text-muted">
-                  {s.tag}
-                </p>
+              {s.photo && (
+                <div className="h-[180px] overflow-hidden">
+                  <img
+                    src={s.photo}
+                    alt={s.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               )}
+              <div className="p-8 md:p-10">
+                <div className="w-12 h-12 rounded-full bg-light-primary flex items-center justify-center mb-5">
+                  <s.icon className="w-6 h-6 text-teal" strokeWidth={1.5} />
+                </div>
+                <h4 className="font-serif text-[22px] md:text-[28px] font-normal leading-[1.3] tracking-[-0.5px] text-charcoal mb-4">
+                  {s.title}
+                </h4>
+                <p className="text-[16px] font-light leading-[1.7] text-charcoal/80 mb-4">
+                  {s.body}
+                </p>
+                {s.tag && (
+                  <p className="text-[11px] font-normal tracking-[1.5px] uppercase text-text-muted">
+                    {s.tag}
+                  </p>
+                )}
+              </div>
             </div>
           ))}
         </div>

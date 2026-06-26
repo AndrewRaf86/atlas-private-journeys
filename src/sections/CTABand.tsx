@@ -10,7 +10,7 @@ export default function CTABand() {
   });
 
   return (
-    <section className="w-full bg-lime py-[80px] md:py-[100px]">
+    <section className="w-full bg-gold py-[80px] md:py-[100px]">
       <div ref={ref} className="max-w-[800px] mx-auto px-6 text-center">
         <h2 className="cta-element font-serif text-[36px] md:text-[56px] font-normal leading-[1.05] tracking-[-1.5px] text-charcoal mb-5">
           Ready to stop planning and start traveling?

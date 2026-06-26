@@ -108,8 +108,8 @@ export default function WhyAtlas() {
 
           <div ref={rightRef} className="relative overflow-hidden rounded-xl">
             <img
-              src="/assets/why-atlas.jpg"
-              alt="Lima, Peru coastline at golden hour"
+              src="/assets/group-pic-3.jpg"
+              alt="Atlas private journeys group"
               className="w-full h-[400px] md:h-[600px] object-cover rounded-xl"
             />
           </div>

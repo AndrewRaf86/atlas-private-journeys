@@ -25,16 +25,16 @@
     --ring: 185 100% 22%;
     --radius: 0.625rem;
 
-    --charcoal: #242422;
-    --light-primary: #f1f1ef;
-    --warm-white: #f4f4f2;
+    --charcoal: #1E1A16;
+    --light-primary: #F5F0E8;
+    --warm-white: #EDE6D3;
     --pure-white: #ffffff;
-    --violet: #3634c7;
-    --teal: #006770;
-    --amber: #f0b72c;
-    --lime: #c7f031;
-    --text-muted: #969188;
-    --border-color: #e0ddd5;
+    --terracotta: #C1603A;
+    --teal: #2D6A4F;
+    --amber: #E8941A;
+    --gold: #D4A843;
+    --text-muted: #8C7B6E;
+    --border-color: #D9CFBE;
   }
 
   * {
@@ -42,7 +42,7 @@
   }
 
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 300;
     color: var(--charcoal);
     background-color: var(--warm-white);

@@ -73,7 +73,7 @@ export default function Navbar() {
             href={getWhatsAppLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center h-[42px] px-5 rounded-full bg-lime text-charcoal text-[13px] font-normal tracking-[1.5px] uppercase hover:scale-[1.02] hover:shadow-md transition-all duration-200"
+            className="hidden md:inline-flex items-center h-[42px] px-5 rounded-full bg-gold text-charcoal text-[13px] font-normal tracking-[1.5px] uppercase hover:scale-[1.02] hover:shadow-md transition-all duration-200"
           >
             Message Fidel
           </a>
@@ -120,7 +120,7 @@ export default function Navbar() {
             href={getWhatsAppLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center h-[48px] px-6 rounded-full bg-lime text-charcoal text-[13px] font-normal tracking-[1.5px] uppercase"
+            className="mt-4 inline-flex items-center h-[48px] px-6 rounded-full bg-gold text-charcoal text-[13px] font-normal tracking-[1.5px] uppercase"
           >
             Message Fidel on WhatsApp
           </a>

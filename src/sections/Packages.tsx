@@ -104,7 +104,7 @@ export default function Packages() {
                 href={getPackageWhatsAppLink(pkg.message)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center h-[40px] px-6 rounded-full bg-lime text-charcoal text-[13px] font-normal tracking-[1.5px] uppercase hover:scale-[1.02] transition-transform duration-200"
+                className="inline-flex items-center justify-center h-[40px] px-6 rounded-full bg-gold text-charcoal text-[13px] font-normal tracking-[1.5px] uppercase hover:scale-[1.02] transition-transform duration-200"
               >
                 {pkg.cta}
               </a>

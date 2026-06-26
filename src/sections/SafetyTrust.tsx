@@ -34,7 +34,7 @@ export default function SafetyTrust() {
               className="trust-row flex items-start gap-4"
             >
               <CheckCircle
-                className="w-6 h-6 text-lime flex-shrink-0 mt-0.5"
+                className="w-6 h-6 text-gold flex-shrink-0 mt-0.5"
                 strokeWidth={1.5}
               />
               <p className="text-[16px] font-light leading-[1.7] text-light-primary/80">

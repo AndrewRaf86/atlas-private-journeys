@@ -1,10 +1,14 @@
-import FractalShader from "@/components/FractalShader";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 export default function Hero() {
   return (
     <section className="relative w-full min-h-[100dvh] overflow-hidden">
-      <FractalShader />
+      <img
+        src="/assets/group-pic-big.png"
+        alt="Atlas group travel in Peru"
+        className="absolute inset-0 w-full h-full object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/50 to-charcoal/80" />
 
       <div className="relative z-10 flex flex-col justify-end min-h-[100dvh] px-6 sm:px-10 lg:px-16 pb-16 sm:pb-20">
         <div className="max-w-[600px]">
@@ -26,7 +30,7 @@ export default function Hero() {
               href={getWhatsAppLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center h-[48px] px-7 rounded-full bg-lime text-charcoal text-[13px] font-normal tracking-[1.5px] uppercase hover:scale-[1.02] hover:shadow-lg transition-all duration-200"
+              className="inline-flex items-center justify-center h-[48px] px-7 rounded-full bg-gold text-charcoal text-[13px] font-normal tracking-[1.5px] uppercase hover:scale-[1.02] hover:shadow-lg transition-all duration-200"
             >
               Message Fidel on WhatsApp
             </a>

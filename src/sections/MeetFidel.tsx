@@ -57,7 +57,7 @@ export default function MeetFidel() {
             href={getWhatsAppLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="fidel-text inline-flex items-center justify-center h-[48px] px-7 rounded-full bg-lime text-charcoal text-[13px] font-normal tracking-[1.5px] uppercase hover:scale-[1.02] hover:shadow-lg transition-all duration-200"
+            className="fidel-text inline-flex items-center justify-center h-[48px] px-7 rounded-full bg-gold text-charcoal text-[13px] font-normal tracking-[1.5px] uppercase hover:scale-[1.02] hover:shadow-lg transition-all duration-200"
           >
             Message Fidel Directly
           </a>
