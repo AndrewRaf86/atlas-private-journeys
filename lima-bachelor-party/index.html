@@ -1,206 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lima Bachelor Party | Private Group Experience | Atlas Private Journeys</title>
-  <meta name="description" content="Private bachelor party planning in Lima, Peru. Fidel handles logistics so you focus on the experience. WhatsApp Fidel to start planning.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lima Bachelor Party | Private Group Weekend | Atlas Private Journeys</title>
+  <meta name="description" content="Bachelor party planning in Lima, Peru. Fidel handles logistics — group transport, restaurant bookings, nightlife, private accommodation. One local contact for the whole crew.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://atlasjourneys.world/lima-bachelor-party">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://atlasjourneys.world/lima-bachelor-party">
+  <meta property="og:title" content="Lima Bachelor Party | Private Group Weekend | Atlas Private Journeys">
+  <meta property="og:description" content="Fidel plans and coordinates your bachelor party in Lima — group transport, restaurants, nightlife, and private stays. Message him on WhatsApp.">
+  <meta property="og:image" content="https://atlasjourneys.world/AtlasPrivateJourneysLogo.jpeg">
+  <meta property="og:site_name" content="Atlas Private Journeys">
+
+  <link rel="icon" type="image/jpeg" href="/AtlasPrivateJourneysLogo.jpeg">
+  <link rel="apple-touch-icon" href="/AtlasPrivateJourneysLogo.jpeg">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Lima Bachelor Party — Private Group Experience",
-    "description": "Private, handled bachelor party experience in Lima, Peru. Fidel coordinates everything for your group.",
-    "touristType": "Groups",
-    "itinerary": {
-      "@type": "ItemList",
-      "name": "Lima",
-      "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Lima, Peru"}]
-    },
+    "@type": "Service",
+    "name": "Bachelor Party Lima Weekend",
+    "description": "Full-weekend bachelor party coordination in Lima, Peru. Group transport, restaurant reservations, nightlife planning, private accommodation, and one local contact throughout.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Atlas Private Journeys",
       "url": "https://atlasjourneys.world",
       "telephone": "+51942299829"
-    }
+    },
+    "areaServed": {"@type": "City", "name": "Lima"},
+    "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "1200", "priceSpecification": {"description": "Starting price for planning and coordination — exact quote confirmed over WhatsApp based on group size and scope"}}
   }
   </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Poppins', sans-serif; color: #1a1a2e; background: #fff; }
-    a { color: inherit; text-decoration: none; }
-
-    /* Nav */
-    .nav { background: #061A40; padding: 18px 28px; display: flex; align-items: center; justify-content: space-between; }
-    .nav-logo { color: #D9B77A; font-family: 'Lora', serif; font-size: 18px; font-weight: 600; letter-spacing: 0.3px; }
-    .nav-home { color: rgba(255,255,255,0.75); font-size: 14px; font-weight: 500; }
-    .nav-home:hover { color: #D9B77A; }
-
-    /* Hero */
-    .hero { background: linear-gradient(135deg, #061A40 0%, #0A2E63 60%, #0d3875 100%); color: #fff; padding: 72px 28px 64px; text-align: center; }
-    .hero-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #D9B77A; margin-bottom: 18px; }
-    .hero h1 { font-family: 'Lora', serif; font-size: clamp(30px, 6vw, 52px); font-weight: 600; line-height: 1.22; margin-bottom: 20px; }
-    .hero-sub { font-size: 17px; color: rgba(255,255,255,0.80); max-width: 560px; margin: 0 auto 38px; line-height: 1.65; }
-    .btn-gold { display: inline-flex; align-items: center; gap: 10px; background: #D9B77A; color: #061A40; padding: 17px 30px; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 14px 40px rgba(0,0,0,0.28); }
-    .btn-navy { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg,#061A40,#0A2E63); color: #fff; padding: 15px 26px; border-radius: 9px; font-weight: 600; font-size: 15px; }
-
-    /* Sections */
-    .section { padding: 72px 28px; max-width: 960px; margin: 0 auto; }
-    .section-title { font-family: 'Lora', serif; font-size: clamp(22px, 4vw, 34px); font-weight: 600; color: #061A40; margin-bottom: 14px; }
-    .section-sub { color: #555; font-size: 15.5px; line-height: 1.7; max-width: 640px; margin-bottom: 40px; }
-
-    /* What's Included */
-    .included-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 36px; }
-    .included-card { background: #f8f7f4; border-radius: 12px; padding: 28px 24px; }
-    .included-icon { font-size: 26px; margin-bottom: 14px; }
-    .included-card h3 { font-family: 'Lora', serif; font-size: 17px; font-weight: 600; color: #061A40; margin-bottom: 8px; }
-    .included-card p { font-size: 14px; color: #555; line-height: 1.65; }
-
-    /* How it works */
-    .steps { display: flex; flex-direction: column; gap: 28px; margin-top: 36px; }
-    .step { display: flex; gap: 22px; align-items: flex-start; }
-    .step-num { flex-shrink: 0; width: 38px; height: 38px; background: #061A40; color: #D9B77A; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; }
-    .step-body h3 { font-family: 'Lora', serif; font-size: 16px; font-weight: 600; color: #061A40; margin-bottom: 5px; }
-    .step-body p { font-size: 14px; color: #555; line-height: 1.65; }
-
-    /* Testimonial */
-    .testimonial-section { background: #f8f7f4; padding: 64px 28px; text-align: center; }
-    .testimonial-inner { max-width: 680px; margin: 0 auto; }
-    .stars { color: #D9B77A; font-size: 20px; margin-bottom: 18px; letter-spacing: 2px; }
-    .quote { font-family: 'Lora', serif; font-size: clamp(17px, 3vw, 22px); font-style: italic; color: #061A40; line-height: 1.6; margin-bottom: 20px; }
-    .quote-author { font-size: 14px; font-weight: 600; color: #555; }
-
-    /* CTA block */
-    .cta-block { background: linear-gradient(135deg,#061A40,#0A2E63); color: #fff; padding: 72px 28px; text-align: center; }
-    .cta-block h2 { font-family: 'Lora', serif; font-size: clamp(24px, 4vw, 36px); font-weight: 600; margin-bottom: 16px; }
-    .cta-block p { font-size: 16px; color: rgba(255,255,255,0.80); max-width: 520px; margin: 0 auto 36px; line-height: 1.65; }
-
-    /* Footer */
-    footer { background: #061A40; color: rgba(255,255,255,0.55); text-align: center; padding: 28px; font-size: 13px; }
-    footer a { color: rgba(255,255,255,0.55); }
-    footer a:hover { color: #D9B77A; }
-
-    @media (max-width: 600px) {
-      .hero { padding: 52px 20px 48px; }
-      .section { padding: 52px 20px; }
-    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Poppins',sans-serif;color:#242422;background:#F6F1E8;-webkit-font-smoothing:antialiased;line-height:1.6}
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    details summary{list-style:none;cursor:pointer}
+    details summary::-webkit-details-marker{display:none}
   </style>
 </head>
 <body>
+<div style="background:#F6F1E8;overflow-x:hidden">
 
-<nav class="nav">
-  <span class="nav-logo">Atlas Private Journeys</span>
-  <a href="/" class="nav-home">← Back to home</a>
-</nav>
+  <!-- NAV -->
+  <nav style="background:#061A40;width:100%;padding:22px clamp(18px,5vw,56px);display:flex;align-items:center;justify-content:space-between;gap:16px">
+    <a href="/" style="display:flex;align-items:center;gap:11px;text-decoration:none">
+      <span style="font-family:'Lora',serif;font-weight:600;font-size:clamp(20px,3vw,26px);letter-spacing:0.2em;color:#fff;line-height:1">ATLAS</span>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="#D9B77A" style="flex-shrink:0"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>
+      <span style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:clamp(7px,1.2vw,9px);color:#D9B77A;font-weight:600;line-height:1.35">Private<br>Journeys</span>
+    </a>
+    <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20bachelor%20party%20in%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D.%20Let%27s%20talk%20details." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'nav-bachelor'}})}catch(e){}" style="display:inline-flex;align-items:center;gap:9px;background:#D9B77A;color:#061A40;padding:11px 20px;border-radius:9px;font-weight:600;font-size:15px;box-shadow:0 10px 30px rgba(0,0,0,0.22)">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="#061A40"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"/></svg>
+      WhatsApp Fidel
+    </a>
+  </nav>
 
-<section class="hero">
-  <div class="hero-eyebrow">Lima, Peru · Private Group</div>
-  <h1>Bachelor Party in Lima,<br>Done Right</h1>
-  <p class="hero-sub">Fidel handles the logistics — you show up, your group has a great time. Private, personal, no tourist nonsense.</p>
-  <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20bachelor%20party%20in%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D.%20Let%27s%20talk%20details." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'bachelor-hero'}})}catch(e){}" class="btn-gold">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="#061A40"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"/></svg>
-    Plan the weekend with Fidel
-  </a>
-</section>
-
-<section class="section">
-  <h2 class="section-title">What Fidel handles for your group</h2>
-  <p class="section-sub">Lima is one of the best cities in South America for a memorable group weekend — incredible food, nightlife, and culture. Fidel makes sure you spend your time enjoying it, not planning it.</p>
-  <div class="included-grid">
-    <div class="included-card">
-      <div class="included-icon">🏡</div>
-      <h3>Private accommodation</h3>
-      <p>Fidel sources private stays suited to the group — no shared hotel hallways, no strangers. Your own space in Lima.</p>
-    </div>
-    <div class="included-card">
-      <div class="included-icon">🍽️</div>
-      <h3>Dining reservations</h3>
-      <p>Lima's restaurant scene is world-class. Fidel gets you into the right places — reservations handled, no wait lists.</p>
-    </div>
-    <div class="included-card">
-      <div class="included-icon">🚗</div>
-      <h3>Private transport</h3>
-      <p>Reliable private vehicles the whole trip. Airport pickup, night-out transport, day trips — all coordinated.</p>
-    </div>
-    <div class="included-card">
-      <div class="included-icon">🗺️</div>
-      <h3>Guided days</h3>
-      <p>Fidel joins you in person when it matters — city orientation, day trips, or anything the group wants to explore.</p>
-    </div>
-    <div class="included-card">
-      <div class="included-icon">📞</div>
-      <h3>On-call throughout</h3>
-      <p>Need something changed last minute? WhatsApp Fidel. He's your single point of contact for anything that comes up.</p>
-    </div>
-    <div class="included-card">
-      <div class="included-icon">✅</div>
-      <h3>Tailored to your group</h3>
-      <p>Every itinerary is built around what your group actually wants — not a template, not a package tour.</p>
-    </div>
-  </div>
-</section>
-
-<section style="background:#f8f7f4; padding: 72px 28px;">
-  <div style="max-width:960px; margin:0 auto;">
-    <h2 class="section-title">How it works</h2>
-    <p class="section-sub">Three steps to a planned weekend.</p>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Message Fidel on WhatsApp</h3>
-          <p>Tell him your dates, group size, and what kind of trip you're thinking. He'll respond and ask a few questions to understand what you want.</p>
-        </div>
+  <!-- HERO -->
+  <section style="position:relative;min-height:clamp(480px,60vh,640px);display:flex;flex-direction:column;justify-content:flex-end;background:#061A40">
+    <img src="../public/images/group-outdoor.webp" alt="A group of friends in Lima, Peru" loading="eager" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0.35) 0%,rgba(6,26,64,0.92) 100%)"></div>
+    <div style="position:relative;z-index:2;max-width:1280px;margin:0 auto;width:100%;padding:clamp(40px,6vw,80px) clamp(18px,5vw,56px)">
+      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.24em;font-size:13px;color:#D9B77A;margin-bottom:16px;font-weight:500">Lima, Peru · Private Group</div>
+      <h1 style="font-family:'Lora',serif;font-weight:600;color:#fff;font-size:clamp(36px,5.5vw,66px);line-height:1.06;letter-spacing:-0.005em;max-width:760px">Bachelor Party in Lima, Handled by a Local</h1>
+      <p style="color:rgba(255,255,255,0.88);font-size:clamp(16px,2vw,20px);line-height:1.65;margin-top:20px;max-width:600px">Fidel coordinates the logistics so you focus on the trip. Group transport, restaurant bookings, nightlife, private accommodation — one contact for the whole crew.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:32px">
+        <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20bachelor%20party%20in%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D.%20Let%27s%20talk%20details." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'hero-bachelor'}})}catch(e){}" style="display:inline-flex;align-items:center;gap:10px;background:#D9B77A;color:#061A40;padding:16px 28px;border-radius:10px;font-weight:700;font-size:16px;box-shadow:0 14px 40px rgba(0,0,0,0.28)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#061A40"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"/></svg>
+          Plan the weekend with Fidel
+        </a>
+        <a href="#whats-included" style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.10);color:#fff;padding:16px 28px;border-radius:10px;font-weight:600;font-size:16px;border:1px solid rgba(255,255,255,0.30);backdrop-filter:blur(6px)">What Fidel handles</a>
       </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Fidel builds the plan</h3>
-          <p>Based on your group's interests and budget, Fidel puts together a full itinerary — accommodation, dining, transport, and activities. You review and confirm.</p>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section style="background:#061A40;padding:22px clamp(18px,5vw,64px)">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 30px">
+      <span style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.12em;font-size:13px;font-weight:600;color:#fff">Group transport</span>
+      <span style="color:#D9B77A">·</span>
+      <span style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.12em;font-size:13px;font-weight:600;color:#fff">Nightlife &amp; restaurants</span>
+      <span style="color:#D9B77A">·</span>
+      <span style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.12em;font-size:13px;font-weight:600;color:#fff">Private accommodation</span>
+      <span style="color:#D9B77A">·</span>
+      <span style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.12em;font-size:13px;font-weight:600;color:#fff">From $1,200</span>
+    </div>
+  </section>
+
+  <!-- WHO THIS IS FOR -->
+  <section style="background:#F6F1E8;padding:clamp(64px,9vw,120px) clamp(18px,5vw,64px)">
+    <div style="max-width:1200px;margin:0 auto">
+      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#9A7A3E;margin-bottom:16px">Who this is for</div>
+      <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(28px,4vw,44px);line-height:1.1;letter-spacing:-0.01em;color:#061A40;max-width:760px">Groups who want a real weekend without the planning headache</h2>
+      <p style="color:#4A4439;font-size:clamp(15px,1.8vw,17.5px);line-height:1.7;margin-top:20px;max-width:680px">Lima is one of the best cities in South America for a bachelor party — world-class food, serious nightlife, and a city that stays open late. The hard part is coordinating a group of 8–15 people across restaurants, venues, and late-night transport in a place you don't know well. That's what Fidel is for.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:46px">
+        <div style="background:#fff;border-radius:14px;padding:32px 28px;box-shadow:0 30px 60px rgba(26,28,28,0.05)">
+          <div style="font-family:'Lora',serif;font-size:19px;font-weight:600;color:#061A40;margin-bottom:10px">Groups flying in from different cities</div>
+          <p style="color:#4A4439;font-size:15.5px;line-height:1.65">Coordinating 10 people's airport arrivals, transfers, and check-ins is genuinely complicated. Fidel handles it so everyone lands at the right place at the right time.</p>
         </div>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Show up and enjoy Lima</h3>
-          <p>Everything is handled before you arrive. Fidel is reachable throughout and joins in person where it adds value.</p>
+        <div style="background:#fff;border-radius:14px;padding:32px 28px;box-shadow:0 30px 60px rgba(26,28,28,0.05)">
+          <div style="font-family:'Lora',serif;font-size:19px;font-weight:600;color:#061A40;margin-bottom:10px">Groups who want private accommodation</div>
+          <p style="color:#4A4439;font-size:15.5px;line-height:1.65">Fidel sources private stays suited to the group — not a hotel corridor. Your own space in Lima for the weekend.</p>
+        </div>
+        <div style="background:#fff;border-radius:14px;padding:32px 28px;box-shadow:0 30px 60px rgba(26,28,28,0.05)">
+          <div style="font-family:'Lora',serif;font-size:19px;font-weight:600;color:#061A40;margin-bottom:10px">Groups who want a plan, not stress</div>
+          <p style="color:#4A4439;font-size:15.5px;line-height:1.65">Restaurants booked, venues scoped, transport sorted. You show up. Fidel keeps the night running and gets everyone home safely.</p>
         </div>
       </div>
     </div>
-    <div style="margin-top:40px;">
-      <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20bachelor%20party%20in%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D.%20Let%27s%20talk%20details." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'bachelor-howitworks'}})}catch(e){}" class="btn-navy">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"/></svg>
-        Start planning with Fidel
+  </section>
+
+  <!-- WHAT FIDEL HANDLES -->
+  <section id="whats-included" style="background:#ECE3D2;padding:clamp(64px,9vw,120px) clamp(18px,5vw,64px)">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(32px,5vw,64px);align-items:start">
+      <div>
+        <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#9A7A3E;margin-bottom:16px">What Fidel handles</div>
+        <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(26px,3.8vw,40px);line-height:1.1;letter-spacing:-0.01em;color:#061A40">The full weekend, coordinated</h2>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:18px;margin-top:34px">
+          <li style="display:flex;gap:14px;align-items:flex-start">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A7A3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong style="color:#061A40;font-size:15.5px">Group airport pickups</strong><p style="color:#4A4439;font-size:14.5px;margin-top:3px;line-height:1.6">Multiple arrivals coordinated into private vehicles so the group arrives together</p></div>
+          </li>
+          <li style="display:flex;gap:14px;align-items:flex-start">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A7A3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong style="color:#061A40;font-size:15.5px">Private accommodation</strong><p style="color:#4A4439;font-size:14.5px;margin-top:3px;line-height:1.6">Fidel sources private stays that fit the group — your own space, not a hotel</p></div>
+          </li>
+          <li style="display:flex;gap:14px;align-items:flex-start">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A7A3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong style="color:#061A40;font-size:15.5px">Restaurant reservations</strong><p style="color:#4A4439;font-size:14.5px;margin-top:3px;line-height:1.6">Lima's dining scene is world-class. Fidel books the right places for the group, booked ahead</p></div>
+          </li>
+          <li style="display:flex;gap:14px;align-items:flex-start">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A7A3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong style="color:#061A40;font-size:15.5px">Nightlife planning</strong><p style="color:#4A4439;font-size:14.5px;margin-top:3px;line-height:1.6">The right venues for the night, with safe private transport between them</p></div>
+          </li>
+          <li style="display:flex;gap:14px;align-items:flex-start">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A7A3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong style="color:#061A40;font-size:15.5px">Night-by-night plan</strong><p style="color:#4A4439;font-size:14.5px;margin-top:3px;line-height:1.6">Clear schedule agreed in advance — what's happening each night and how the group gets there</p></div>
+          </li>
+          <li style="display:flex;gap:14px;align-items:flex-start">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A7A3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong style="color:#061A40;font-size:15.5px">One contact for the whole crew</strong><p style="color:#4A4439;font-size:14.5px;margin-top:3px;line-height:1.6">Fidel is on WhatsApp throughout. Anyone in the group can reach him</p></div>
+          </li>
+        </ul>
+        <div style="background:#fff;border-radius:13px;padding:26px 26px;margin-top:28px;box-shadow:0 24px 50px rgba(26,28,28,0.04)">
+          <div style="font-family:'Lora',serif;font-size:26px;font-weight:600;color:#061A40;margin-bottom:6px">From $1,200 <span style="font-family:'Poppins',sans-serif;font-size:13px;font-weight:400;color:#8A8175">/ weekend · planning &amp; coordination</span></div>
+          <p style="color:#8A8175;font-size:13px;line-height:1.6">Starting price for planning and coordination. Does not include accommodation, meals, venue spend, or transport costs — those are confirmed separately. Final quote over WhatsApp once group size and scope are clear.</p>
+        </div>
+      </div>
+
+      <div>
+        <picture>
+          <source srcset="../public/images/group-dinner-lima.webp" type="image/webp">
+          <img src="../public/images/group-dinner-lima.png" alt="A group of men dining out in Lima" loading="lazy" style="width:100%;border-radius:16px;box-shadow:0 40px 80px rgba(26,28,28,0.12)">
+        </picture>
+        <div style="margin-top:22px">
+          <img src="../public/images/group-eating.webp" alt="A group eating together in Lima" loading="lazy" style="width:100%;border-radius:16px;box-shadow:0 30px 60px rgba(26,28,28,0.08)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section style="background:#061A40;padding:clamp(64px,9vw,120px) clamp(18px,5vw,64px)">
+    <div style="max-width:1100px;margin:0 auto">
+      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#D9B77A;margin-bottom:16px">How it works</div>
+      <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(28px,4vw,44px);line-height:1.1;color:#fff;max-width:680px">From first message to a planned weekend</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:46px">
+        <div style="background:rgba(255,255,255,0.06);border-radius:13px;padding:28px 24px">
+          <div style="font-family:'Lora',serif;font-size:32px;font-weight:700;color:#D9B77A;margin-bottom:14px">1</div>
+          <div style="font-family:'Lora',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:8px">Message Fidel</div>
+          <p style="color:rgba(255,255,255,0.72);font-size:14.5px;line-height:1.6">Send your dates and group size. Fidel asks a few questions to understand the vibe and what the group wants out of the weekend.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border-radius:13px;padding:28px 24px">
+          <div style="font-family:'Lora',serif;font-size:32px;font-weight:700;color:#D9B77A;margin-bottom:14px">2</div>
+          <div style="font-family:'Lora',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:8px">Fidel builds the plan</div>
+          <p style="color:rgba(255,255,255,0.72);font-size:14.5px;line-height:1.6">He puts together a full itinerary — accommodation options, restaurant ideas, nightlife plan, and transport. You review and confirm what works.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border-radius:13px;padding:28px 24px">
+          <div style="font-family:'Lora',serif;font-size:32px;font-weight:700;color:#D9B77A;margin-bottom:14px">3</div>
+          <div style="font-family:'Lora',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:8px">Show up and enjoy Lima</div>
+          <p style="color:rgba(255,255,255,0.72);font-size:14.5px;line-height:1.6">Everything is handled before you arrive. Fidel is on WhatsApp the whole weekend and joins in person where it makes sense.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section style="background:#f4efe3;padding:clamp(64px,9vw,120px) clamp(18px,5vw,64px)">
+    <div style="max-width:860px;margin:0 auto">
+      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#9A7A3E;margin-bottom:36px">In their words</div>
+      <div style="background:#fff;border-radius:16px;padding:clamp(28px,4vw,48px);box-shadow:0 30px 60px rgba(26,28,28,0.06)">
+        <div style="display:flex;gap:4px;margin-bottom:18px">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#D9B77A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#D9B77A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#D9B77A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#D9B77A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#D9B77A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p style="font-family:'Lora',serif;font-size:clamp(17px,2.2vw,21px);line-height:1.58;color:#4A4439;font-style:italic">"Amazing experience in Lima with Fidel. He has it all — anything you need or could possibly imagine, Fidel can make it happen. Our group of 10 guys had an incredible experience and would recommend Fidel to all others — you will not be disappointed!"</p>
+        <div style="margin-top:22px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:#061A40">Ram B. <span style="color:#8A8175;font-weight:400">· Lima, Peru</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="background:#ECE3D2;padding:clamp(64px,9vw,120px) clamp(18px,5vw,64px)">
+    <div style="max-width:840px;margin:0 auto">
+      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#9A7A3E;margin-bottom:16px">Questions</div>
+      <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(28px,4vw,44px);line-height:1.1;letter-spacing:-0.01em;color:#061A40">Common questions about bachelor parties in Lima</h2>
+      <div style="margin-top:38px;display:flex;flex-direction:column;gap:12px">
+
+        <details style="background:#fff;border-radius:12px;padding:4px 24px">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">How far in advance should we book?<span style="color:#9A7A3E;font-size:22px;font-weight:400">+</span></summary>
+          <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">At least 4–6 weeks ahead gives Fidel enough time to secure accommodation, make restaurant reservations, and build a proper plan. Shorter lead times are possible — message Fidel and he'll tell you what's realistic.</p>
+        </details>
+
+        <details style="background:#fff;border-radius:12px;padding:4px 24px">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">What group sizes does this work for?<span style="color:#9A7A3E;font-size:22px;font-weight:400">+</span></summary>
+          <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">Groups of 6–20+ are common. Tell Fidel your group size upfront — it affects accommodation options, vehicle capacity, and restaurant reservations.</p>
+        </details>
+
+        <details style="background:#fff;border-radius:12px;padding:4px 24px">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">Is Lima a good choice for a bachelor party?<span style="color:#9A7A3E;font-size:22px;font-weight:400">+</span></summary>
+          <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">Yes — it's one of the best cities in South America. World-ranked dining, a serious nightlife scene, and a city that genuinely welcomes groups. It's also less expensive than most European or US destinations for the same quality of experience.</p>
+        </details>
+
+        <details style="background:#fff;border-radius:12px;padding:4px 24px">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">Is Lima safe for a group?<span style="color:#9A7A3E;font-size:22px;font-weight:400">+</span></summary>
+          <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">Lima is very manageable when you know which neighborhoods to be in and use vetted private transport at night. Fidel's role is partly safety — he knows the city, the routes, and the venues. The group stays together and gets home reliably.</p>
+        </details>
+
+        <details style="background:#fff;border-radius:12px;padding:4px 24px">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">What does the $1,200 starting price cover?<span style="color:#9A7A3E;font-size:22px;font-weight:400">+</span></summary>
+          <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">The starting price covers Fidel's planning and coordination time — building the itinerary, making reservations, managing logistics, and being on-call throughout the weekend. Accommodation, restaurant bills, venue spend, and transport costs are separate and confirmed with you in advance. The total scope and breakdown are always agreed over WhatsApp before anything is paid.</p>
+        </details>
+
+        <details style="background:#fff;border-radius:12px;padding:4px 24px">
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">Can we add a guide day or airport pickup?<span style="color:#9A7A3E;font-size:22px;font-weight:400">+</span></summary>
+          <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">Yes — many groups arrive a day early and add a guide day to see Lima properly before the weekend kicks off. Airport pickups for the whole group are part of the standard coordination. Tell Fidel what you want and he'll put together a quote for the complete trip.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section style="position:relative;padding:clamp(72px,10vw,130px) clamp(18px,5vw,64px);background:linear-gradient(135deg,#061A40,#0A2E63);text-align:center">
+    <div style="max-width:680px;margin:0 auto">
+      <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(30px,5vw,52px);line-height:1.1;color:#fff;text-wrap:balance">Ready to plan the weekend?</h2>
+      <p style="color:rgba(255,255,255,0.82);font-size:clamp(15px,2vw,19px);line-height:1.65;margin-top:20px">Message Fidel with your dates and group size. He'll ask a few questions and come back with a plan.</p>
+      <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20bachelor%20party%20in%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D.%20Let%27s%20talk%20details." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'final-bachelor'}})}catch(e){}" style="display:inline-flex;align-items:center;gap:11px;margin-top:36px;background:#D9B77A;color:#061A40;padding:18px 34px;border-radius:10px;font-weight:700;font-size:17px;box-shadow:0 20px 60px rgba(0,0,0,0.3)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#061A40"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"/></svg>
+        Plan Lima bachelor party with Fidel
       </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="testimonial-section">
-  <div class="testimonial-inner">
-    <div class="stars">★★★★★</div>
-    <p class="quote">"Amazing experience in Lima with Fidel. He has it all — anything you need or could possibly imagine, Fidel can make it happen. Our group of 10 guys had an incredible experience and I can say without a doubt this was the best trip I've ever been on."</p>
-    <p class="quote-author">Ram B. · Lima · Verified guest</p>
-  </div>
-</section>
+  <!-- FOOTER -->
+  <footer style="background:#242422;padding:clamp(40px,6vw,60px) clamp(18px,5vw,64px)">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
+      <a href="/" style="display:flex;align-items:center;gap:11px;text-decoration:none">
+        <span style="font-family:'Lora',serif;font-weight:600;font-size:24px;letter-spacing:0.2em;color:#fff;line-height:1">ATLAS</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="#D9B77A" style="flex-shrink:0"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>
+        <span style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:8px;color:#D9B77A;font-weight:600;line-height:1.35">Private<br>Journeys</span>
+      </a>
+      <nav style="display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center">
+        <a href="/" style="color:rgba(255,255,255,0.55);font-size:13.5px;font-family:'Poppins',sans-serif">Home</a>
+        <a href="/lima-airport-transfer" style="color:rgba(255,255,255,0.55);font-size:13.5px;font-family:'Poppins',sans-serif">Airport Transfer</a>
+        <a href="/private-guide-lima" style="color:rgba(255,255,255,0.55);font-size:13.5px;font-family:'Poppins',sans-serif">Private Guide</a>
+      </nav>
+      <div style="color:rgba(255,255,255,0.4);font-size:12.5px;font-family:'Poppins',sans-serif">© 2026 Atlas Private Journeys</div>
+    </div>
+  </footer>
 
-<section class="cta-block">
-  <h2>Ready to plan the weekend?</h2>
-  <p>Message Fidel directly on WhatsApp with your dates and group size. He'll take it from there.</p>
-  <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20bachelor%20party%20in%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D.%20Let%27s%20talk%20details." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'bachelor-final'}})}catch(e){}" class="btn-gold">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="#061A40"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"/></svg>
-    Message Fidel on WhatsApp
-  </a>
-</section>
-
-<footer>
-  <p>© 2026 Atlas Private Journeys · <a href="/">Home</a> · <a href="/lima-airport-transfer">Airport Transfer</a> · <a href="/private-guide-lima">Private Guide</a></p>
-</footer>
-
+</div>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
