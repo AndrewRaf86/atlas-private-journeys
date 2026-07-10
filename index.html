@@ -10,6 +10,10 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://atlasjourneys.world/">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="/AtlasPrivateJourneysLogo.jpeg">
+  <link rel="apple-touch-icon" href="/AtlasPrivateJourneysLogo.jpeg">
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://atlasjourneys.world/">
@@ -35,6 +39,7 @@
     "logo": "https://atlasjourneys.world/AtlasPrivateJourneysLogo.jpeg",
     "description": "Private travel support, airport transfers, private guide days, and local coordination for travelers in Peru and Brazil.",
     "telephone": "+51942299829",
+    "priceRange": "$75 - $1200",
     "areaServed": ["Peru", "Lima", "Cusco", "Huacachina", "Machu Picchu", "Brazil", "Rio de Janeiro", "São Paulo"],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -56,6 +61,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="public/images/hero-machu-picchu.jpg">
+
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:'Poppins',sans-serif;color:#242422;background:#F6F1E8;-webkit-font-smoothing:antialiased;line-height:1.6}
@@ -71,7 +79,7 @@
 
   <!-- ============ 1. HERO (integrated nav + full-bleed) ============ -->
   <section style="position:relative;min-height:clamp(640px,94vh,880px);display:flex;flex-direction:column;background:#061A40">
-    <img src="public/images/hero-machu-picchu.jpg" alt="Machu Picchu, Peru at golden hour" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+    <img src="public/images/hero-machu-picchu.jpg" alt="Machu Picchu, Peru at golden hour" loading="eager" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0.74) 0%,rgba(6,26,64,0.34) 36%,rgba(6,26,64,0.52) 66%,rgba(6,26,64,0.90) 100%)"></div>
 
     <!-- integrated nav -->
@@ -81,7 +89,7 @@
         <svg width="13" height="13" viewBox="0 0 24 24" fill="#D9B77A" style="flex-shrink:0"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"></path></svg>
         <span style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:clamp(8px,1.3vw,9.5px);color:#D9B77A;font-weight:600;line-height:1.35">Private<br>Journeys</span>
       </a>
-      <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;background:#D9B77A;color:#061A40;padding:11px 20px;border-radius:9px;font-weight:600;font-size:15px;box-shadow:0 10px 30px rgba(0,0,0,0.22)">
+      <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20found%20Atlas%20Private%20Journeys%20and%20I%27d%20like%20to%20plan%20a%20trip%20to%20Peru%20or%20Brazil.%20Can%20we%20chat%3F" target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'nav'}})}catch(e){}" style="display:inline-flex;align-items:center;gap:9px;background:#D9B77A;color:#061A40;padding:11px 20px;border-radius:9px;font-weight:600;font-size:15px;box-shadow:0 10px 30px rgba(0,0,0,0.22)">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="#061A40"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>
         WhatsApp Fidel
       </a>
@@ -94,7 +102,7 @@
         <h1 style="font-family:'Lora',serif;font-weight:600;color:#fff;font-size:clamp(40px,6.6vw,82px);line-height:1.04;letter-spacing:-0.005em;text-wrap:balance">Your Trusted Local in Peru &amp; Brazil</h1>
         <p style="color:rgba(255,255,255,0.92);font-size:clamp(17px,2.05vw,22px);line-height:1.6;margin-top:26px;max-width:660px">Private airport pickup, local guide support, restaurants, nightlife, group coordination, and custom itineraries — one direct local contact from landing to departure.</p>
         <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:38px">
-          <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#D9B77A;color:#061A40;padding:17px 30px;border-radius:10px;font-weight:600;font-size:16.5px;box-shadow:0 18px 50px rgba(0,0,0,0.30)">
+          <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru%20or%20Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'hero'}})}catch(e){}" style="display:inline-flex;align-items:center;gap:10px;background:#D9B77A;color:#061A40;padding:17px 30px;border-radius:10px;font-weight:600;font-size:16.5px;box-shadow:0 18px 50px rgba(0,0,0,0.30)">
             <svg width="19" height="19" viewBox="0 0 24 24" fill="#061A40"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>
             Message Fidel on WhatsApp
           </a>
@@ -106,27 +114,30 @@
     <!-- labeled destination thumbnails -->
     <div style="position:relative;z-index:3;width:100%;max-width:1280px;margin:0 auto;padding:0 clamp(18px,5vw,56px) clamp(28px,4vw,44px);display:flex;flex-wrap:wrap;gap:clamp(8px,1vw,14px)">
       <a href="#destinations" style="flex:1 1 130px;min-width:110px;position:relative;border-radius:13px;overflow:hidden;height:clamp(94px,11vw,128px);box-shadow:0 14px 34px rgba(0,0,0,0.32);text-decoration:none">
-        <img src="public/images/dest-lima.jpg" alt="Lima, Peru" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg,#061A40,#1F5C4D);display:flex;align-items:center;justify-content:center"><span style="color:#D9B77A;font-family:'Lora',serif;font-size:28px;font-weight:600">Lima</span></div>
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0) 40%,rgba(6,26,64,0.78) 100%)"></div>
         <span style="position:absolute;left:14px;bottom:12px;font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:600;letter-spacing:0.04em;color:#fff">Lima</span>
       </a>
       <a href="#destinations" style="flex:1 1 130px;min-width:110px;position:relative;border-radius:13px;overflow:hidden;height:clamp(94px,11vw,128px);box-shadow:0 14px 34px rgba(0,0,0,0.32);text-decoration:none">
-        <img src="public/images/dest-rio.jpg" alt="Rio de Janeiro, Brazil" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+        <img src="public/images/dest-rio.jpg" alt="Rio de Janeiro, Brazil" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0) 40%,rgba(6,26,64,0.78) 100%)"></div>
         <span style="position:absolute;left:14px;bottom:12px;font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:600;letter-spacing:0.04em;color:#fff">Rio</span>
       </a>
       <a href="#destinations" style="flex:1 1 130px;min-width:110px;position:relative;border-radius:13px;overflow:hidden;height:clamp(94px,11vw,128px);box-shadow:0 14px 34px rgba(0,0,0,0.32);text-decoration:none">
-        <img src="public/images/dest-cusco.jpg" alt="Cusco, Peru" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+        <img src="public/images/dest-cusco.jpg" alt="Cusco, Peru" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0) 40%,rgba(6,26,64,0.78) 100%)"></div>
         <span style="position:absolute;left:14px;bottom:12px;font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:600;letter-spacing:0.04em;color:#fff">Cusco</span>
       </a>
-      <a href="#services" style="flex:1 1 130px;min-width:110px;position:relative;border-radius:13px;overflow:hidden;height:clamp(94px,11vw,128px);box-shadow:0 14px 34px rgba(0,0,0,0.32);text-decoration:none">
-        <img src="public/images/food-ceviche.jpg" alt="Peruvian ceviche" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+      <a href="#services" style="flex:1 1 130px;min-width:110px;position:relative;border-radius:13px;overflow:hidden;height:clamp(94px,11vw,128px);box-shadow:0 14px 34px rgba(0,0,0,0.32);text-decoration:none;background:linear-gradient(135deg,#1F5C4D,#061A40);display:flex;align-items:center;justify-content:center">
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0) 40%,rgba(6,26,64,0.78) 100%)"></div>
+        <span style="position:relative;z-index:1;color:#D9B77A;font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;text-align:center;line-height:1.4">Local<br>cuisine</span>
         <span style="position:absolute;left:14px;bottom:12px;font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:600;letter-spacing:0.04em;color:#fff">Food</span>
       </a>
       <a href="#packages" style="flex:1 1 130px;min-width:110px;position:relative;border-radius:13px;overflow:hidden;height:clamp(94px,11vw,128px);box-shadow:0 14px 34px rgba(0,0,0,0.32);text-decoration:none">
-        <img src="public/images/group-private-stays.png" alt="Private stays in Lima" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+        <picture>
+          <source srcset="public/images/group-private-stays.webp" type="image/webp">
+          <img src="public/images/group-private-stays.png" alt="Private stays in Lima" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+        </picture>
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0) 40%,rgba(6,26,64,0.78) 100%)"></div>
         <span style="position:absolute;left:14px;bottom:12px;font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:600;letter-spacing:0.04em;color:#fff">Private Stays</span>
       </a>
@@ -157,21 +168,30 @@
       <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(30px,4.4vw,48px);line-height:1.08;letter-spacing:-0.01em;max-width:720px;color:#061A40">Built for the way you actually travel</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:26px;margin-top:48px">
         <div style="background:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 30px 60px rgba(26,28,28,0.05)">
-          <img src="public/images/group-dinner-lima.png" alt="A men's group at dinner in Lima" style="width:100%;height:240px;object-fit:cover">
+          <picture>
+            <source srcset="public/images/group-dinner-lima.webp" type="image/webp">
+            <img src="public/images/group-dinner-lima.png" alt="A men's group at dinner in Lima" loading="lazy" style="width:100%;height:240px;object-fit:cover">
+          </picture>
           <div style="padding:28px 26px 30px">
             <h3 style="font-family:'Lora',serif;font-size:23px;font-weight:600;color:#061A40;margin-bottom:10px">Groups &amp; bachelor parties</h3>
             <p style="color:#4A4439;font-size:16px;line-height:1.7">Restaurants, transport, nightlife, and logistics coordinated for the whole group — so the trip runs smoothly and everyone stays together and safe.</p>
           </div>
         </div>
         <div style="background:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 30px 60px rgba(26,28,28,0.05)">
-          <img src="public/images/fidel-greeting.png" alt="Fidel greeting travelers" style="width:100%;height:240px;object-fit:cover;object-position:center 30%">
+          <picture>
+            <source srcset="public/images/fidel-greeting.webp" type="image/webp">
+            <img src="public/images/fidel-greeting.png" alt="Fidel greeting travelers" loading="lazy" style="width:100%;height:240px;object-fit:cover;object-position:center 30%">
+          </picture>
           <div style="padding:28px 26px 30px">
             <h3 style="font-family:'Lora',serif;font-size:23px;font-weight:600;color:#061A40;margin-bottom:10px">Solo travelers &amp; first-timers</h3>
             <p style="color:#4A4439;font-size:16px;line-height:1.7">Landing alone in a new country? Get a familiar face at the airport and a local who answers your questions and keeps you out of tourist traps.</p>
           </div>
         </div>
         <div style="background:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 30px 60px rgba(26,28,28,0.05)">
-          <img src="public/images/private-stay.png" alt="A private stay in Lima" style="width:100%;height:240px;object-fit:cover">
+          <picture>
+            <source srcset="public/images/private-stay.webp" type="image/webp">
+            <img src="public/images/private-stay.png" alt="A private stay in Lima" loading="lazy" style="width:100%;height:240px;object-fit:cover">
+          </picture>
           <div style="padding:28px 26px 30px">
             <h3 style="font-family:'Lora',serif;font-size:23px;font-weight:600;color:#061A40;margin-bottom:10px">Couples &amp; private trips</h3>
             <p style="color:#4A4439;font-size:16px;line-height:1.7">Quiet logistics handled in the background. Private transport, vetted dining, and a calm itinerary so you can focus on the trip, not the planning.</p>
@@ -227,7 +247,10 @@
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:48px">
 
         <div style="background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px rgba(26,28,28,0.06);display:flex;flex-direction:column">
-          <img src="public/images/group-private-stays.png" alt="" style="width:100%;height:180px;object-fit:cover">
+          <picture>
+            <source srcset="public/images/group-private-stays.webp" type="image/webp">
+            <img src="public/images/group-private-stays.png" alt="" loading="lazy" style="width:100%;height:180px;object-fit:cover">
+          </picture>
           <div style="padding:30px 28px 32px;display:flex;flex-direction:column;flex:1">
             <h3 style="font-family:'Lora',serif;font-size:24px;font-weight:600;color:#061A40;margin-bottom:6px">Lima Arrival Support</h3>
             <p style="color:#9A7A3E;font-family:'Poppins',sans-serif;font-size:12.5px;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:10px">Land smoothly, settle in fast</p>
@@ -238,12 +261,15 @@
               <li style="display:flex;gap:11px;color:#4A4439;font-size:16px;line-height:1.65"><span style="color:#9A7A3E;font-weight:700">✓</span>Local SIM &amp; first-night orientation</li>
               <li style="display:flex;gap:11px;color:#4A4439;font-size:16px;line-height:1.65"><span style="color:#9A7A3E;font-weight:700">✓</span>WhatsApp support on the ground</li>
             </ul>
-            <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:14px 22px;border-radius:9px;font-weight:600;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Ask Fidel about this</a>
+            <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20need%20airport%20pickup%20in%20Lima.%20My%20flight%20arrives%20on%20%5Bdate%5D%20at%20%5Btime%5D%2C%20group%20size%20%5Bnumber%5D.%20Can%20you%20help%3F" target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'lima-arrival'}})}catch(e){}" style="display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:14px 22px;border-radius:9px;font-weight:600;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Ask Fidel about this</a>
           </div>
         </div>
 
         <div style="background:#061A40;border-radius:16px;overflow:hidden;box-shadow:0 40px 80px rgba(6,26,64,0.22);display:flex;flex-direction:column">
-          <img src="public/images/group-dinner-lima.png" alt="A men's group dining out in Lima" style="width:100%;height:230px;object-fit:cover;object-position:center 22%">
+          <picture>
+            <source srcset="public/images/group-dinner-lima.webp" type="image/webp">
+            <img src="public/images/group-dinner-lima.png" alt="A men's group dining out in Lima" loading="lazy" style="width:100%;height:230px;object-fit:cover;object-position:center 22%">
+          </picture>
           <div style="padding:30px 28px 32px;display:flex;flex-direction:column;flex:1">
             <div style="font-family:'Poppins',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.16em;color:#D9B77A;margin-bottom:10px">Most requested</div>
             <h3 style="font-family:'Lora',serif;font-size:24px;font-weight:600;color:#fff;margin-bottom:6px">Bachelor Party Lima</h3>
@@ -255,12 +281,15 @@
               <li style="display:flex;gap:11px;color:rgba(255,255,255,0.85);font-size:16px;line-height:1.65"><span style="color:#D9B77A;font-weight:700">✓</span>Night-by-night plan &amp; safe transfers</li>
               <li style="display:flex;gap:11px;color:rgba(255,255,255,0.85);font-size:16px;line-height:1.65"><span style="color:#D9B77A;font-weight:700">✓</span>One local contact for the whole crew</li>
             </ul>
-            <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:9px;background:#D9B77A;color:#061A40;padding:14px 22px;border-radius:9px;font-weight:700;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#061A40"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Plan the weekend</a>
+            <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20bachelor%20party%20in%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D.%20Let%27s%20talk%20details." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'bachelor-party'}})}catch(e){}" style="display:inline-flex;align-items:center;justify-content:center;gap:9px;background:#D9B77A;color:#061A40;padding:14px 22px;border-radius:9px;font-weight:700;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#061A40"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Plan the weekend</a>
           </div>
         </div>
 
         <div style="background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px rgba(26,28,28,0.06);display:flex;flex-direction:column">
-          <img src="public/images/fidel-portrait.png" alt="" style="width:100%;height:180px;object-fit:cover">
+          <picture>
+            <source srcset="public/images/fidel-portrait.webp" type="image/webp">
+            <img src="public/images/fidel-portrait.png" alt="" loading="lazy" style="width:100%;height:180px;object-fit:cover">
+          </picture>
           <div style="padding:30px 28px 32px;display:flex;flex-direction:column;flex:1">
             <h3 style="font-family:'Lora',serif;font-size:24px;font-weight:600;color:#061A40;margin-bottom:6px">Private Lima Guide Day</h3>
             <p style="color:#9A7A3E;font-family:'Poppins',sans-serif;font-size:12.5px;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:10px">A full day, handled by a local</p>
@@ -271,7 +300,7 @@
               <li style="display:flex;gap:11px;color:#4A4439;font-size:16px;line-height:1.65"><span style="color:#9A7A3E;font-weight:700">✓</span>Restaurants &amp; reservations arranged</li>
               <li style="display:flex;gap:11px;color:#4A4439;font-size:16px;line-height:1.65"><span style="color:#9A7A3E;font-weight:700">✓</span>Real-time WhatsApp support all day</li>
             </ul>
-            <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:14px 22px;border-radius:9px;font-weight:600;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Book a guide day</a>
+            <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27d%20like%20a%20private%20guide%20day%20in%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D.%20What%27s%20available%3F" target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'guide-day'}})}catch(e){}" style="display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:14px 22px;border-radius:9px;font-weight:600;font-size:15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Book a guide day</a>
           </div>
         </div>
 
@@ -308,18 +337,20 @@
   </section>
 
   <!-- ============ 7. MEET FIDEL ============ -->
-  <!-- NOTE: Replace the photo (assets/fidel.png) and the bio below with Fidel's real final headshot and approved bio before launch. -->
   <section style="background:#f4efe3;padding:clamp(64px,9vw,120px) clamp(18px,5vw,64px)">
     <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(32px,5vw,64px);align-items:center">
       <div style="position:relative">
-        <img src="public/images/fidel-with-guest.png" alt="Fidel (left) with a guest in Lima" style="width:100%;border-radius:16px;display:block;box-shadow:0 40px 80px rgba(26,28,28,0.12)">
+        <picture>
+          <source srcset="public/images/fidel-with-guest.webp" type="image/webp">
+          <img src="public/images/fidel-with-guest.png" alt="Fidel (left) with a guest in Lima" loading="lazy" style="width:100%;border-radius:16px;display:block;box-shadow:0 40px 80px rgba(26,28,28,0.12)">
+        </picture>
         <div style="position:absolute;bottom:16px;left:16px;background:rgba(6,26,64,0.82);backdrop-filter:blur(8px);padding:8px 16px;border-radius:22px;font-family:'Poppins',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:#fff;display:flex;align-items:center;gap:8px"><svg width="11" height="11" viewBox="0 0 24 24" fill="#D9B77A"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"></path></svg>Fidel (left) · Lima, Peru</div>
       </div>
       <div>
         <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#9A7A3E;margin-bottom:16px">Meet Fidel</div>
         <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(28px,4.2vw,44px);line-height:1.1;letter-spacing:-0.01em;color:#061A40">Your local contact, from landing to departure</h2>
         <p style="color:#4A4439;font-size:clamp(16px,2vw,18.5px);line-height:1.7;margin-top:24px">My name is Fidel. I'm based in Lima and help travelers from the US, Canada, the UK, and Europe plan smoother, safer trips in Peru and Brazil. Whether you're landing alone, planning a group trip, or organizing a bachelor party, I help with the local details that are hard to figure out from abroad.</p>
-        <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;margin-top:30px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:15px 26px;border-radius:9px;font-weight:600;font-size:15.5px"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Message Fidel directly</a>
+        <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20saw%20your%20profile%20on%20Atlas%20Private%20Journeys%20and%20want%20to%20plan%20a%20trip.%20My%20dates%20are%20%5Bdates%5D%2C%20destination%20%5Bplace%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'meet-fidel'}})}catch(e){}" style="display:inline-flex;align-items:center;gap:10px;margin-top:30px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:15px 26px;border-radius:9px;font-weight:600;font-size:15.5px"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Message Fidel directly</a>
       </div>
     </div>
   </section>
@@ -368,8 +399,7 @@
 
           <details style="border-radius:14px;overflow:hidden;box-shadow:0 18px 42px rgba(6,26,64,0.12);background:#fff">
             <summary style="display:block;position:relative;height:210px">
-              <!-- TODO: dest-lima.jpg has visible watermarks. Replace with a clean Lima image before shipping to production. -->
-              <img src="public/images/dest-lima.jpg" alt="Lima, Peru — Miraflores coastline" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+              <div style="position:absolute;inset:0;background:linear-gradient(135deg,#061A40,#1F5C4D);display:flex;align-items:center;justify-content:center"><span style="color:#D9B77A;font-family:'Lora',serif;font-size:28px;font-weight:600">Lima</span></div>
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0) 40%,rgba(6,26,64,0.84) 100%)"></div>
               <span style="position:absolute;left:20px;bottom:18px;color:#fff;font-family:'Lora',serif;font-size:23px;font-weight:600">Lima</span>
               <span style="position:absolute;right:16px;bottom:18px;color:#061A40;background:#D9B77A;font-family:'Poppins',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Explore</span>
@@ -378,13 +408,13 @@
               <p style="color:#4A4439;font-size:15.5px;line-height:1.7">Peru's capital and culinary heart — sea-cliff neighborhoods like Miraflores and Barranco, world-ranked dining, and the easiest soft landing in the country.</p>
               <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.12em;font-size:11px;color:#9A7A3E;font-weight:600;margin:18px 0 7px">Where to eat</div>
               <p style="color:#242422;font-size:15px;line-height:1.7">Central · Maido · La Mar Cebichería · Isolina</p>
-              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan Lima with Fidel</a>
+              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20want%20to%20visit%20Lima%20with%20Atlas.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'destination-lima'}})}catch(e){}" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan Lima with Fidel</a>
             </div>
           </details>
 
           <details style="border-radius:14px;overflow:hidden;box-shadow:0 18px 42px rgba(6,26,64,0.12);background:#fff">
             <summary style="display:block;position:relative;height:210px">
-              <img src="public/images/dest-cusco.jpg" alt="Cusco, Peru — Plaza de Armas" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+              <img src="public/images/dest-cusco.jpg" alt="Cusco, Peru — Plaza de Armas" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0) 40%,rgba(6,26,64,0.84) 100%)"></div>
               <span style="position:absolute;left:20px;bottom:18px;color:#fff;font-family:'Lora',serif;font-size:23px;font-weight:600">Cusco</span>
               <span style="position:absolute;right:16px;bottom:18px;color:#061A40;background:#D9B77A;font-family:'Poppins',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Explore</span>
@@ -393,13 +423,13 @@
               <p style="color:#4A4439;font-size:15.5px;line-height:1.7">The old Inca capital at 3,400m and the gateway to the Sacred Valley — cobblestone streets, San Blas artisans, and a serious high-altitude food scene.</p>
               <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.12em;font-size:11px;color:#9A7A3E;font-weight:600;margin:18px 0 7px">Where to eat</div>
               <p style="color:#242422;font-size:15px;line-height:1.7">Cicciolina · Chicha por Gastón Acurio · MAP Café · Pachapapa</p>
-              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan Cusco with Fidel</a>
+              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20want%20to%20visit%20Cusco%20with%20Atlas.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'destination-cusco'}})}catch(e){}" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan Cusco with Fidel</a>
             </div>
           </details>
 
           <details style="border-radius:14px;overflow:hidden;box-shadow:0 18px 42px rgba(6,26,64,0.12);background:#fff">
             <summary style="display:block;position:relative;height:210px">
-              <img src="public/images/dest-huacachina.jpg" alt="Huacachina desert oasis, Peru" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+              <img src="public/images/dest-huacachina.jpg" alt="Huacachina desert oasis, Peru" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0) 40%,rgba(6,26,64,0.84) 100%)"></div>
               <span style="position:absolute;left:20px;bottom:18px;color:#fff;font-family:'Lora',serif;font-size:23px;font-weight:600">Huacachina</span>
               <span style="position:absolute;right:16px;bottom:18px;color:#061A40;background:#D9B77A;font-family:'Poppins',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Explore</span>
@@ -408,13 +438,13 @@
               <p style="color:#4A4439;font-size:15.5px;line-height:1.7">A palm-ringed desert oasis outside Ica — dune-buggy rides and sandboarding at sunset, with Peru's pisco vineyards a short drive away.</p>
               <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.12em;font-size:11px;color:#9A7A3E;font-weight:600;margin:18px 0 7px">Where to eat</div>
               <p style="color:#242422;font-size:15px;line-height:1.7">Bodega Tacama (winery lunch) · La Casa de Bamboo · Desert Nights</p>
-              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan Huacachina with Fidel</a>
+              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20want%20to%20visit%20Huacachina%20with%20Atlas.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'destination-huacachina'}})}catch(e){}" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan Huacachina with Fidel</a>
             </div>
           </details>
 
           <details style="border-radius:14px;overflow:hidden;box-shadow:0 18px 42px rgba(6,26,64,0.12);background:#fff">
             <summary style="display:block;position:relative;height:210px">
-              <img src="public/images/hero-machu-picchu.jpg" alt="Machu Picchu, Peru" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+              <img src="public/images/hero-machu-picchu.jpg" alt="Machu Picchu, Peru" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0) 40%,rgba(6,26,64,0.84) 100%)"></div>
               <span style="position:absolute;left:20px;bottom:18px;color:#fff;font-family:'Lora',serif;font-size:23px;font-weight:600">Machu Picchu</span>
               <span style="position:absolute;right:16px;bottom:18px;color:#061A40;background:#D9B77A;font-family:'Poppins',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Explore</span>
@@ -423,7 +453,7 @@
               <p style="color:#4A4439;font-size:15.5px;line-height:1.7">The Inca citadel above the cloud forest, reached by train through the Sacred Valley. We handle tickets, timing, and the climb so the day runs smoothly.</p>
               <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.12em;font-size:11px;color:#9A7A3E;font-weight:600;margin:18px 0 7px">Where to eat (Aguas Calientes)</div>
               <p style="color:#242422;font-size:15px;line-height:1.7">Indio Feliz · Tree House · Mapacho Craft Beer</p>
-              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan Machu Picchu with Fidel</a>
+              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20want%20to%20visit%20Machu%20Picchu%20with%20Atlas.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'destination-machu-picchu'}})}catch(e){}" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan Machu Picchu with Fidel</a>
             </div>
           </details>
 
@@ -436,7 +466,7 @@
 
           <details style="border-radius:14px;overflow:hidden;box-shadow:0 18px 42px rgba(6,26,64,0.12);background:#fff">
             <summary style="display:block;position:relative;height:210px">
-              <img src="public/images/dest-rio.jpg" alt="Rio de Janeiro, Brazil — Christ the Redeemer" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+              <img src="public/images/dest-rio.jpg" alt="Rio de Janeiro, Brazil — Christ the Redeemer" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0) 40%,rgba(6,26,64,0.84) 100%)"></div>
               <span style="position:absolute;left:20px;bottom:18px;color:#fff;font-family:'Lora',serif;font-size:23px;font-weight:600">Rio de Janeiro</span>
               <span style="position:absolute;right:16px;bottom:18px;color:#061A40;background:#D9B77A;font-family:'Poppins',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Explore</span>
@@ -445,13 +475,13 @@
               <p style="color:#4A4439;font-size:15.5px;line-height:1.7">Brazil's beach capital — Ipanema and Copacabana, Christ the Redeemer, and Sugarloaf, with samba-bar nights in Lapa.</p>
               <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.12em;font-size:11px;color:#9A7A3E;font-weight:600;margin:18px 0 7px">Where to eat</div>
               <p style="color:#242422;font-size:15px;line-height:1.7">Aprazível · Confeitaria Colombo · Garota de Ipanema · CT Boucherie</p>
-              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan Rio with Fidel</a>
+              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20want%20to%20visit%20Rio%20de%20Janeiro%20with%20Atlas.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'destination-rio'}})}catch(e){}" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan Rio with Fidel</a>
             </div>
           </details>
 
           <details style="border-radius:14px;overflow:hidden;box-shadow:0 18px 42px rgba(6,26,64,0.12);background:#fff">
             <summary style="display:block;position:relative;height:210px">
-              <img src="public/images/dest-saopaulo.jpg" alt="São Paulo, Brazil skyline at dusk" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+              <img src="public/images/dest-saopaulo.jpg" alt="São Paulo, Brazil skyline at dusk" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0) 40%,rgba(6,26,64,0.84) 100%)"></div>
               <span style="position:absolute;left:20px;bottom:18px;color:#fff;font-family:'Lora',serif;font-size:23px;font-weight:600">São Paulo</span>
               <span style="position:absolute;right:16px;bottom:18px;color:#061A40;background:#D9B77A;font-family:'Poppins',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Explore</span>
@@ -460,7 +490,7 @@
               <p style="color:#4A4439;font-size:15.5px;line-height:1.7">Brazil's biggest city and its dining and nightlife capital — the Jardins district, rooftop bars, and some of South America's best restaurants.</p>
               <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.12em;font-size:11px;color:#9A7A3E;font-weight:600;margin:18px 0 7px">Where to eat</div>
               <p style="color:#242422;font-size:15px;line-height:1.7">A Casa do Porco · Mocotó · D.O.M. · Mani</p>
-              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan São Paulo with Fidel</a>
+              <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20want%20to%20visit%20S%C3%A3o%20Paulo%20with%20Atlas.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'destination-saopaulo'}})}catch(e){}" style="display:inline-block;margin-top:18px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px">Plan São Paulo with Fidel</a>
             </div>
           </details>
 
@@ -548,11 +578,6 @@
           <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">Yes — Atlas covers Brazil alongside Peru, with a focus on Rio de Janeiro and São Paulo. Message Fidel with your dates and we'll plan from there.</p>
         </details>
 
-        <details style="background:#fff;border-radius:12px;padding:4px 24px">
-          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">Do you arrange ceremonies or retreats?<span style="color:#9A7A3E;font-size:22px;font-weight:400">+</span></summary>
-          <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">Our core focus is logistics, transport, guides, dining, and nightlife. If you have a specific request such as a wellness or ceremony experience, ask Fidel directly and he'll let you know what he can responsibly arrange.</p>
-        </details>
-
       </div>
     </div>
   </section>
@@ -562,7 +587,7 @@
     <div style="max-width:760px;margin:0 auto">
       <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(32px,5vw,56px);line-height:1.08;letter-spacing:-0.01em;color:#fff;text-wrap:balance">Ready to stop planning and start traveling?</h2>
       <p style="color:rgba(255,255,255,0.82);font-size:clamp(16px,2.2vw,20px);line-height:1.6;margin-top:24px">Message Fidel on WhatsApp with your dates, group size, and destination.</p>
-      <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru/Brazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:11px;margin-top:38px;background:#D9B77A;color:#061A40;padding:18px 34px;border-radius:10px;font-weight:700;font-size:17px;box-shadow:0 20px 60px rgba(0,0,0,0.3)"><svg width="20" height="20" viewBox="0 0 24 24" fill="#061A40"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Message Fidel Now</a>
+      <a href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20ready%20to%20plan%20my%20trip%20to%20Peru%20or%20Brazil.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D%2C%20and%20I%20need%20%5Bservice%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'final-cta'}})}catch(e){}" style="display:inline-flex;align-items:center;gap:11px;margin-top:38px;background:#D9B77A;color:#061A40;padding:18px 34px;border-radius:10px;font-weight:700;font-size:17px;box-shadow:0 20px 60px rgba(0,0,0,0.3)"><svg width="20" height="20" viewBox="0 0 24 24" fill="#061A40"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Message Fidel Now</a>
     </div>
   </section>
 
@@ -577,12 +602,11 @@
       <div style="color:rgba(255,255,255,0.55);font-size:13.5px;font-family:'Poppins',sans-serif;text-align:right">
         <div style="margin-bottom:6px">Your trusted local in Peru &amp; Brazil</div>
         <div>© 2026 Atlas Private Journeys. All rights reserved.</div>
-        <div style="margin-top:8px;font-size:11px;color:rgba(255,255,255,0.38)">Ceviche photo source: <a href="https://recetas.elperiodico.com/receta-de-ceviche-peruano-18147.html" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.55);text-decoration:underline">Recetas El Periódico</a></div>
       </div>
     </div>
   </footer>
 
 </div>
-</body></html>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
