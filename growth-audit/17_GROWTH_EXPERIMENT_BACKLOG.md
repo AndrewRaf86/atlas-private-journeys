@@ -1,0 +1,18 @@
+# Growth Experiment Backlog
+
+Testable hypotheses, ordered by how cheap they are to test relative to what they'd teach. None of these are running yet — this is a backlog to pull from once the analytics foundation (`12_ANALYTICS_AND_LEAD_MEASUREMENT.md`) exists to actually measure results.
+
+| # | Hypothesis | Test | Cost | What it would tell us | Depends on |
+|---|---|---|---|---|---|
+| 1 | Search Console + sitemap submission gets the site indexed within 30 days | Submit, re-run `04_SEARCH_VISIBILITY_BASELINE.md` method at day 14 and day 30 | $0 | Whether indexing was the real blocker or something else is wrong (e.g. a manual Google penalty, unlikely but worth ruling out) | Andrew's Google account |
+| 2 | A live Google Business Profile produces inquiries faster than organic site SEO alone | Track "found via Google Maps" as a source in the manual lead log for 60 days post-launch | $0 | Whether local/Maps discovery outperforms organic web search for this business | GBP live |
+| 3 | Listing on a guide marketplace produces bookable reviews faster than direct Google review requests | Compare review count/velocity on the marketplace vs. GBP over 60 days | Marketplace commission per booking | Whether the marketplace tradeoff (commission for review-bootstrap speed) is worth it long-term | Marketplace listing decision |
+| 4 | Adding an indicative price range reduces WhatsApp-click bounce without hurting lead quality | A/B is not really feasible on a static single-version site without more tooling — simpler test: add a range to one service page only, compare its WhatsApp-click rate to the other two pages over 30 days | $0, but requires Andrew's pricing-disclosure decision | Whether full price opacity is actually costing qualified inquiries | GA4 live, Andrew's decision |
+| 5 | Instagram-sourced traffic converts to inquiries at a meaningfully different rate than search traffic | Track "source" field consistently in the manual lead log for 60 days across both channels | Fidel's time only | Which channel deserves more of Fidel's limited content/response time | Lead log + social content both running |
+| 6 | A dedicated "Lima nightlife guide" page would capture demand the current pages don't | Once the 3 existing pages are indexed and have baseline traffic, check GA4 for on-page search terms/Search Console queries already landing on `/private-guide-lima`'s nightlife section — if there's real query volume hitting that section specifically, build the dedicated page | Page-build time | Whether this specific content gap (flagged as P1 in `06_CONTENT_AND_KEYWORD_MAP.md`) is worth prioritizing over other work | Search Console data existing |
+| 7 | A short, real founder-intro video on the homepage increases WhatsApp-click rate | Add video, compare pre/post click-through in GA4 | Filming time only | Whether stronger founder presence measurably affects conversion, not just "feels right" | GA4 live, real footage |
+| 8 | A small Google Search test campaign (Scenario B) produces a lower cost-per-qualified-inquiry than free channels alone | Run Scenario B for a fixed budget/time window, compare against organic-channel cost (Fidel's time value) over the same window | Ad spend (Andrew's budget decision) | Whether paid search is worth scaling past a test | All Section 11 prerequisites met |
+
+## How to use this backlog
+
+Pull the cheapest, most foundational experiment first — most of these are sequenced by dependency already (you can't test #8 without #1-#2's infrastructure existing). Log results in `18_WEEKLY_SCORECARD_TEMPLATE.md`'s "experiment run this week / result" rows. An experiment that fails to confirm its hypothesis is still a useful result — record it rather than quietly dropping it.
