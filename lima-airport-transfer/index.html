@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lima Airport Transfer | Private Pickup to Miraflores</title>
+  <meta name="description" content="Private Lima airport transfer with meet-and-greet at arrivals. Direct pickup to Miraflores, Barranco or San Isidro — no meters, no sharing, no stress.">
+  <link rel="canonical" href="https://atlasjourneys.world/lima-airport-transfer">
+
+  <!-- OG / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://atlasjourneys.world/lima-airport-transfer">
+  <meta property="og:title" content="Lima Airport Transfer | Private Pickup to Miraflores">
+  <meta property="og:description" content="Private Lima airport transfer with meet-and-greet at arrivals. Direct pickup to Miraflores, Barranco or San Isidro.">
+  <meta property="og:image" content="https://atlasjourneys.world/public/images/van-premium.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lima Airport Transfer | Private Pickup to Miraflores">
+  <meta name="twitter:description" content="Private Lima airport transfer with meet-and-greet at arrivals. Direct pickup to Miraflores, Barranco or San Isidro.">
+  <meta name="twitter:image" content="https://atlasjourneys.world/public/images/van-premium.jpeg">
+
+  <!-- JSON-LD: no price data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Lima Airport Transfer",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Atlas Private Journeys",
+      "url": "https://atlasjourneys.world/",
+      "telephone": "+51942299829"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Lima, Peru"
+    },
+    "description": "Private airport pickup and drop-off service in Lima, Peru. Personal meet-and-greet by Fidel, direct transfer to your hotel or accommodation.",
+    "url": "https://atlasjourneys.world/lima-airport-transfer"
+  }
+  </script>
+
+  <!-- Vercel Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #061A40;
+      --cream: #F6F1E8;
+      --cream2: #ECE3D2;
+      --cream3: #f4efe3;
+      --gold: #D9B77A;
+      --gold-dark: #9A7A3E;
+      --text: #1a1a1a;
+      --text-light: #4a4a4a;
+    }
+    body { font-family: 'Georgia', 'Times New Roman', serif; color: var(--text); background: var(--cream); line-height: 1.7; }
+    h1, h2, h3, h4 { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.25; }
+    p, li { font-family: 'Georgia', 'Times New Roman', serif; }
+    .sans { font-family: 'Arial', 'Helvetica', sans-serif; }
+
+    /* NAV */
+    nav {
+      background: var(--navy);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo-text {
+      font-family: 'Arial', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+    }
+    .nav-logo-sub {
+      font-family: 'Georgia', serif;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: rgba(255,255,255,0.65);
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: 'Arial', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    @media (max-width: 640px) { .nav-links { display: none; } }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      height: 520px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+    }
+    .hero img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(6,26,64,0.82) 0%, rgba(6,26,64,0.25) 60%, transparent 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 40px 52px;
+      max-width: 720px;
+    }
+    .hero-eyebrow {
+      font-family: 'Arial', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .hero-sub {
+      font-size: 17px;
+      color: rgba(255,255,255,0.85);
+      max-width: 540px;
+    }
+    @media (max-width: 640px) {
+      .hero { height: 420px; }
+      .hero-content { padding: 0 20px 36px; }
+    }
+
+    /* TRUST STRIP */
+    .trust-strip {
+      background: var(--navy);
+      padding: 20px 40px;
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Arial', sans-serif;
+      font-size: 13px;
+      color: rgba(255,255,255,0.8);
+    }
+    .trust-item span.icon { font-size: 16px; }
+    @media (max-width: 640px) { .trust-strip { padding: 16px 20px; gap: 16px; } }
+
+    /* SECTIONS */
+    .section { padding: 72px 40px; }
+    .section-inner { max-width: 960px; margin: 0 auto; }
+    .section-label {
+      font-family: 'Arial', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      margin-bottom: 10px;
+    }
+    .section h2 {
+      font-size: clamp(22px, 3.5vw, 34px);
+      margin-bottom: 20px;
+      color: var(--navy);
+    }
+    .section p { font-size: 16px; color: var(--text-light); max-width: 680px; }
+    @media (max-width: 640px) { .section { padding: 48px 20px; } }
+
+    /* WHO IS THIS FOR — 3 cards */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 36px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 30px 60px rgba(26,28,28,0.05);
+      padding: 28px 24px;
+    }
+    .card-icon { font-size: 28px; margin-bottom: 12px; }
+    .card h3 { font-size: 17px; color: var(--navy); margin-bottom: 8px; }
+    .card p { font-size: 14px; color: var(--text-light); line-height: 1.6; }
+
+    /* INCLUDED */
+    .included-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+      margin-top: 36px;
+    }
+    @media (max-width: 720px) { .included-layout { grid-template-columns: 1fr; } }
+    .checklist { list-style: none; }
+    .checklist li {
+      font-size: 15px;
+      color: var(--text-light);
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .check { color: var(--gold-dark); font-weight: bold; flex-shrink: 0; margin-top: 2px; }
+    .included-images {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .included-images img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    /* HOW IT WORKS — navy bg */
+    .how-section { background: var(--navy); }
+    .how-section h2 { color: #fff; }
+    .how-section .section-label { color: var(--gold); }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .step { text-align: center; }
+    .step-num {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Arial', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--gold);
+      margin: 0 auto 16px;
+    }
+    .step h3 { font-size: 16px; color: #fff; margin-bottom: 8px; }
+    .step p { font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.6; }
+
+    /* WHAT FIDEL NEEDS */
+    .needs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 36px;
+    }
+    .need-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      border-left: 3px solid var(--gold);
+    }
+    .need-card h4 { font-size: 14px; font-family: 'Arial', sans-serif; color: var(--navy); margin-bottom: 6px; font-weight: 700; letter-spacing: 0.04em; }
+    .need-card p { font-size: 13px; color: var(--text-light); line-height: 1.55; }
+
+    /* PRICING NOTE */
+    .pricing-note {
+      background: #fff;
+      border-radius: 14px;
+      border: 1.5px solid var(--gold);
+      padding: 28px 32px;
+      margin-top: 36px;
+      text-align: center;
+    }
+    .pricing-note p {
+      font-size: 16px;
+      color: var(--text-light);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* TESTIMONIAL */
+    .testimonial-section { background: var(--cream2); }
+    .testimonial-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 680px;
+      margin: 36px auto 0;
+      box-shadow: 0 30px 60px rgba(26,28,28,0.06);
+      text-align: center;
+    }
+    .quote-mark { font-size: 48px; color: var(--gold); line-height: 1; margin-bottom: 4px; }
+    .testimonial-text { font-size: 17px; font-style: italic; color: var(--text); line-height: 1.75; margin-bottom: 20px; }
+    .testimonial-author { font-family: 'Arial', sans-serif; font-size: 13px; letter-spacing: 0.08em; color: var(--gold-dark); text-transform: uppercase; }
+
+    /* FAQ */
+    .faq-list { margin-top: 36px; max-width: 720px; }
+    details {
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    details:first-child { border-top: 1px solid rgba(0,0,0,0.1); }
+    summary {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--navy);
+      padding: 18px 0;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-size: 22px; color: var(--gold-dark); transition: transform 0.2s; }
+    details[open] summary::after { transform: rotate(45deg); }
+    details p { font-size: 15px; color: var(--text-light); padding-bottom: 18px; line-height: 1.7; }
+
+    /* CTA SECTION */
+    .cta-section { background: var(--navy); text-align: center; }
+    .cta-section h2 { color: #fff; font-size: clamp(24px, 4vw, 38px); margin-bottom: 16px; }
+    .cta-section p { font-size: 17px; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto 36px; }
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 16px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .btn-wa:hover { opacity: 0.9; transform: translateY(-1px); }
+    .btn-wa svg { width: 20px; height: 20px; fill: #fff; flex-shrink: 0; }
+
+    /* RELATED */
+    .related-section { background: var(--cream3); }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 36px;
+    }
+    .related-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .related-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+    .related-card h3 { font-size: 17px; color: var(--navy); margin-bottom: 8px; }
+    .related-card p { font-size: 14px; color: var(--text-light); line-height: 1.6; }
+    .related-card .arrow { color: var(--gold-dark); font-size: 18px; margin-top: 12px; display: block; }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      padding: 48px 40px 32px;
+      text-align: center;
+    }
+    footer .footer-logo {
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    footer nav {
+      background: none;
+      position: static;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      justify-content: center;
+      padding: 0;
+      margin-bottom: 24px;
+    }
+    footer nav a {
+      font-family: 'Arial', sans-serif;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    footer nav a:hover { color: var(--gold); }
+    footer .copyright {
+      font-family: 'Arial', sans-serif;
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">
+    <div>
+      <div class="nav-logo-text">ATLAS</div>
+      <div class="nav-logo-sub">Private Journeys</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/lima-airport-transfer" aria-current="page" style="color:var(--gold)">Airport Transfer</a></li>
+    <li><a href="/private-guide-lima">Private Guide</a></li>
+    <li><a href="/lima-bachelor-party">Bachelor Party</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="../public/images/van-premium.jpeg" alt="Atlas private transfer van ready for Lima airport pickup" loading="eager">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Lima Airport Transfer</div>
+    <h1>Private Lima Airport Transfer</h1>
+    <p class="hero-sub">Fidel meets you at arrivals, handles your luggage, and takes you directly to your hotel — no meters, no sharing, no stress.</p>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-item"><span class="icon">✓</span> Meet-and-greet at arrivals</div>
+  <div class="trust-item"><span class="icon">✓</span> Direct to your accommodation</div>
+  <div class="trust-item"><span class="icon">✓</span> Flight tracking included</div>
+  <div class="trust-item"><span class="icon">✓</span> Private vehicle — no shared rides</div>
+  <div class="trust-item"><span class="icon">✓</span> WhatsApp communication</div>
+</div>
+
+<!-- WHO IS THIS FOR -->
+<section class="section" style="background:var(--cream);">
+  <div class="section-inner">
+    <div class="section-label">Who this is for</div>
+    <h2>Arriving in Lima and want a reliable first impression</h2>
+    <p>Lima's Jorge Chávez airport can be overwhelming — especially after a long flight. A private transfer means Fidel is there, on time, with your name on a sign, ready to handle everything so your trip starts smoothly.</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">✈️</div>
+        <h3>First-time visitors</h3>
+        <p>Don't know the city, unsure about taxis, or arriving late at night? Fidel removes the guesswork from your first moments in Peru.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">👥</div>
+        <h3>Groups and families</h3>
+        <p>Travelling with luggage, children, or multiple passengers? A private vehicle means everyone travels together, comfortably.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💼</div>
+        <h3>Travellers who value their time</h3>
+        <p>No negotiating fares, no ride-share confusion. You land, you're met, you go. Simple as that.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="section" style="background:var(--cream2);">
+  <div class="section-inner">
+    <div class="section-label">What's included</div>
+    <h2>What you get with an Atlas airport transfer</h2>
+    <div class="included-layout">
+      <ul class="checklist">
+        <li><span class="check">✓</span> Fidel or Atlas driver meets you at arrivals with a name sign</li>
+        <li><span class="check">✓</span> Flight monitoring — Fidel adjusts if your flight is delayed</li>
+        <li><span class="check">✓</span> Luggage assistance from terminal to vehicle</li>
+        <li><span class="check">✓</span> Private, air-conditioned vehicle (no shared rides)</li>
+        <li><span class="check">✓</span> Direct transfer to your hotel, apartment, or accommodation</li>
+        <li><span class="check">✓</span> WhatsApp contact from departure through arrival</li>
+        <li><span class="check">✓</span> Drop-off transfers from accommodation to airport also available</li>
+      </ul>
+      <div class="included-images">
+        <img src="../public/images/van-transfer.jpeg" alt="Private transfer van interior for Lima airport service">
+        <img src="../public/images/van-private.jpeg" alt="Private vehicle used for Atlas airport transfers in Lima">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section how-section">
+  <div class="section-inner">
+    <div class="section-label">How it works</div>
+    <h2>Simple from message to arrival</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Send Fidel your details</h3>
+        <p>Flight number, arrival date and time, group size, and where you're staying in Lima.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Fidel confirms and tracks your flight</h3>
+        <p>He monitors your flight in real time and adjusts pickup timing if there are delays.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>You land — he's waiting</h3>
+        <p>Walk out of arrivals and Fidel is there with your name, ready to take you directly to your accommodation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT FIDEL NEEDS -->
+<section class="section" style="background:var(--cream);">
+  <div class="section-inner">
+    <div class="section-label">What Fidel needs from you</div>
+    <h2>To arrange your transfer, have these ready</h2>
+    <div class="needs-grid">
+      <div class="need-card">
+        <h4>Flight number &amp; airline</h4>
+        <p>So Fidel can track your arrival in real time and adjust if your flight is delayed.</p>
+      </div>
+      <div class="need-card">
+        <h4>Arrival date &amp; time</h4>
+        <p>Scheduled landing time at Jorge Chávez International Airport (LIM).</p>
+      </div>
+      <div class="need-card">
+        <h4>Group size</h4>
+        <p>Number of passengers travelling together so the right vehicle is arranged.</p>
+      </div>
+      <div class="need-card">
+        <h4>Accommodation address</h4>
+        <p>Name and address of your hotel, Airbnb, or wherever you're staying in Lima.</p>
+      </div>
+    </div>
+    <div class="pricing-note">
+      <p>Contact Atlas for pricing based on your dates, group size and trip requirements.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section testimonial-section">
+  <div class="section-inner">
+    <div class="section-label">What clients say</div>
+    <h2 style="text-align:center">Trusted by travellers to Peru</h2>
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <p class="testimonial-text">Fidel made arriving in Lima completely stress-free. He was at arrivals with a sign, helped with our bags, and had us at our hotel within the hour. After a 10-hour flight it was exactly what we needed.</p>
+      <div class="testimonial-author">Ram B. — Verified client</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:var(--cream);">
+  <div class="section-inner">
+    <div class="section-label">Frequently asked questions</div>
+    <h2>Airport transfer questions answered</h2>
+    <div class="faq-list">
+      <details>
+        <summary>Which airport does this service cover?</summary>
+        <p>Atlas transfers operate from Jorge Chávez International Airport (LIM) in Lima, Peru. Drop-off transfers from your Lima accommodation back to the airport are also available.</p>
+      </details>
+      <details>
+        <summary>What if my flight is delayed?</summary>
+        <p>Fidel monitors your flight in real time. If your arrival is delayed, he adjusts accordingly — no need to contact him about normal delays. Just let him know if your plans change significantly.</p>
+      </details>
+      <details>
+        <summary>Can you accommodate large groups or lots of luggage?</summary>
+        <p>Yes. When you message Fidel, share your group size and any luggage specifics. He'll arrange a vehicle suited to your party.</p>
+      </details>
+      <details>
+        <summary>Where exactly will Fidel or the driver meet me?</summary>
+        <p>At the arrivals exit at Jorge Chávez Airport, holding a sign with your name. Fidel will also confirm the exact meeting point with you via WhatsApp before your flight.</p>
+      </details>
+      <details>
+        <summary>Can I book a transfer from my hotel to the airport for departure?</summary>
+        <p>Yes — drop-off transfers are available. Share your departure date, flight time, and hotel address when you message Fidel.</p>
+      </details>
+      <details>
+        <summary>How do I contact Fidel if something changes?</summary>
+        <p>All communication is through WhatsApp. You'll have his number once you book, and he's responsive throughout your trip.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section cta-section">
+  <div class="section-inner" style="text-align:center">
+    <div class="section-label" style="color:var(--gold)">Book your transfer</div>
+    <h2>Ready to arrange your Lima airport transfer?</h2>
+    <p>Message Fidel on WhatsApp with your flight details and he'll take it from there.</p>
+    <a
+      href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20need%20airport%20pickup%20in%20Lima.%20My%20flight%20arrives%20on%20%5Bdate%5D%20at%20%5Btime%5D%2C%20group%20size%20%5Bnumber%5D%2C%20destination%20%5Baccommodation%5D.%20Can%20you%20help%3F"
+      class="btn-wa"
+      onclick="try{va('event',{name:'whatsapp_click',data:{cta:'airport_transfer_final'}})}catch(e){}"
+      target="_blank"
+      rel="noopener"
+    >
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Message Fidel on WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- RELATED SERVICES -->
+<section class="section related-section">
+  <div class="section-inner">
+    <div class="section-label">Also from Atlas</div>
+    <h2>Explore more ways Fidel can help</h2>
+    <div class="related-grid">
+      <a href="/private-guide-lima" class="related-card">
+        <h3>Private Guide Day — Lima</h3>
+        <p>Explore Miraflores, Barranco, the Historic Centre and more with Fidel as your personal guide.</p>
+        <span class="arrow">→</span>
+      </a>
+      <a href="/lima-bachelor-party" class="related-card">
+        <h3>Bachelor Party — Lima</h3>
+        <p>Fidel plans and runs your group's Lima bachelor party from start to finish.</p>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="/" class="footer-logo">ATLAS PRIVATE JOURNEYS</a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/lima-airport-transfer">Airport Transfer</a>
+    <a href="/private-guide-lima">Private Guide</a>
+    <a href="/lima-bachelor-party">Bachelor Party</a>
+  </nav>
+  <div class="copyright">© 2026 Atlas Private Journeys. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
