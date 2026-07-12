@@ -1,0 +1,21 @@
+query,funnel_stage,target_page,current_page_exists,search_intent,competition_notes,priority,owner_input_needed
+private guide Lima,Bottom,/private-guide-lima,Yes,Actively looking for a Lima-specific private guide,"Individual-guide competitors exist (Tour Guides Peru is Cusco-based, not a direct Lima match); marketplaces (ToursByLocals) rank strongly",P0,No
+Lima private tour guide,Bottom,/private-guide-lima,Yes,Same as above with word-order variant,Moderate - marketplace-dominated results,P0,No
+Lima airport transfer,Bottom,/lima-airport-transfer,Yes,Ready to book airport pickup,"Lower competition than broad Peru terms; mostly transport-company listings, not personal-guide brands",P0,No
+private airport pickup Lima,Bottom,/lima-airport-transfer,Yes,Same intent variant,Low-moderate,P1,No
+Lima airport to Miraflores,Bottom,/lima-airport-transfer,Yes,Route-specific - high purchase intent,Low competition - very specific,P1,No
+Lima bachelor party,Bottom,/lima-bachelor-party,Yes,Actively planning a group trip,"Thin competitive set - no Tier 1 agency targets this specifically",P0,No
+bachelor party Lima Peru,Bottom,/lima-bachelor-party,Yes,Same intent variant,Thin,P1,No
+Lima nightlife guide,Middle,/private-guide-lima (nightlife section) or new page,No dedicated page yet,Researching Lima nightlife before deciding on a guide,Content-only competitors (blogs) dominate - real opening for a bookable page,P1,No
+Miraflores private guide,Bottom,/private-guide-lima,Partial (mentioned, not dedicated),Neighborhood-specific guide search,Low competition,P2,No
+Barranco private guide,Bottom,/private-guide-lima,Partial (mentioned, not dedicated),Neighborhood-specific guide search,Low competition,P2,No
+Lima food tour,Middle,/private-guide-lima (food section),Partial,Comparing food-tour options,Moderate - GetYourGuide/Viator listings present,P2,No
+Peru travel planner,Bottom,None,No dedicated page,Broad - looking for any Peru planning help,"High competition - Tier 1 agencies own this (see 03_COMPETITOR_GAP_ANALYSIS.md)",P3 - do not prioritize yet,Yes - only pursue if scope expands beyond Lima
+private tours Peru,Bottom,None,No dedicated page,Broad Peru-wide search,Very high competition - 15+ established Tier 1 agencies,P4 - avoid for now,Yes
+luxury Peru travel,Bottom,None,No dedicated page,Broad luxury-positioned search,Very high competition; also may not match Atlas's honest current positioning,P4 - avoid for now,Yes - depends on positioning decision
+Peru itinerary 7 days,Top,None,No dedicated page,Early-stage planning research,"High content competition (travel blogs), but genuine opportunity if Atlas adds a real, specific sample itinerary rather than generic advice",P2,No - but requires real itinerary content Atlas can stand behind
+first time Peru travel tips,Top,None,No dedicated page,Early-stage planning research,High content competition,P3,No
+Lima travel concierge,Bottom,/ (homepage) or new page,Partial,Looking for a concierge-style service specifically,Low competition - matches Atlas's honest positioning well,P1,No
+private transportation Lima,Bottom,/lima-airport-transfer,Partial,Broader than just airport - includes intra-city transport,Low-moderate,P2,No
+Lima group trip planner,Bottom,/lima-bachelor-party or new page,Partial,Planning a group trip (not specifically bachelor),Low competition,P2,No
+Atlas Private Journeys,Brand,/,Yes,Direct brand search,Zero competition (once indexed),P0 - indexing fix, not content,No

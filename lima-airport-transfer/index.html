@@ -22,20 +22,70 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Lima Airport Transfer",
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Atlas Private Journeys",
-      "url": "https://atlasjourneys.world/",
-      "telephone": "+51942299829"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Lima, Peru"
-    },
-    "description": "Private airport pickup and drop-off service in Lima, Peru. Personal meet-and-greet by Fidel, direct transfer to your hotel or accommodation.",
-    "url": "https://atlasjourneys.world/lima-airport-transfer"
+    "@graph": [
+      {
+        "@type": ["TravelAgency", "TourOperator"],
+        "@id": "https://atlasjourneys.world/#organization",
+        "name": "Atlas Private Journeys",
+        "url": "https://atlasjourneys.world/",
+        "telephone": "+51942299829",
+        "areaServed": [
+          { "@type": "City", "name": "Lima" },
+          { "@type": "Country", "name": "Peru" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://atlasjourneys.world/lima-airport-transfer#service",
+        "name": "Lima Airport Transfer",
+        "provider": { "@id": "https://atlasjourneys.world/#organization" },
+        "areaServed": { "@type": "City", "name": "Lima, Peru" },
+        "description": "Private airport pickup and drop-off service in Lima, Peru. Personal meet-and-greet by Fidel, direct transfer to your hotel or accommodation.",
+        "url": "https://atlasjourneys.world/lima-airport-transfer"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://atlasjourneys.world/" },
+          { "@type": "ListItem", "position": 2, "name": "Lima Airport Transfer", "item": "https://atlasjourneys.world/lima-airport-transfer" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which airport does this service cover?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Atlas transfers operate from Jorge Chávez International Airport (LIM) in Lima, Peru. Drop-off transfers from your Lima accommodation back to the airport are also available." }
+          },
+          {
+            "@type": "Question",
+            "name": "What if my flight is delayed?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Fidel monitors your flight in real time. If your arrival is delayed, he adjusts accordingly — no need to contact him about normal delays. Just let him know if your plans change significantly." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you accommodate large groups or lots of luggage?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. When you message Fidel, share your group size and any luggage specifics. He'll arrange a vehicle suited to your party." }
+          },
+          {
+            "@type": "Question",
+            "name": "Where exactly will Fidel or the driver meet me?",
+            "acceptedAnswer": { "@type": "Answer", "text": "At the arrivals exit at Jorge Chávez Airport, holding a sign with your name. Fidel will also confirm the exact meeting point with you via WhatsApp before your flight." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I book a transfer from my hotel to the airport for departure?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes — drop-off transfers are available. Share your departure date, flight time, and hotel address when you message Fidel." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I contact Fidel if something changes?",
+            "acceptedAnswer": { "@type": "Answer", "text": "All communication is through WhatsApp. You'll have his number once you book, and he's responsive throughout your trip." }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
