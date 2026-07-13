@@ -1,41 +1,43 @@
 # Owner Decisions Required
 
-Everything here needs Andrew's (or Fidel's) input, confirmation, or a real asset before it can be published or acted on. Nothing in this list has been implemented — items move out of this file into `13_IMPLEMENTATION_LOG.md` once resolved and shipped.
+Updated 2026-07-13. Everything here needs Andrew's (or Fidel's) input, confirmation, or a real asset before it can be published or acted on. Items move to `13_IMPLEMENTATION_LOG.md` once resolved and shipped.
 
-## Carried over from prior session (`OWNER_INPUT_REQUIRED.md`, still unresolved)
+## Resolved this session
 
-| Item | Why it matters | Status |
-|---|---|---|
-| Consent confirmation for Jay, Ram B., Sam testimonials | Legal/ethical requirement before continuing to display names + quotes publicly, and before using them in ads or Google Business Profile review requests | Unresolved |
-| Star-rating accuracy for testimonials | The site currently shows no stars (correct, per prior session's caution) — confirm actual ratings if Andrew wants to add them later | Unresolved |
-| Verified contact email | No non-WhatsApp contact channel exists; also a prerequisite for most ad-platform policies | Unresolved |
-| Privacy policy | Required by Meta and Google Ads for lead campaigns; also standard trust signal | Unresolved |
-| Terms of service | Business decision, not urgent for organic growth but needed before paid ads | Unresolved |
-| Cancellation/refund policy | Should be stated somewhere client-facing before any paid promotion drives volume | Unresolved |
-| Fidel's languages spoken | Needed for trust section copy and for GBP profile setup | Unresolved |
-| Certifications/licenses (e.g. MINCETUR guide credential) | Competitor research (`03_COMPETITOR_GAP_ANALYSIS.md`) shows this is a major trust differentiator for comparable competitors. If Fidel holds any real credential, this is one of the highest-value additions available — but must not be claimed unless verified | Unresolved |
-| Watermarked/unlicensed photos (`dest-lima.jpg`, `food-ceviche.jpg` situation) | Already flagged; not currently used on live pages, but should be resolved or removed from the repo | Unresolved |
+- **Geographic scope claim** — Homepage and all metadata now narrowed to Lima, Peru only. All Brazil/Rio/Cusco/Huacachina/São Paulo/Machu Picchu content removed from the homepage (previously implied services Atlas doesn't verifiably provide).
+- **Privacy Policy, Terms of Service, Cancellation Policy** — Draft pages now exist at `/privacy-policy`, `/terms-of-service`, `/cancellation-policy`, linked from every page's footer. They are intentionally minimal and mark every unconfirmed fact with a visible "Owner input required" box rather than inventing details.
 
-## New from this growth mission
+## Still unresolved — needs Andrew or Fidel directly
 
-| Item | Why it matters | Confidence this needs owner input (not something I can just decide) |
-|---|---|---|
-| **Geographic scope claim: "Peru & Brazil" on homepage vs. Lima-only real content** | Directly affects title tags, meta descriptions, ad targeting, and trust — overstating scope risks bounce and mismatched expectations. My recommendation is to narrow homepage claims to Lima/Peru until Rio content is real, but this is Andrew's call on ambition/timeline | High — business direction decision |
-| **Pricing transparency** | Fully private pricing is a legitimate choice but measurably increases funnel friction. Decide: stay fully private, or publish an indicative "starting from" range | High — pricing is Andrew's call |
-| **Fidel's response capacity** | Every growth channel (SEO, ads, social) increases inquiry volume. Without knowing realistic weekly capacity, I cannot respons­ibly recommend a lead-volume target or ad budget | High — operational, only Andrew/Fidel know this |
-| **Legal business structure** | Affects what can be claimed (e.g. "registered business," invoicing, liability language) and affects Google Business Profile setup (business name policy compliance) | High |
-| **Google Business Profile creation** | Atlas qualifies as a service-area business (verified against current Google policy, `08_LOCAL_AND_REPUTATION_PLAN.md`). Setting this up requires Andrew or Fidel to complete Google's identity/phone verification — I cannot do this on their behalf | High — requires account ownership and verification only the business owner can complete |
-| **Search Console / Bing Webmaster Tools verification** | Highest-leverage free action identified in this audit (see `04_SEARCH_VISIBILITY_BASELINE.md`) but requires domain-ownership verification tied to Andrew's Google account | High |
-| **Marketplace listing (ToursByLocals / Withlocals / GoWithGuide)** | High-leverage distribution and review-bootstrapping opportunity, but means Fidel operating under a third-party platform's terms, commission, and review policies — a real business tradeoff, not just a technical task | High |
-| **Ad spend and channel budget (Google Ads / Meta)** | I have drafted campaign architecture and budget *scenarios* (`11_PAID_ADVERTISING_PLAN.md`, `18_META_ADVERTISING_PLAN.md` — pending) but will not activate any campaign or spend without explicit approval | High — explicit rule from this project's brief and from standing safety practice |
-| **Social media account creation** | No verified existing account was found. Creating new accounts (Instagram, etc.) as Atlas is a real decision (naming, handle, who runs it day-to-day) | Medium — I can draft the content system regardless, but account creation itself needs a decision |
+| Item | Why it matters |
+|---|---|
+| **Verified starting prices** | Every service card on the homepage has a visible `[OWNER TODO: insert verified starting price once confirmed]` placeholder. Pricing stays fully private (per this task's rule) until you decide whether to publish an indicative range. |
+| **Fidel's biography details** | The "Meet Fidel" section deliberately does not state years of experience, background, or any biographical claim beyond what's already verified (that he's the direct local contact). Add real detail once confirmed. |
+| **Verified languages Fidel speaks** | Flagged with an inline code comment on the homepage. Not stated anywhere. |
+| **Certifications or credentials** (e.g. a MINCETUR guide credential) | Not claimed anywhere. Per `03_COMPETITOR_GAP_ANALYSIS.md`, this is the single biggest trust differentiator comparable competitors use — if Fidel holds anything real, it's high-value to add, but only once verified. |
+| **Service hours / availability window** | Not stated anywhere on the site. If there's a real constraint (e.g., no service after a certain hour), it should be disclosed rather than implied as 24/7. |
+| **Response-time expectation** | Not claimed anywhere (correctly, since it's unverified). If Fidel tracks this in practice, a real number would measurably improve trust — see `12_ANALYTICS_AND_LEAD_MEASUREMENT.md`'s manual lead-log recommendation, which would let this be measured honestly. |
+| **Payment methods accepted** | Marked "Owner input required" on `/terms-of-service`. Not stated anywhere. |
+| **Cancellation / refund terms** | Marked "Owner input required" on `/cancellation-policy`. This page currently only says arrangements are worked out directly with Fidel — no specific window, deposit, or refund rule is stated because none has been confirmed. |
+| **Legal business details** (registered entity name, business registration status, address, tax ID) | Marked "Owner input required" on both `/privacy-policy` and `/terms-of-service`. Needed before any paid advertising, and generally good practice regardless. |
+| **Google Business Profile review link** | A reserved, commented-out (not publicly visible) slot exists in the homepage testimonials section for this. Do not un-comment it until a real, verified Google review link exists — see `08_LOCAL_AND_REPUTATION_PLAN.md`. |
+| **Whether any Brazil service actually exists** | This session removed all Brazil/Rio/São Paulo content because no verified service evidence exists in the repository. If Atlas does serve Brazil in some real capacity, tell me and I'll build real, honest content for it rather than leave it unaddressed. |
 
-## What I will NOT do without a decision here
+## Carried over, still unresolved
 
-- Publish any certification, license, years-in-business, or safety claim.
-- Add star ratings to testimonials.
-- Create or verify a Google Business Profile (requires the owner's identity).
-- Activate any paid campaign.
-- List Atlas on any third-party marketplace.
-- Send any real outbound message (review requests, partnership outreach) on Atlas's behalf.
-- Change the "Peru & Brazil" positioning without Andrew's direction on which way to resolve it.
+| Item | Why it matters |
+|---|---|
+| Consent confirmation for Jay, Ram B., and Sam to keep displaying their testimonials publicly | Legal/ethical requirement, and a prerequisite for requesting they leave public Google reviews |
+| Star-rating accuracy for testimonials | Site correctly shows no stars; confirm actual ratings only if you want to add them later |
+| Verified contact email | No non-WhatsApp channel exists; also referenced as unresolved on the new Privacy Policy page |
+| Fidel's realistic weekly inquiry/booking capacity | Needed before scaling any growth channel — see `01_BUSINESS_AND_OFFER_AUDIT.md` |
+| Google Business Profile creation | Requires Andrew or Fidel's identity verification — cannot be done on your behalf |
+| Search Console / Bing Webmaster Tools verification | Requires your Google account — highest-leverage free action still outstanding |
+| Marketplace listing (ToursByLocals / Withlocals / GoWithGuide) | Real tradeoff (commission, third-party terms) — your call |
+| Ad spend and channel budget | Will not be activated without explicit approval — prerequisites not yet met regardless (see `11_PAID_ADVERTISING_PLAN.md`) |
+| Social media account creation | No existing verified account found; creating one is a real decision about who runs it |
+| Watermarked/unlicensed photos (`dest-lima.jpg`, `food-ceviche.jpg`) | Not used on any live page; still sitting in the repo unresolved |
+
+## What I will not do without a decision here
+
+Publish any certification, license, years-in-business, service-hours, or response-time claim; add star ratings; un-comment the reserved Google review slot; create or verify a Google Business Profile; activate any paid campaign; list Atlas on any marketplace; send any real outbound message on Atlas's behalf; or state specific cancellation/payment terms that haven't been confirmed.

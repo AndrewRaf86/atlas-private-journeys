@@ -82,6 +82,21 @@
             "@type": "Question",
             "name": "How do I contact Fidel if something changes?",
             "acceptedAnswer": { "@type": "Answer", "text": "All communication is through WhatsApp. You'll have his number once you book, and he's responsive throughout your trip." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you pick me up late at night?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Message Fidel with your actual arrival time and he'll confirm directly — share your flight details as early as you can, especially for late or overnight arrivals." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you serve Miraflores, Barranco, and San Isidro?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes — these are common drop-off areas. Share your accommodation address when you message Fidel and he'll confirm the transfer." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is pricing per person or per vehicle?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Pricing depends on your group size, timing, and vehicle needs. Message Fidel with your details and he'll confirm a quote directly." }
           }
         ]
       }
@@ -490,10 +505,10 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="/">Home</a></li>
+    <li><a href="/" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_home'}})}catch(e){}">Home</a></li>
     <li><a href="/lima-airport-transfer" aria-current="page" style="color:var(--gold)">Airport Transfer</a></li>
-    <li><a href="/private-guide-lima">Private Guide</a></li>
-    <li><a href="/lima-bachelor-party">Bachelor Party</a></li>
+    <li><a href="/private-guide-lima" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_guide'}})}catch(e){}">Private Guide</a></li>
+    <li><a href="/lima-bachelor-party" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_group'}})}catch(e){}">Bachelor Party</a></li>
   </ul>
 </nav>
 
@@ -663,6 +678,18 @@
         <summary>How do I contact Fidel if something changes?</summary>
         <p>All communication is through WhatsApp. You'll have his number once you book, and he's responsive throughout your trip.</p>
       </details>
+      <details>
+        <summary>Can you pick me up late at night?</summary>
+        <p>Message Fidel with your actual arrival time and he'll confirm directly — share your flight details as early as you can, especially for late or overnight arrivals.</p>
+      </details>
+      <details>
+        <summary>Do you serve Miraflores, Barranco, and San Isidro?</summary>
+        <p>Yes — these are common drop-off areas. Share your accommodation address when you message Fidel and he'll confirm the transfer.</p>
+      </details>
+      <details>
+        <summary>Is pricing per person or per vehicle?</summary>
+        <p>Pricing depends on your group size, timing, and vehicle needs. Message Fidel with your details and he'll confirm a quote directly.</p>
+      </details>
     </div>
   </div>
 </section>
@@ -674,7 +701,7 @@
     <h2>Ready to arrange your Lima airport transfer?</h2>
     <p>Message Fidel on WhatsApp with your flight details and he'll take it from there.</p>
     <a
-      href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20need%20airport%20pickup%20in%20Lima.%20My%20flight%20arrives%20on%20%5Bdate%5D%20at%20%5Btime%5D%2C%20group%20size%20%5Bnumber%5D%2C%20destination%20%5Baccommodation%5D.%20Can%20you%20help%3F"
+      href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%20arrive%20in%20Lima%20on%20%5Bdate%5D%20at%20%5Btime%5D%20with%20%5Bnumber%5D%20travelers.%20My%20hotel%20is%20in%20%5Barea%5D%2C%20and%20I%20need%20help%20with%20airport%20pickup."
       class="btn-wa"
       onclick="try{va('event',{name:'whatsapp_click',data:{cta:'airport_transfer_final'}})}catch(e){}"
       target="_blank"
@@ -714,6 +741,9 @@
     <a href="/lima-airport-transfer">Airport Transfer</a>
     <a href="/private-guide-lima">Private Guide</a>
     <a href="/lima-bachelor-party">Bachelor Party</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/terms-of-service">Terms of Service</a>
+    <a href="/cancellation-policy">Cancellation Policy</a>
   </nav>
   <div class="copyright">© 2026 Atlas Private Journeys. All rights reserved.</div>
 </footer>

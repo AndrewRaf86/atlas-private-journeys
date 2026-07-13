@@ -210,9 +210,9 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/lima-airport-transfer">Airport Transfer</a></li>
-    <li><a href="/private-guide-lima">Private Guide</a></li>
+    <li><a href="/" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_home'}})}catch(e){}">Home</a></li>
+    <li><a href="/lima-airport-transfer" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_airport'}})}catch(e){}">Airport Transfer</a></li>
+    <li><a href="/private-guide-lima" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_guide'}})}catch(e){}">Private Guide</a></li>
     <li><a href="/lima-bachelor-party" aria-current="page" style="color:var(--gold)">Bachelor Party</a></li>
   </ul>
 </nav>
@@ -392,7 +392,7 @@
     <h2>Ready to plan your Lima bachelor party?</h2>
     <p>Message Fidel on WhatsApp with your dates and group size and he'll take it from there.</p>
     <a
-      href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20bachelor%20party%20in%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D.%20Let%27s%20talk%20details."
+      href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27m%20planning%20a%20group%20trip%20to%20Lima%20for%20%5Bnumber%5D%20people%20on%20%5Bdates%5D.%20We%20need%20help%20with%20%5Btransportation%20%2F%20restaurants%20%2F%20nightlife%20%2F%20full%20planning%5D."
       class="btn-wa"
       onclick="try{va('event',{name:'whatsapp_click',data:{cta:'bachelor_party_final'}})}catch(e){}"
       target="_blank" rel="noopener"
@@ -430,6 +430,9 @@
     <a href="/lima-airport-transfer">Airport Transfer</a>
     <a href="/private-guide-lima">Private Guide</a>
     <a href="/lima-bachelor-party">Bachelor Party</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/terms-of-service">Terms of Service</a>
+    <a href="/cancellation-policy">Cancellation Policy</a>
   </nav>
   <div class="copyright">© 2026 Atlas Private Journeys. All rights reserved.</div>
 </footer>
