@@ -222,10 +222,10 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/lima-airport-transfer">Airport Transfer</a></li>
+    <li><a href="/" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_home'}})}catch(e){}">Home</a></li>
+    <li><a href="/lima-airport-transfer" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_airport'}})}catch(e){}">Airport Transfer</a></li>
     <li><a href="/private-guide-lima" aria-current="page" style="color:var(--gold)">Private Guide</a></li>
-    <li><a href="/lima-bachelor-party">Bachelor Party</a></li>
+    <li><a href="/lima-bachelor-party" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_group'}})}catch(e){}">Bachelor Party</a></li>
   </ul>
 </nav>
 
@@ -248,7 +248,7 @@
     <div class="hero-ctas">
       <a href="#start-planning" class="btn-primary">Plan My Private Lima Day</a>
       <a
-        href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru%2FBrazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D."
+        href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27ll%20be%20in%20Lima%20on%20%5Bdate%5D%20with%20%5Bnumber%5D%20travelers.%20I%27m%20interested%20in%20a%20private%20%5Bhalf-day%20%2F%20full-day%5D%20experience."
         class="btn-secondary"
         onclick="try{va('event',{name:'whatsapp_click',data:{cta:'private_guide_hero'}})}catch(e){}"
         target="_blank" rel="noopener"
@@ -312,7 +312,7 @@
     </div>
     <div class="fidel-photos">
       <img src="../public/images/fidel-with-guest.webp" alt="Fidel with guests during a private Lima tour" loading="lazy" onerror="this.src='../public/images/fidel-with-guest.png'">
-      <img src="../public/images/fidel-portrait-2.jpeg" alt="Fidel, private guide and founder of Atlas Private Journeys" loading="lazy">
+      <img src="../public/images/group-night.webp" alt="Atlas clients enjoying a private evening in Lima" loading="lazy" style="object-position:center 25%">
     </div>
   </div>
 </section>
@@ -405,7 +405,7 @@
     <h2>Ready to explore Lima with a private guide?</h2>
     <p>Send your dates, group size and what you're interested in, and Fidel will help shape a plan.</p>
     <a
-      href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20trip%20to%20Peru%2FBrazil%20and%20want%20private%20support.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20is%20%5Bnumber%5D%2C%20and%20I%20need%20help%20with%20%5Bservice%5D."
+      href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27ll%20be%20in%20Lima%20on%20%5Bdate%5D%20with%20%5Bnumber%5D%20travelers.%20I%27m%20interested%20in%20a%20private%20%5Bhalf-day%20%2F%20full-day%5D%20experience."
       class="btn-wa"
       onclick="try{va('event',{name:'whatsapp_click',data:{cta:'private_guide_final'}})}catch(e){}"
       target="_blank" rel="noopener"
@@ -442,6 +442,9 @@
     <a href="/lima-airport-transfer">Airport Transfer</a>
     <a href="/private-guide-lima">Private Guide</a>
     <a href="/lima-bachelor-party">Bachelor Party</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/terms-of-service">Terms of Service</a>
+    <a href="/cancellation-policy">Cancellation Policy</a>
   </nav>
   <div class="copyright">© 2026 Atlas Private Journeys. All rights reserved.</div>
 </footer>

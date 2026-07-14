@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lima Bachelor Party | Private Group Planning with Fidel | Atlas Private Journeys</title>
+  <title>Lima Bachelor Party | Private Group Planning | Atlas</title>
   <meta name="description" content="Plan your bachelor party in Lima with Fidel — private group experiences, food, nightlife, and the city's best spots. Contact Atlas for pricing based on your group and dates.">
   <link rel="canonical" href="https://atlasjourneys.world/lima-bachelor-party">
 
@@ -20,17 +20,70 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Lima Bachelor Party Planning",
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Atlas Private Journeys",
-      "url": "https://atlasjourneys.world/",
-      "telephone": "+51942299829"
-    },
-    "areaServed": { "@type": "City", "name": "Lima, Peru" },
-    "description": "Private bachelor party planning and coordination in Lima, Peru. Fidel arranges group experiences, food, nightlife, and logistics tailored to your group.",
-    "url": "https://atlasjourneys.world/lima-bachelor-party"
+    "@graph": [
+      {
+        "@type": ["TravelAgency", "TourOperator"],
+        "@id": "https://atlasjourneys.world/#organization",
+        "name": "Atlas Private Journeys",
+        "url": "https://atlasjourneys.world/",
+        "telephone": "+51942299829",
+        "areaServed": [
+          { "@type": "City", "name": "Lima" },
+          { "@type": "Country", "name": "Peru" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://atlasjourneys.world/lima-bachelor-party#service",
+        "name": "Lima Bachelor Party Planning",
+        "provider": { "@id": "https://atlasjourneys.world/#organization" },
+        "areaServed": { "@type": "City", "name": "Lima, Peru" },
+        "description": "Private bachelor party planning and coordination in Lima, Peru. Fidel arranges group experiences, food, nightlife, and logistics tailored to your group.",
+        "url": "https://atlasjourneys.world/lima-bachelor-party"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://atlasjourneys.world/" },
+          { "@type": "ListItem", "position": 2, "name": "Lima Bachelor Party", "item": "https://atlasjourneys.world/lima-bachelor-party" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many days do we need for a Lima bachelor party?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Most groups do 3–4 nights in Lima, which gives enough time for a full day of exploration, at least one big dinner, and a couple of nights out. Fidel can work with whatever time you have — shorter stays can be packed efficiently too." }
+          },
+          {
+            "@type": "Question",
+            "name": "What kinds of activities can you arrange?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Fidel can arrange group dining, nightlife, day tours, coastal activities, and city experiences. The specifics depend on your group's interests — tell him what you're into and he'll build a programme around that. He'll be upfront about what's genuinely available in Lima and what requires advance planning." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you handle airport pickups for the whole group?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. If group members are arriving on different flights, Fidel can coordinate individual airport transfers so everyone arrives at the accommodation smoothly. Share the flight details when you message." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you work with all group sizes?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Message Fidel with your group size and he'll confirm what he can accommodate. He's experienced with small groups (4–6) and larger ones." }
+          },
+          {
+            "@type": "Question",
+            "name": "How far in advance should we get in touch?",
+            "acceptedAnswer": { "@type": "Answer", "text": "As early as possible — particularly for popular dates and if your group has specific restaurant or venue requests. Ideally 4–8 weeks out, but Fidel will do his best with shorter notice too." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Lima safe for a group trip?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Miraflores and Barranco — where most visitors spend their time — are established neighbourhoods with plenty of tourists and group activity. Fidel will brief you on what to know before you arrive and is available throughout the trip if anything comes up." }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -157,9 +210,9 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/lima-airport-transfer">Airport Transfer</a></li>
-    <li><a href="/private-guide-lima">Private Guide</a></li>
+    <li><a href="/" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_home'}})}catch(e){}">Home</a></li>
+    <li><a href="/lima-airport-transfer" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_airport'}})}catch(e){}">Airport Transfer</a></li>
+    <li><a href="/private-guide-lima" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_guide'}})}catch(e){}">Private Guide</a></li>
     <li><a href="/lima-bachelor-party" aria-current="page" style="color:var(--gold)">Bachelor Party</a></li>
   </ul>
 </nav>
@@ -339,7 +392,7 @@
     <h2>Ready to plan your Lima bachelor party?</h2>
     <p>Message Fidel on WhatsApp with your dates and group size and he'll take it from there.</p>
     <a
-      href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%27m%20planning%20a%20bachelor%20party%20in%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20group%20size%20%5Bnumber%5D.%20Let%27s%20talk%20details."
+      href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27m%20planning%20a%20group%20trip%20to%20Lima%20for%20%5Bnumber%5D%20people%20on%20%5Bdates%5D.%20We%20need%20help%20with%20%5Btransportation%20%2F%20restaurants%20%2F%20nightlife%20%2F%20full%20planning%5D."
       class="btn-wa"
       onclick="try{va('event',{name:'whatsapp_click',data:{cta:'bachelor_party_final'}})}catch(e){}"
       target="_blank" rel="noopener"
@@ -377,6 +430,9 @@
     <a href="/lima-airport-transfer">Airport Transfer</a>
     <a href="/private-guide-lima">Private Guide</a>
     <a href="/lima-bachelor-party">Bachelor Party</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/terms-of-service">Terms of Service</a>
+    <a href="/cancellation-policy">Cancellation Policy</a>
   </nav>
   <div class="copyright">© 2026 Atlas Private Journeys. All rights reserved.</div>
 </footer>

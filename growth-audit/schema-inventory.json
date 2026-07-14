@@ -1,0 +1,53 @@
+{
+  "audit_date": "2026-07-11",
+  "pages": [
+    {
+      "url": "https://atlasjourneys.world/",
+      "file": "index.html",
+      "schema_types": ["TravelAgency"],
+      "has_faq_page": false,
+      "has_breadcrumb_list": false,
+      "has_service": false,
+      "notes": "Single standalone TravelAgency block. No @id used, so it cannot be referenced by other pages' schema. Recommend aligning to the #organization @id pattern used on the 3 service pages."
+    },
+    {
+      "url": "https://atlasjourneys.world/private-guide-lima",
+      "file": "private-guide-lima/index.html",
+      "schema_types": ["TravelAgency", "TourOperator", "Service", "BreadcrumbList", "FAQPage"],
+      "has_faq_page": true,
+      "faq_count": 5,
+      "has_breadcrumb_list": true,
+      "has_service": true,
+      "organization_id": "https://atlasjourneys.world/#organization",
+      "notes": "Full @graph pattern. Built this session as the reference implementation."
+    },
+    {
+      "url": "https://atlasjourneys.world/lima-airport-transfer",
+      "file": "lima-airport-transfer/index.html",
+      "schema_types": ["TravelAgency", "TourOperator", "Service", "BreadcrumbList", "FAQPage"],
+      "has_faq_page": true,
+      "faq_count": 6,
+      "has_breadcrumb_list": true,
+      "has_service": true,
+      "organization_id": "https://atlasjourneys.world/#organization",
+      "notes": "Brought up to the same @graph pattern as private-guide-lima during this growth mission (committed, not yet deployed)."
+    },
+    {
+      "url": "https://atlasjourneys.world/lima-bachelor-party",
+      "file": "lima-bachelor-party/index.html",
+      "schema_types": ["TravelAgency", "TourOperator", "Service", "BreadcrumbList", "FAQPage"],
+      "has_faq_page": true,
+      "faq_count": 6,
+      "has_breadcrumb_list": true,
+      "has_service": true,
+      "organization_id": "https://atlasjourneys.world/#organization",
+      "notes": "Brought up to the same @graph pattern as private-guide-lima during this growth mission (committed, not yet deployed)."
+    }
+  ],
+  "site_wide_gaps": [
+    "No AggregateRating schema anywhere (correct - no verified aggregate rating data exists, per prior session's explicit decision not to fabricate one)",
+    "Homepage TravelAgency block does not share the #organization @id used by the 3 service pages - recommend reconciling in a future pass so all 4 pages reference one consistent entity",
+    "No Person schema for Fidel (would require confirmed, owner-approved bio details - see 15_OWNER_DECISIONS_REQUIRED.md)"
+  ],
+  "validation_method": "Python json.loads() syntax validation only, performed 2026-07-11. Google's Rich Results Test has not been run - recommended as a follow-up once the domain is indexed."
+}

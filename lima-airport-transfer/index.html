@@ -12,30 +12,95 @@
   <meta property="og:url" content="https://atlasjourneys.world/lima-airport-transfer">
   <meta property="og:title" content="Lima Airport Transfer | Private Pickup to Miraflores">
   <meta property="og:description" content="Private Lima airport transfer with meet-and-greet at arrivals. Direct pickup to Miraflores, Barranco or San Isidro.">
-  <meta property="og:image" content="https://atlasjourneys.world/public/images/van-premium.jpeg">
+  <meta property="og:image" content="https://atlasjourneys.world/public/images/fidel-with-guest.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Lima Airport Transfer | Private Pickup to Miraflores">
   <meta name="twitter:description" content="Private Lima airport transfer with meet-and-greet at arrivals. Direct pickup to Miraflores, Barranco or San Isidro.">
-  <meta name="twitter:image" content="https://atlasjourneys.world/public/images/van-premium.jpeg">
+  <meta name="twitter:image" content="https://atlasjourneys.world/public/images/fidel-with-guest.webp">
 
   <!-- JSON-LD: no price data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Lima Airport Transfer",
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Atlas Private Journeys",
-      "url": "https://atlasjourneys.world/",
-      "telephone": "+51942299829"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Lima, Peru"
-    },
-    "description": "Private airport pickup and drop-off service in Lima, Peru. Personal meet-and-greet by Fidel, direct transfer to your hotel or accommodation.",
-    "url": "https://atlasjourneys.world/lima-airport-transfer"
+    "@graph": [
+      {
+        "@type": ["TravelAgency", "TourOperator"],
+        "@id": "https://atlasjourneys.world/#organization",
+        "name": "Atlas Private Journeys",
+        "url": "https://atlasjourneys.world/",
+        "telephone": "+51942299829",
+        "areaServed": [
+          { "@type": "City", "name": "Lima" },
+          { "@type": "Country", "name": "Peru" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://atlasjourneys.world/lima-airport-transfer#service",
+        "name": "Lima Airport Transfer",
+        "provider": { "@id": "https://atlasjourneys.world/#organization" },
+        "areaServed": { "@type": "City", "name": "Lima, Peru" },
+        "description": "Private airport pickup and drop-off service in Lima, Peru. Personal meet-and-greet by Fidel, direct transfer to your hotel or accommodation.",
+        "url": "https://atlasjourneys.world/lima-airport-transfer"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://atlasjourneys.world/" },
+          { "@type": "ListItem", "position": 2, "name": "Lima Airport Transfer", "item": "https://atlasjourneys.world/lima-airport-transfer" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which airport does this service cover?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Atlas transfers operate from Jorge Chávez International Airport (LIM) in Lima, Peru. Drop-off transfers from your Lima accommodation back to the airport are also available." }
+          },
+          {
+            "@type": "Question",
+            "name": "What if my flight is delayed?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Fidel monitors your flight in real time. If your arrival is delayed, he adjusts accordingly — no need to contact him about normal delays. Just let him know if your plans change significantly." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you accommodate large groups or lots of luggage?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. When you message Fidel, share your group size and any luggage specifics. He'll arrange a vehicle suited to your party." }
+          },
+          {
+            "@type": "Question",
+            "name": "Where exactly will Fidel or the driver meet me?",
+            "acceptedAnswer": { "@type": "Answer", "text": "At the arrivals exit at Jorge Chávez Airport, holding a sign with your name. Fidel will also confirm the exact meeting point with you via WhatsApp before your flight." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I book a transfer from my hotel to the airport for departure?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes — drop-off transfers are available. Share your departure date, flight time, and hotel address when you message Fidel." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I contact Fidel if something changes?",
+            "acceptedAnswer": { "@type": "Answer", "text": "All communication is through WhatsApp. You'll have his number once you book, and he's responsive throughout your trip." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you pick me up late at night?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Message Fidel with your actual arrival time and he'll confirm directly — share your flight details as early as you can, especially for late or overnight arrivals." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you serve Miraflores, Barranco, and San Isidro?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes — these are common drop-off areas. Share your accommodation address when you message Fidel and he'll confirm the transfer." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is pricing per person or per vehicle?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Pricing depends on your group size, timing, and vehicle needs. Message Fidel with your details and he'll confirm a quote directly." }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -440,16 +505,16 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="/">Home</a></li>
+    <li><a href="/" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_home'}})}catch(e){}">Home</a></li>
     <li><a href="/lima-airport-transfer" aria-current="page" style="color:var(--gold)">Airport Transfer</a></li>
-    <li><a href="/private-guide-lima">Private Guide</a></li>
-    <li><a href="/lima-bachelor-party">Bachelor Party</a></li>
+    <li><a href="/private-guide-lima" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_guide'}})}catch(e){}">Private Guide</a></li>
+    <li><a href="/lima-bachelor-party" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_group'}})}catch(e){}">Bachelor Party</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <img src="../public/images/van-premium.jpeg" alt="Atlas private transfer van ready for Lima airport pickup" loading="eager">
+  <img src="../public/images/fidel-with-guest.webp" alt="Fidel, Atlas Private Journeys' local host, with a guest in Lima" loading="eager" style="object-position:center 25%">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Lima Airport Transfer</div>
@@ -509,8 +574,8 @@
         <li><span class="check">✓</span> Drop-off transfers from accommodation to airport also available</li>
       </ul>
       <div class="included-images">
-        <img src="../public/images/van-transfer.jpeg" alt="Private transfer van interior for Lima airport service">
-        <img src="../public/images/van-private.jpeg" alt="Private vehicle used for Atlas airport transfers in Lima">
+        <img src="../public/images/group-private-stays.webp" alt="Entryway of a private accommodation in Lima" style="object-position:center">
+        <img src="../public/images/private-stay.webp" alt="A private bedroom accommodation in Lima" style="object-position:center">
       </div>
     </div>
   </div>
@@ -613,6 +678,18 @@
         <summary>How do I contact Fidel if something changes?</summary>
         <p>All communication is through WhatsApp. You'll have his number once you book, and he's responsive throughout your trip.</p>
       </details>
+      <details>
+        <summary>Can you pick me up late at night?</summary>
+        <p>Message Fidel with your actual arrival time and he'll confirm directly — share your flight details as early as you can, especially for late or overnight arrivals.</p>
+      </details>
+      <details>
+        <summary>Do you serve Miraflores, Barranco, and San Isidro?</summary>
+        <p>Yes — these are common drop-off areas. Share your accommodation address when you message Fidel and he'll confirm the transfer.</p>
+      </details>
+      <details>
+        <summary>Is pricing per person or per vehicle?</summary>
+        <p>Pricing depends on your group size, timing, and vehicle needs. Message Fidel with your details and he'll confirm a quote directly.</p>
+      </details>
     </div>
   </div>
 </section>
@@ -624,7 +701,7 @@
     <h2>Ready to arrange your Lima airport transfer?</h2>
     <p>Message Fidel on WhatsApp with your flight details and he'll take it from there.</p>
     <a
-      href="https://wa.me/51942299829?text=Hi%20Fidel%20%E2%80%94%20I%20need%20airport%20pickup%20in%20Lima.%20My%20flight%20arrives%20on%20%5Bdate%5D%20at%20%5Btime%5D%2C%20group%20size%20%5Bnumber%5D%2C%20destination%20%5Baccommodation%5D.%20Can%20you%20help%3F"
+      href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%20arrive%20in%20Lima%20on%20%5Bdate%5D%20at%20%5Btime%5D%20with%20%5Bnumber%5D%20travelers.%20My%20hotel%20is%20in%20%5Barea%5D%2C%20and%20I%20need%20help%20with%20airport%20pickup."
       class="btn-wa"
       onclick="try{va('event',{name:'whatsapp_click',data:{cta:'airport_transfer_final'}})}catch(e){}"
       target="_blank"
@@ -664,6 +741,9 @@
     <a href="/lima-airport-transfer">Airport Transfer</a>
     <a href="/private-guide-lima">Private Guide</a>
     <a href="/lima-bachelor-party">Bachelor Party</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/terms-of-service">Terms of Service</a>
+    <a href="/cancellation-policy">Cancellation Policy</a>
   </nav>
   <div class="copyright">© 2026 Atlas Private Journeys. All rights reserved.</div>
 </footer>
