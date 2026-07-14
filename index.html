@@ -106,8 +106,9 @@
 <div style="background:#F6F1E8;overflow-x:hidden">
 
   <!-- ============ 1. HERO (integrated nav + full-bleed) ============ -->
-  <section style="position:relative;min-height:clamp(560px,82vh,760px);display:flex;flex-direction:column;background:linear-gradient(135deg,#061A40 0%,#0A2E63 45%,#1F5C4D 100%)">
-    <div style="position:absolute;inset:0;opacity:0.5;background:radial-gradient(circle at 15% 20%,rgba(217,183,122,0.18) 0%,transparent 45%),radial-gradient(circle at 85% 80%,rgba(31,92,77,0.35) 0%,transparent 50%)"></div>
+  <section style="position:relative;min-height:clamp(560px,82vh,760px);display:flex;flex-direction:column;background:#061A40">
+    <img src="public/images/group-eating.webp" alt="Outdoor cafe in Miraflores, Lima" loading="eager" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0.82) 0%,rgba(6,26,64,0.45) 36%,rgba(6,26,64,0.60) 66%,rgba(6,26,64,0.92) 100%)"></div>
 
     <!-- integrated nav -->
     <nav style="position:relative;z-index:3;width:100%;max-width:1280px;margin:0 auto;padding:22px clamp(18px,5vw,56px);display:flex;align-items:center;justify-content:space-between;gap:16px">
@@ -211,7 +212,7 @@
 
         <!-- Lima Arrival Support -->
         <div style="background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px rgba(26,28,28,0.06);display:flex;flex-direction:column">
-          <img src="public/images/fidel-with-guest.webp" alt="Fidel greeting a guest in Lima" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:center 30%">
+          <img src="public/images/group-private-stays.webp" alt="Entryway of a private accommodation in Lima" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:center">
           <div style="padding:30px 28px 32px;display:flex;flex-direction:column;flex:1">
             <h3 style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:#061A40;margin-bottom:8px">Lima Arrival Support</h3>
             <p style="font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;color:#9A7A3E;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">For first-time visitors and anyone landing in a new city</p>
@@ -226,7 +227,10 @@
 
         <!-- Lima With a Local -->
         <div style="background:#061A40;border-radius:16px;overflow:hidden;box-shadow:0 40px 80px rgba(6,26,64,0.22);display:flex;flex-direction:column">
-          <img src="public/images/fidel-with-guest.webp" alt="Fidel with a guest during a private day in Lima" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:center 25%">
+          <picture>
+            <source srcset="public/images/group-dinner-lima.webp" type="image/webp">
+            <img src="public/images/group-dinner-lima.png" alt="A private evening out with Fidel in Lima" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:center 22%">
+          </picture>
           <div style="padding:30px 28px 32px;display:flex;flex-direction:column;flex:1">
             <h3 style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:#fff;margin-bottom:8px">Lima With a Local</h3>
             <p style="font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;color:#D9B77A;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">For couples, small groups, and independent travelers</p>
@@ -241,10 +245,7 @@
 
         <!-- Lima Group Weekend -->
         <div style="background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px rgba(26,28,28,0.06);display:flex;flex-direction:column">
-          <picture>
-            <source srcset="public/images/group-dinner-lima.webp" type="image/webp">
-            <img src="public/images/group-dinner-lima.png" alt="A group dining out in Lima" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:center 22%">
-          </picture>
+          <img src="public/images/fidel-portrait-2.jpeg" alt="Atlas clients celebrating during a Lima group weekend" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:center 15%">
           <div style="padding:30px 28px 32px;display:flex;flex-direction:column;flex:1">
             <h3 style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:#061A40;margin-bottom:8px">Lima Group Weekend</h3>
             <p style="font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;color:#9A7A3E;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">For bachelor groups, friend groups, and group trips</p>
