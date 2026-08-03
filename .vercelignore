@@ -1,0 +1,61 @@
+# Repository-only instructions and internal planning
+AGENTS.md
+DESIGN.md
+OWNER_INPUT_REQUIRED.md
+growth-audit/
+.claude/
+_computer_archive.noindex/
+.git
+.gitignore
+
+# Local and generated workspace files
+.DS_Store
+*.zip
+screen.png
+
+# Original source photos kept in the repository but not used by the website
+bedroom 1.png
+entrance airbnb.png
+fidel and two women.png
+fidel thai.jpeg
+group eating .png
+group pic.png
+group pic 2.png
+group pic 3.jpg
+group pic big.png
+kitchen.png
+living room airbnb.png
+peru desert amiga.jpeg
+peru desert fun.jpeg
+premium van service.jpeg
+private transfer enhanced service.jpeg
+private transfer service.jpeg
+private van service.jpeg
+tour guide and friends 1.jpeg
+tour guide and friends brazil.jpeg
+tour guide and friends brazil 2.jpeg
+tour guide and friends colombia.jpeg
+
+# Unused delivery assets; referenced website images remain deployable
+public/images/dest-cusco.jpg
+public/images/dest-huacachina.jpg
+public/images/dest-lima.jpg
+public/images/dest-rio.jpg
+public/images/dest-saopaulo.jpg
+public/images/fidel-greeting.png
+public/images/fidel-greeting.webp
+public/images/fidel-group.webp
+public/images/fidel-guide-day.jpeg
+public/images/fidel-portrait.png
+public/images/fidel-portrait.webp
+public/images/food-ceviche.jpg
+public/images/group-dinner-lima.png
+public/images/group-dinner-lima.webp
+public/images/group-lima.jpg
+public/images/group-night.webp
+public/images/group-private-stays.png
+public/images/hero-machu-picchu.jpg
+public/images/private-stay.png
+public/images/van-premium.jpeg
+public/images/van-private.jpeg
+public/images/van-transfer.jpeg
