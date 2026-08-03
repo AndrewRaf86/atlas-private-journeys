@@ -58,10 +58,13 @@
     footer nav a:hover { color: var(--gold); }
     footer .copyright { font-family: 'Arial', sans-serif; font-size: 12px; color: rgba(255,255,255,0.35); }
   </style>
+  <link rel="stylesheet" href="/assets/site-enhancements.css">
+  <script defer src="/assets/site-enhancements.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<nav>
+<nav aria-label="Main navigation">
   <a href="/" class="nav-logo">
     <div>
       <div class="nav-logo-text">ATLAS</div>
@@ -74,8 +77,22 @@
     <li><a href="/private-guide-lima">Private Guide</a></li>
     <li><a href="/lima-bachelor-party">Bachelor Party</a></li>
   </ul>
+  <details class="mobile-menu">
+    <summary aria-label="Site menu">Menu</summary>
+    <div class="mobile-menu-panel">
+      <a class="mobile-menu-cta" href="https://wa.me/51942299829" target="_blank" rel="noopener noreferrer">Message Fidel on WhatsApp</a>
+      <a href="/">Home</a>
+      <a href="/lima-airport-transfer">Lima Airport Transfer</a>
+      <a href="/private-guide-lima">Private Guide in Lima</a>
+      <a href="/lima-bachelor-party">Lima Group Trips</a>
+      <a href="/privacy-policy" aria-current="page">Privacy Policy</a>
+      <a href="/terms-of-service">Terms of Service</a>
+      <a href="/cancellation-policy">Cancellation Policy</a>
+    </div>
+  </details>
 </nav>
 
+<main id="main-content" tabindex="-1">
 <div class="page-header">
   <div class="eyebrow">Legal</div>
   <h1>Privacy Policy</h1>
@@ -116,9 +133,10 @@
   </div>
 </div>
 
+</main>
 <footer>
   <a href="/" class="footer-logo">ATLAS PRIVATE JOURNEYS</a>
-  <nav>
+  <nav aria-label="Footer navigation">
     <a href="/">Home</a>
     <a href="/lima-airport-transfer">Airport Transfer</a>
     <a href="/private-guide-lima">Private Guide</a>

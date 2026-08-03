@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Private Guide Lima, Peru | Custom Tours, Food & Nightlife</title>
+  <title>Private Guide Lima, Peru | Custom Tours, Food &amp; Nightlife</title>
   <meta name="description" content="Explore Lima with a trusted private guide. Custom days in Miraflores, Barranco and historic Lima, plus food, nightlife and private transportation support.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://atlasjourneys.world/private-guide-lima">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://atlasjourneys.world/private-guide-lima">
-  <meta property="og:title" content="Private Guide Lima, Peru | Custom Tours, Food & Nightlife">
+  <meta property="og:title" content="Private Guide Lima, Peru | Custom Tours, Food &amp; Nightlife">
   <meta property="og:description" content="Explore Lima with a trusted private guide. Custom days in Miraflores, Barranco and historic Lima, plus food, nightlife and private transportation support.">
   <meta property="og:image" content="https://atlasjourneys.world/public/images/private-guide-lima-nightlife.webp">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Private Guide Lima, Peru | Custom Tours, Food & Nightlife">
+  <meta name="twitter:title" content="Private Guide Lima, Peru | Custom Tours, Food &amp; Nightlife">
   <meta name="twitter:description" content="Explore Lima with a trusted private guide — Miraflores, Barranco, historic Lima, food, nightlife and private transportation.">
   <meta name="twitter:image" content="https://atlasjourneys.world/public/images/private-guide-lima-nightlife.webp">
 
@@ -30,7 +31,16 @@
         "areaServed": [
           { "@type": "City", "name": "Lima" },
           { "@type": "Country", "name": "Peru" }
-        ]
+        ],
+        "employee": { "@id": "https://atlasjourneys.world/#fidel" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://atlasjourneys.world/#fidel",
+        "name": "Fidel",
+        "jobTitle": "Local guide and travel host",
+        "worksFor": { "@id": "https://atlasjourneys.world/#organization" },
+        "workLocation": { "@type": "City", "name": "Lima" }
       },
       {
         "@type": "Service",
@@ -39,7 +49,7 @@
         "serviceType": "Private guided Lima tours and local travel support",
         "url": "https://atlasjourneys.world/private-guide-lima",
         "provider": { "@id": "https://atlasjourneys.world/#organization" },
-        "areaServed": { "@type": "City", "name": "Lima" },
+        "areaServed": { "@type": "City", "name": "Lima", "containedInPlace": { "@type": "Country", "name": "Peru" } },
         "description": "Private and customizable guided experiences in Lima, including Miraflores, Barranco, historic Lima, food, nightlife and transportation coordination."
       },
       {
@@ -162,7 +172,7 @@
 
     .place-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 32px; }
     .place-card { background: #fff; border-radius: 12px; padding: 20px 18px; border-top: 3px solid var(--gold); box-shadow: 0 4px 20px rgba(0,0,0,0.04); }
-    .place-card h4 { font-size: 15px; color: var(--navy); margin-bottom: 6px; }
+    .place-card h3 { font-size: 15px; color: var(--navy); margin-bottom: 6px; }
     .place-card p { font-size: 13px; color: var(--text-light); line-height: 1.55; max-width: none; }
 
     .why-section { background: var(--navy); }
@@ -211,10 +221,13 @@
     footer nav a:hover { color: var(--gold); }
     footer .copyright { font-family: 'Arial', sans-serif; font-size: 12px; color: rgba(255,255,255,0.35); }
   </style>
+  <link rel="stylesheet" href="/assets/site-enhancements.css">
+  <script defer src="/assets/site-enhancements.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<nav>
+<nav aria-label="Main navigation">
   <a href="/" class="nav-logo">
     <div>
       <div class="nav-logo-text">ATLAS</div>
@@ -227,8 +240,19 @@
     <li><a href="/private-guide-lima" aria-current="page" style="color:var(--gold)">Private Guide</a></li>
     <li><a href="/lima-bachelor-party" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_group'}})}catch(e){}">Bachelor Party</a></li>
   </ul>
+  <details class="mobile-menu">
+    <summary aria-label="Site menu">Menu</summary>
+    <div class="mobile-menu-panel">
+      <a class="mobile-menu-cta" href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27ll%20be%20in%20Lima%20on%20%5Bdate%5D%20with%20%5Bnumber%5D%20travelers.%20I%27m%20interested%20in%20a%20private%20%5Bhalf-day%20%2F%20full-day%5D%20experience." target="_blank" rel="noopener noreferrer">Ask Fidel on WhatsApp</a>
+      <a href="/">Home</a>
+      <a href="/lima-airport-transfer">Lima Airport Transfer</a>
+      <a href="/private-guide-lima" aria-current="page">Private Guide in Lima</a>
+      <a href="/lima-bachelor-party">Lima Group Trips</a>
+    </div>
+  </details>
 </nav>
 
+<main id="main-content" tabindex="-1">
 <section class="hero">
   <img
     src="../public/images/private-guide-lima-nightlife.webp"
@@ -319,10 +343,10 @@
     <h2>Places You Can Explore with Your Lima Guide</h2>
     <p>Popular areas include Miraflores, Barranco, San Isidro, the Historic Center of Lima, the Costa Verde and selected local neighborhoods based on your interests and available time.</p>
     <div class="place-grid">
-      <div class="place-card"><h4>Miraflores</h4><p>Lima's clifftop district overlooking the Pacific — parks, markets, viewpoints, and the best ceviche.</p></div>
-      <div class="place-card"><h4>Barranco</h4><p>Lima's bohemian neighbourhood — colonial architecture, street art, galleries, and local bars.</p></div>
-      <div class="place-card"><h4>Historic Centre</h4><p>UNESCO-listed colonial city centre with plazas, churches, and centuries of Peruvian history.</p></div>
-      <div class="place-card"><h4>Huaca Pucllana</h4><p>An ancient adobe pyramid rising from the middle of the city — pre-Inca and often overlooked.</p></div>
+      <div class="place-card"><h3>Miraflores</h3><p>Lima's clifftop district overlooking the Pacific — parks, markets, viewpoints, and the best ceviche.</p></div>
+      <div class="place-card"><h3>Barranco</h3><p>Lima's bohemian neighbourhood — colonial architecture, street art, galleries, and local bars.</p></div>
+      <div class="place-card"><h3>Historic Centre</h3><p>UNESCO-listed colonial city centre with plazas, churches, and centuries of Peruvian history.</p></div>
+      <div class="place-card"><h3>Huaca Pucllana</h3><p>An ancient adobe pyramid rising from the middle of the city — pre-Inca and often overlooked.</p></div>
     </div>
   </div>
 </section>
@@ -431,9 +455,10 @@
   </div>
 </section>
 
+</main>
 <footer>
   <a href="/" class="footer-logo">ATLAS PRIVATE JOURNEYS</a>
-  <nav>
+  <nav aria-label="Footer navigation">
     <a href="/">Home</a>
     <a href="/lima-airport-transfer">Airport Transfer</a>
     <a href="/private-guide-lima">Private Guide</a>

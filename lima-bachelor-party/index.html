@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lima Bachelor Party | Private Group Planning | Atlas</title>
   <meta name="description" content="Plan your bachelor party in Lima with Fidel — private group experiences, food, nightlife, and the city's best spots. Contact Atlas for pricing based on your group and dates.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://atlasjourneys.world/lima-bachelor-party">
 
   <meta property="og:type" content="website">
@@ -30,14 +31,23 @@
         "areaServed": [
           { "@type": "City", "name": "Lima" },
           { "@type": "Country", "name": "Peru" }
-        ]
+        ],
+        "employee": { "@id": "https://atlasjourneys.world/#fidel" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://atlasjourneys.world/#fidel",
+        "name": "Fidel",
+        "jobTitle": "Local guide and travel host",
+        "worksFor": { "@id": "https://atlasjourneys.world/#organization" },
+        "workLocation": { "@type": "City", "name": "Lima" }
       },
       {
         "@type": "Service",
         "@id": "https://atlasjourneys.world/lima-bachelor-party#service",
         "name": "Lima Bachelor Party Planning",
         "provider": { "@id": "https://atlasjourneys.world/#organization" },
-        "areaServed": { "@type": "City", "name": "Lima, Peru" },
+        "areaServed": { "@type": "City", "name": "Lima", "containedInPlace": { "@type": "Country", "name": "Peru" } },
         "description": "Private bachelor party planning and coordination in Lima, Peru. Fidel arranges group experiences, food, nightlife, and logistics tailored to your group.",
         "url": "https://atlasjourneys.world/lima-bachelor-party"
       },
@@ -156,7 +166,7 @@
     /* WHAT REQUIRES CONFIRMATION */
     .confirm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 36px; }
     .confirm-card { background: #fff; border-radius: 12px; padding: 22px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); border-left: 3px solid var(--gold); }
-    .confirm-card h4 { font-size: 14px; font-family: 'Arial', sans-serif; color: var(--navy); margin-bottom: 6px; font-weight: 700; letter-spacing: 0.04em; }
+    .confirm-card h3 { font-size: 14px; font-family: 'Arial', sans-serif; color: var(--navy); margin-bottom: 6px; font-weight: 700; letter-spacing: 0.04em; }
     .confirm-card p { font-size: 13px; color: var(--text-light); line-height: 1.55; }
 
     .pricing-note { background: #fff; border-radius: 14px; border: 1.5px solid var(--gold); padding: 28px 32px; margin-top: 36px; text-align: center; }
@@ -199,10 +209,13 @@
     footer nav a:hover { color: var(--gold); }
     footer .copyright { font-family: 'Arial', sans-serif; font-size: 12px; color: rgba(255,255,255,0.35); }
   </style>
+  <link rel="stylesheet" href="/assets/site-enhancements.css">
+  <script defer src="/assets/site-enhancements.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<nav>
+<nav aria-label="Main navigation">
   <a href="/" class="nav-logo">
     <div>
       <div class="nav-logo-text">ATLAS</div>
@@ -215,8 +228,19 @@
     <li><a href="/private-guide-lima" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_guide'}})}catch(e){}">Private Guide</a></li>
     <li><a href="/lima-bachelor-party" aria-current="page" style="color:var(--gold)">Bachelor Party</a></li>
   </ul>
+  <details class="mobile-menu">
+    <summary aria-label="Site menu">Menu</summary>
+    <div class="mobile-menu-panel">
+      <a class="mobile-menu-cta" href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27m%20planning%20a%20group%20trip%20to%20Lima%20for%20%5Bnumber%5D%20people%20on%20%5Bdates%5D.%20We%20need%20help%20with%20%5Btransportation%20%2F%20restaurants%20%2F%20nightlife%20%2F%20full%20planning%5D." target="_blank" rel="noopener noreferrer">Ask Fidel on WhatsApp</a>
+      <a href="/">Home</a>
+      <a href="/lima-airport-transfer">Lima Airport Transfer</a>
+      <a href="/private-guide-lima">Private Guide in Lima</a>
+      <a href="/lima-bachelor-party" aria-current="page">Lima Group Trips</a>
+    </div>
+  </details>
 </nav>
 
+<main id="main-content" tabindex="-1">
 <section class="hero">
   <img src="../public/images/group-outdoor.webp" alt="Group of friends enjoying Lima together on an Atlas private experience" loading="eager">
   <div class="hero-overlay"></div>
@@ -315,19 +339,19 @@
     <h2>To put together the right plan, Fidel needs to know</h2>
     <div class="confirm-grid">
       <div class="confirm-card">
-        <h4>Trip dates</h4>
+        <h3>Trip dates</h3>
         <p>Arrival and departure dates so Fidel can plan the full itinerary and check what's available.</p>
       </div>
       <div class="confirm-card">
-        <h4>Group size</h4>
+        <h3>Group size</h3>
         <p>Number of people so Fidel can arrange the right venues, vehicles, and experiences for the group.</p>
       </div>
       <div class="confirm-card">
-        <h4>Group preferences</h4>
+        <h3>Group preferences</h3>
         <p>Food priorities, nightlife interest, activity level, any dietary needs or restrictions across the group.</p>
       </div>
       <div class="confirm-card">
-        <h4>What's most important</h4>
+        <h3>What's most important</h3>
         <p>What does the group care most about? Fidel will weight the itinerary around the things that matter.</p>
       </div>
     </div>
@@ -422,9 +446,10 @@
   </div>
 </section>
 
+</main>
 <footer>
   <a href="/" class="footer-logo">ATLAS PRIVATE JOURNEYS</a>
-  <nav>
+  <nav aria-label="Footer navigation">
     <a href="/">Home</a>
     <a href="/lima-airport-transfer">Airport Transfer</a>
     <a href="/private-guide-lima">Private Guide</a>
