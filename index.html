@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- SEO -->
-  <title>Private Local Host in Lima, Peru | Atlas Private Journeys</title>
-  <meta name="description" content="Private travel support in Lima, Peru — airport pickup, personalized private days, restaurant reservations, nightlife planning, and group coordination through one trusted local contact.">
+  <title>Private Guide &amp; Local Travel Support in Lima | Atlas</title>
+  <meta name="description" content="Plan Lima with a private local guide and one trusted contact for airport pickup, personalized days, restaurants, nightlife, and group travel support.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://atlasjourneys.world/">
 
@@ -17,7 +17,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://atlasjourneys.world/">
-  <meta property="og:title" content="Private Local Host in Lima, Peru | Atlas Private Journeys">
+  <meta property="og:title" content="Private Guide &amp; Local Travel Support in Lima | Atlas">
   <meta property="og:description" content="Airport pickup, personalized private days, restaurant reservations, nightlife planning, and group coordination in Lima — one trusted local contact, WhatsApp direct.">
   <meta property="og:image" content="https://atlasjourneys.world/AtlasPrivateJourneysLogo.jpeg">
   <meta property="og:site_name" content="Atlas Private Journeys">
@@ -25,7 +25,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Private Local Host in Lima, Peru | Atlas Private Journeys">
+  <meta name="twitter:title" content="Private Guide &amp; Local Travel Support in Lima | Atlas">
   <meta name="twitter:description" content="Airport pickup, personalized private days, restaurant reservations, nightlife planning, and group coordination in Lima, Peru.">
   <meta name="twitter:image" content="https://atlasjourneys.world/AtlasPrivateJourneysLogo.jpeg">
 
@@ -46,7 +46,16 @@
           { "@type": "City", "name": "Lima" },
           { "@type": "Country", "name": "Peru" }
         ],
-        "sameAs": []
+        "sameAs": [],
+        "employee": { "@id": "https://atlasjourneys.world/#fidel" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://atlasjourneys.world/#fidel",
+        "name": "Fidel",
+        "jobTitle": "Local guide and travel host",
+        "worksFor": { "@id": "https://atlasjourneys.world/#organization" },
+        "workLocation": { "@type": "City", "name": "Lima" }
       },
       {
         "@type": "FAQPage",
@@ -90,7 +99,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Poppins:wght@300;400;500;600;700&amp;display=optional" rel="stylesheet">
 
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
@@ -101,9 +110,13 @@
     details summary::-webkit-details-marker{display:none}
     a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid #D9B77A; outline-offset: 2px; }
   </style>
+  <link rel="stylesheet" href="/assets/site-enhancements.css">
+  <script defer src="/assets/site-enhancements.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <div style="background:#F6F1E8;overflow-x:hidden">
+<main id="main-content" tabindex="-1">
 
   <!-- ============ 1. HERO (integrated nav + full-bleed) ============ -->
   <section style="position:relative;min-height:clamp(560px,82vh,760px);display:flex;flex-direction:column;background:#061A40">
@@ -111,23 +124,40 @@
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,26,64,0.82) 0%,rgba(6,26,64,0.45) 36%,rgba(6,26,64,0.60) 66%,rgba(6,26,64,0.92) 100%)"></div>
 
     <!-- integrated nav -->
-    <nav style="position:relative;z-index:3;width:100%;max-width:1280px;margin:0 auto;padding:22px clamp(18px,5vw,56px);display:flex;align-items:center;justify-content:space-between;gap:16px">
+    <nav aria-label="Main navigation" style="position:relative;z-index:3;width:100%;max-width:1280px;margin:0 auto;padding:22px clamp(18px,5vw,56px);display:flex;align-items:center;justify-content:space-between;gap:16px">
       <a href="/" style="display:flex;align-items:center;gap:11px;text-decoration:none">
         <span style="font-family:'Lora',serif;font-weight:600;font-size:clamp(22px,3.2vw,28px);letter-spacing:0.2em;color:#fff;line-height:1">ATLAS</span>
         <svg width="13" height="13" viewBox="0 0 24 24" fill="#D9B77A" style="flex-shrink:0" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"></path></svg>
         <span style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:clamp(8px,1.3vw,9.5px);color:#D9B77A;font-weight:600;line-height:1.35">Private<br>Journeys</span>
       </a>
-      <a href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27m%20planning%20a%20trip%20to%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20there%20are%20%5Bnumber%5D%20travelers%2C%20and%20I%27m%20interested%20in%20%5Bairport%20support%20%2F%20private%20guide%20%2F%20group%20planning%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'nav_home'}})}catch(e){}" aria-label="Message Fidel on WhatsApp" style="display:inline-flex;align-items:center;gap:9px;background:#D9B77A;color:#061A40;padding:11px 20px;border-radius:9px;font-weight:600;font-size:15px;box-shadow:0 10px 30px rgba(0,0,0,0.22)">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="#061A40" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>
-        WhatsApp Fidel
-      </a>
+      <div class="home-nav-actions">
+        <div class="home-nav-primary">
+          <a href="/lima-airport-transfer">Airport Transfer</a>
+          <a href="/private-guide-lima">Private Guide</a>
+          <a href="/lima-bachelor-party">Group Trips</a>
+        </div>
+        <a class="home-nav-whatsapp" href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27m%20planning%20a%20trip%20to%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20there%20are%20%5Bnumber%5D%20travelers%2C%20and%20I%27m%20interested%20in%20%5Bairport%20support%20%2F%20private%20guide%20%2F%20group%20planning%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'nav_home'}})}catch(e){}" aria-label="Message Fidel on WhatsApp" style="display:inline-flex;align-items:center;gap:9px;background:#D9B77A;color:#061A40;padding:11px 20px;border-radius:9px;font-weight:600;font-size:15px;box-shadow:0 10px 30px rgba(0,0,0,0.22)">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="#061A40" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>
+          WhatsApp Fidel
+        </a>
+        <details class="mobile-menu">
+          <summary aria-label="Site menu">Menu</summary>
+          <div class="mobile-menu-panel">
+            <a class="mobile-menu-cta" href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27m%20planning%20a%20trip%20to%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20there%20are%20%5Bnumber%5D%20travelers%2C%20and%20I%27m%20interested%20in%20%5Bairport%20support%20%2F%20private%20guide%20%2F%20group%20planning%5D." target="_blank" rel="noopener noreferrer">Message Fidel on WhatsApp</a>
+            <a href="/lima-airport-transfer">Lima Airport Transfer</a>
+            <a href="/private-guide-lima">Private Guide in Lima</a>
+            <a href="/lima-bachelor-party">Lima Group Trips</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+          </div>
+        </details>
+      </div>
     </nav>
 
     <!-- hero content -->
     <div style="position:relative;z-index:3;flex:1;display:flex;align-items:center;width:100%;max-width:1280px;margin:0 auto;padding:clamp(24px,5vw,48px) clamp(18px,5vw,56px)">
       <div style="max-width:720px">
         <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.24em;font-size:clamp(12px,1.5vw,14px);color:#D9B77A;margin-bottom:22px;font-weight:500">Private Local Host · Lima, Peru</div>
-        <h1 style="font-family:'Lora',serif;font-weight:600;color:#fff;font-size:clamp(38px,6vw,72px);line-height:1.06;letter-spacing:-0.005em;text-wrap:balance">Your Private Local Host in Lima</h1>
+        <h1 style="font-family:'Lora',serif;font-weight:600;color:#fff;font-size:clamp(38px,6vw,72px);line-height:1.06;letter-spacing:-0.005em;text-wrap:balance">Your Private Guide in Lima</h1>
         <p style="color:rgba(255,255,255,0.92);font-size:clamp(17px,2.05vw,21px);line-height:1.6;margin-top:26px;max-width:600px">Airport pickup, personalized private days, restaurant reservations, nightlife planning, and group coordination — through one trusted local contact.</p>
         <p style="color:#D9B77A;font-size:15px;font-weight:500;margin-top:18px">Speak directly with the person helping you in Lima. Private, flexible support planned around your trip.</p>
         <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:32px">
@@ -167,10 +197,9 @@
         <div style="position:absolute;bottom:16px;left:16px;background:rgba(6,26,64,0.82);backdrop-filter:blur(8px);padding:8px 16px;border-radius:22px;font-family:'Poppins',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:#fff;display:flex;align-items:center;gap:8px"><svg width="11" height="11" viewBox="0 0 24 24" fill="#D9B77A" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"></path></svg>Fidel (left) · Lima, Peru</div>
       </div>
       <div>
-        <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#9A7A3E;margin-bottom:16px">Meet Fidel</div>
+        <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#775A19;margin-bottom:16px">Meet Fidel</div>
         <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(28px,4.2vw,44px);line-height:1.1;letter-spacing:-0.01em;color:#061A40">Your local contact for your whole trip in Lima</h2>
         <p style="color:#4A4439;font-size:clamp(16px,2vw,18.5px);line-height:1.7;margin-top:24px">Atlas is built around direct, personal help from Fidel, based in Lima. You speak with him before your trip to plan the details, and you stay in touch with the same person while you're in the city — not a call center, not a booking platform.</p>
-        <!-- OWNER TODO: add Fidel's confirmed languages and years of local experience here once verified. Do not state without confirmation. -->
         <a href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Lima.%20My%20dates%20are%20%5Bdates%5D%2C%20there%20are%20%5Bnumber%5D%20travelers%2C%20and%20I%27m%20interested%20in%20%5Bairport%20support%20%2F%20private%20guide%20%2F%20group%20planning%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'meet_fidel'}})}catch(e){}" style="display:inline-flex;align-items:center;gap:10px;margin-top:30px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:15px 26px;border-radius:9px;font-weight:600;font-size:15.5px"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Message Fidel directly</a>
       </div>
     </div>
@@ -206,7 +235,7 @@
   <!-- ============ 4. THREE MAIN SERVICES ============ -->
   <section id="services" style="background:#ECE3D2;padding:clamp(64px,9vw,120px) clamp(18px,5vw,64px)">
     <div style="max-width:1200px;margin:0 auto">
-      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#9A7A3E;margin-bottom:16px">Where to start</div>
+      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#775A19;margin-bottom:16px">Where to start</div>
       <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(30px,4.4vw,48px);line-height:1.08;letter-spacing:-0.01em;max-width:760px;color:#061A40">Three ways Atlas helps in Lima</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:48px">
 
@@ -215,12 +244,12 @@
           <img src="public/images/group-private-stays.webp" alt="Entryway of a private accommodation in Lima" loading="lazy" style="width:100%;height:260px;object-fit:cover;object-position:center 30%">
           <div style="padding:30px 28px 32px;display:flex;flex-direction:column;flex:1">
             <h3 style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:#061A40;margin-bottom:8px">Lima Arrival Support</h3>
-            <p style="font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;color:#9A7A3E;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">For first-time visitors and anyone landing in a new city</p>
+            <p style="font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;color:#775A19;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">For first-time visitors and anyone landing in a new city</p>
             <p style="color:#4A4439;font-size:15.5px;line-height:1.65;margin-bottom:16px;flex:1">Airport pickup coordination, a direct transfer to your hotel, and orientation for your first day in Lima — so arriving doesn't feel like the hardest part of the trip.</p>
-            <p style="color:#8A8175;font-size:13.5px;line-height:1.6;margin-bottom:20px">Pricing depends on group size, timing, and pickup location.<br><span style="color:#9A7A3E">[OWNER TODO: insert verified starting price once confirmed]</span></p>
+            <p style="color:#625B52;font-size:13.5px;line-height:1.6;margin-bottom:20px">Pricing depends on group size, timing, and pickup location.</p>
             <div style="display:flex;flex-direction:column;gap:10px">
               <a href="/lima-airport-transfer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:13px 20px;border-radius:9px;font-weight:600;font-size:14.5px">See arrival support</a>
-              <a href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%20arrive%20in%20Lima%20on%20%5Bdate%5D%20at%20%5Btime%5D%20with%20%5Bnumber%5D%20travelers.%20My%20hotel%20is%20in%20%5Barea%5D%2C%20and%20I%20need%20help%20with%20airport%20pickup." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'home_service_arrival'}})}catch(e){}" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1.5px solid #D9B77A;color:#061A40;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="#9A7A3E" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Ask Fidel on WhatsApp</a>
+              <a href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%20arrive%20in%20Lima%20on%20%5Bdate%5D%20at%20%5Btime%5D%20with%20%5Bnumber%5D%20travelers.%20My%20hotel%20is%20in%20%5Barea%5D%2C%20and%20I%20need%20help%20with%20airport%20pickup." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'home_service_arrival'}})}catch(e){}" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1.5px solid #D9B77A;color:#061A40;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="#775A19" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Ask Fidel on WhatsApp</a>
             </div>
           </div>
         </div>
@@ -234,7 +263,7 @@
             <h3 style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:#fff;margin-bottom:8px">Lima With a Local</h3>
             <p style="font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;color:#D9B77A;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">For couples, small groups, and independent travelers</p>
             <p style="color:rgba(255,255,255,0.80);font-size:15.5px;line-height:1.65;margin-bottom:16px;flex:1">A personalized four-hour or full-day experience through Miraflores, Barranco, and other neighborhoods — restaurants, local history, and a flexible itinerary coordinated directly with Fidel.</p>
-            <p style="color:rgba(255,255,255,0.55);font-size:13.5px;line-height:1.6;margin-bottom:20px">Pricing depends on group size, timing, and itinerary.<br><span style="color:#D9B77A">[OWNER TODO: insert verified starting price once confirmed]</span></p>
+            <p style="color:rgba(255,255,255,0.55);font-size:13.5px;line-height:1.6;margin-bottom:20px">Pricing depends on group size, timing, and itinerary.</p>
             <div style="display:flex;flex-direction:column;gap:10px">
               <a href="/private-guide-lima" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#D9B77A;color:#061A40;padding:13px 20px;border-radius:9px;font-weight:700;font-size:14.5px">See private days</a>
               <a href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27ll%20be%20in%20Lima%20on%20%5Bdate%5D%20with%20%5Bnumber%5D%20travelers.%20I%27m%20interested%20in%20a%20private%20%5Bhalf-day%20%2F%20full-day%5D%20experience." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'home_service_guide'}})}catch(e){}" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1.5px solid rgba(217,183,122,0.5);color:#D9B77A;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="#D9B77A" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Ask Fidel on WhatsApp</a>
@@ -244,17 +273,17 @@
 
         <!-- Lima Group Weekend -->
         <div style="background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px rgba(26,28,28,0.06);display:flex;flex-direction:column">
-          <div style="width:100%;height:260px;background:linear-gradient(135deg,#9A7A3E 0%,#061A40 100%);position:relative;display:flex;align-items:center;justify-content:center">
+          <div style="width:100%;height:260px;background:linear-gradient(135deg,#775A19 0%,#061A40 100%);position:relative;display:flex;align-items:center;justify-content:center">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#F6F1E8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
           </div>
           <div style="padding:30px 28px 32px;display:flex;flex-direction:column;flex:1">
             <h3 style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:#061A40;margin-bottom:8px">Lima Group Weekend</h3>
-            <p style="font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;color:#9A7A3E;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">For bachelor groups, friend groups, and group trips</p>
+            <p style="font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:600;color:#775A19;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">For bachelor groups, friend groups, and group trips</p>
             <p style="color:#4A4439;font-size:15.5px;line-height:1.65;margin-bottom:16px;flex:1">Transportation coordination, restaurant planning, nightlife planning, and one local point of contact — so the whole group stays organized and together.</p>
-            <p style="color:#8A8175;font-size:13.5px;line-height:1.6;margin-bottom:20px">Pricing depends on group size, timing, and itinerary.<br><span style="color:#9A7A3E">[OWNER TODO: insert verified starting price once confirmed]</span></p>
+            <p style="color:#625B52;font-size:13.5px;line-height:1.6;margin-bottom:20px">Pricing depends on group size, timing, and itinerary.</p>
             <div style="display:flex;flex-direction:column;gap:10px">
               <a href="/lima-bachelor-party" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:13px 20px;border-radius:9px;font-weight:600;font-size:14.5px">See group planning</a>
-              <a href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27m%20planning%20a%20group%20trip%20to%20Lima%20for%20%5Bnumber%5D%20people%20on%20%5Bdates%5D.%20We%20need%20help%20with%20%5Btransportation%20%2F%20restaurants%20%2F%20nightlife%20%2F%20full%20planning%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'home_service_group'}})}catch(e){}" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1.5px solid #D9B77A;color:#061A40;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="#9A7A3E" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Ask Fidel on WhatsApp</a>
+              <a href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%27m%20planning%20a%20group%20trip%20to%20Lima%20for%20%5Bnumber%5D%20people%20on%20%5Bdates%5D.%20We%20need%20help%20with%20%5Btransportation%20%2F%20restaurants%20%2F%20nightlife%20%2F%20full%20planning%5D." target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'whatsapp_click',data:{cta:'home_service_group'}})}catch(e){}" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1.5px solid #D9B77A;color:#061A40;padding:12px 20px;border-radius:9px;font-weight:600;font-size:14.5px"><svg width="15" height="15" viewBox="0 0 24 24" fill="#775A19" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"></path></svg>Ask Fidel on WhatsApp</a>
             </div>
           </div>
         </div>
@@ -266,21 +295,21 @@
   <!-- ============ 5. HOW BOOKING WORKS ============ -->
   <section style="background:#F6F1E8;padding:clamp(64px,9vw,120px) clamp(18px,5vw,64px)">
     <div style="max-width:1100px;margin:0 auto">
-      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#9A7A3E;margin-bottom:16px">How booking works</div>
+      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#775A19;margin-bottom:16px">How booking works</div>
       <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(30px,4.4vw,48px);line-height:1.08;letter-spacing:-0.01em;color:#061A40;max-width:680px">Simple, direct, no booking platform</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:48px">
         <div>
-          <div style="width:52px;height:52px;border-radius:50%;border:2px solid #D9B77A;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:#9A7A3E;margin-bottom:18px">1</div>
+          <div style="width:52px;height:52px;border-radius:50%;border:2px solid #D9B77A;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:#775A19;margin-bottom:18px">1</div>
           <h3 style="font-family:'Lora',serif;font-size:19px;font-weight:600;color:#061A40;margin-bottom:8px">Tell Fidel what you need</h3>
           <p style="color:#4A4439;font-size:15px;line-height:1.65">Your dates, group size, hotel area, and what kind of help you're looking for.</p>
         </div>
         <div>
-          <div style="width:52px;height:52px;border-radius:50%;border:2px solid #D9B77A;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:#9A7A3E;margin-bottom:18px">2</div>
+          <div style="width:52px;height:52px;border-radius:50%;border:2px solid #D9B77A;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:#775A19;margin-bottom:18px">2</div>
           <h3 style="font-family:'Lora',serif;font-size:19px;font-weight:600;color:#061A40;margin-bottom:8px">Fidel confirms and sends a plan</h3>
           <p style="color:#4A4439;font-size:15px;line-height:1.65">He confirms availability and sends a personalized plan or quote based on what you've shared.</p>
         </div>
         <div>
-          <div style="width:52px;height:52px;border-radius:50%;border:2px solid #D9B77A;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:#9A7A3E;margin-bottom:18px">3</div>
+          <div style="width:52px;height:52px;border-radius:50%;border:2px solid #D9B77A;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:#775A19;margin-bottom:18px">3</div>
           <h3 style="font-family:'Lora',serif;font-size:19px;font-weight:600;color:#061A40;margin-bottom:8px">Coordinate directly via WhatsApp</h3>
           <p style="color:#4A4439;font-size:15px;line-height:1.65">Once confirmed, you stay in touch with Fidel directly, before and during your time in Lima.</p>
         </div>
@@ -291,67 +320,60 @@
   <!-- ============ 6. TESTIMONIALS ============ -->
   <section style="background:#ECE3D2;padding:clamp(64px,9vw,120px) clamp(18px,5vw,64px)">
     <div style="max-width:1200px;margin:0 auto">
-      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#9A7A3E;margin-bottom:16px">Feedback from past Atlas clients</div>
+      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#775A19;margin-bottom:16px">Feedback from past Atlas clients</div>
       <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(30px,4.4vw,48px);line-height:1.08;letter-spacing:-0.01em;color:#061A40;max-width:640px">What past travelers say</h2>
       <!-- Honest label only — these are direct client quotes collected by Atlas, not verified third-party reviews. Do not add star ratings or platform badges. -->
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:40px">
         <div style="background:#fff;border-radius:14px;padding:32px 28px;box-shadow:0 24px 50px rgba(26,28,28,0.05)">
           <p style="font-family:'Lora',serif;font-size:19px;line-height:1.55;color:#4A4439;font-style:italic">"Amazing experience in Lima with Fidel. He has it all — anything you need or could possibly imagine, Fidel can make it happen. Our group of 10 guys had an incredible experience and would recommend Fidel to all others — you will not be disappointed!"</p>
-          <div style="margin-top:20px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:#061A40">Ram B. <span style="color:#8A8175;font-weight:400">· Lima, Peru</span></div>
+          <div style="margin-top:20px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:#061A40">Ram B. <span style="color:#625B52;font-weight:400">· Lima, Peru</span></div>
         </div>
         <div style="background:#fff;border-radius:14px;padding:32px 28px;box-shadow:0 24px 50px rgba(26,28,28,0.05)">
           <p style="font-family:'Lora',serif;font-size:19px;line-height:1.55;color:#4A4439;font-style:italic">"It's a good experience — good vibes, good tour guides, safe and reliable, also a great Airbnb location!"</p>
-          <div style="margin-top:20px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:#061A40">Jay <span style="color:#8A8175;font-weight:400">· Lima, Peru</span></div>
+          <div style="margin-top:20px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:#061A40">Jay <span style="color:#625B52;font-weight:400">· Lima, Peru</span></div>
         </div>
         <div style="background:#fff;border-radius:14px;padding:32px 28px;box-shadow:0 24px 50px rgba(26,28,28,0.05)">
           <p style="font-family:'Lora',serif;font-size:19px;line-height:1.55;color:#4A4439;font-style:italic">"Huaca Pucllana site visit and restaurant was sensational."</p>
-          <div style="margin-top:20px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:#061A40">Sam <span style="color:#8A8175;font-weight:400">· Lima, Peru</span></div>
+          <div style="margin-top:20px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:#061A40">Sam <span style="color:#625B52;font-weight:400">· Lima, Peru</span></div>
         </div>
       </div>
-      <!--
-        RESERVED: Google review link, hidden until a verified Google Business Profile exists.
-        Do not un-comment or publish until growth-audit/15_OWNER_DECISIONS_REQUIRED.md confirms a real GBP review link.
-        <div style="margin-top:28px;text-align:center">
-          <a href="[VERIFIED_GOOGLE_REVIEW_LINK]" target="_blank" rel="noopener noreferrer">Read more reviews on Google</a>
-        </div>
-      -->
     </div>
   </section>
 
   <!-- ============ 7. FAQ ============ -->
   <section style="background:#F6F1E8;padding:clamp(64px,9vw,120px) clamp(18px,5vw,64px)">
     <div style="max-width:840px;margin:0 auto">
-      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#9A7A3E;margin-bottom:16px">Questions</div>
+      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#775A19;margin-bottom:16px">Questions</div>
       <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(30px,4.4vw,48px);line-height:1.08;letter-spacing:-0.01em;color:#061A40">Good questions to ask first</h2>
       <div style="margin-top:40px;display:flex;flex-direction:column;gap:12px">
 
         <details style="background:#fff;border-radius:12px;padding:4px 24px">
-          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">What kind of help can Atlas provide in Lima?<span style="color:#9A7A3E;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">What kind of help can Atlas provide in Lima?<span style="color:#775A19;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
           <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">Airport pickup and arrival support, a personalized private day with a local host, and group or bachelor-weekend coordination — restaurants, transport, and nightlife planning included. Message Fidel directly to talk through what you need.</p>
         </details>
 
         <details style="background:#fff;border-radius:12px;padding:4px 24px">
-          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">Do I speak directly with Fidel?<span style="color:#9A7A3E;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">Do I speak directly with Fidel?<span style="color:#775A19;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
           <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">Yes. You communicate directly with Fidel over WhatsApp before your trip and while you're in Lima — there's no call center or booking platform in between.</p>
         </details>
 
         <details style="background:#fff;border-radius:12px;padding:4px 24px">
-          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">Can Atlas help with groups?<span style="color:#9A7A3E;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">Can Atlas help with groups?<span style="color:#775A19;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
           <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">Yes. Fidel regularly coordinates group and bachelor-party trips — transportation, restaurant reservations, nightlife planning, and one point of contact for the whole group.</p>
         </details>
 
         <details style="background:#fff;border-radius:12px;padding:4px 24px">
-          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">How is pricing calculated?<span style="color:#9A7A3E;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">How is pricing calculated?<span style="color:#775A19;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
           <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">Pricing depends on group size, timing, and what you need. Message Fidel with your dates and details and he'll confirm a quote directly.</p>
         </details>
 
         <details style="background:#fff;border-radius:12px;padding:4px 24px">
-          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">How far in advance should I contact Atlas?<span style="color:#9A7A3E;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">How far in advance should I contact Atlas?<span style="color:#775A19;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
           <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">As early as you can, especially for group trips or busy travel dates — but message Fidel directly and he'll confirm what's realistic for your timing.</p>
         </details>
 
         <details style="background:#fff;border-radius:12px;padding:4px 24px">
-          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">Is Atlas a fixed group tour?<span style="color:#9A7A3E;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
+          <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Lora',serif;font-size:18px;font-weight:600;color:#061A40">Is Atlas a fixed group tour?<span style="color:#775A19;font-size:22px;font-weight:400" aria-hidden="true">+</span></summary>
           <p style="color:#4A4439;font-size:16px;line-height:1.7;padding:0 0 22px">No. Everything is private and planned around your own dates, group, and interests — not a scheduled group tour with other travelers.</p>
         </details>
 
@@ -362,7 +384,7 @@
   <!-- ============ 7b. AYAHUASCA REFERRAL (not an Atlas service) ============ -->
   <section id="ayahuasca" style="background:#f4efe3;padding:clamp(56px,8vw,100px) clamp(18px,5vw,64px)">
     <div style="max-width:900px;margin:0 auto">
-      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#9A7A3E;margin-bottom:16px">For serious travelers</div>
+      <div style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:13px;color:#775A19;margin-bottom:16px">For serious travelers</div>
       <h2 style="font-family:'Lora',serif;font-weight:600;font-size:clamp(26px,4vw,40px);line-height:1.15;color:#061A40;margin-bottom:22px">Ayahuasca in Peru</h2>
       <p style="color:#4A4439;font-size:16px;line-height:1.75;max-width:760px;margin-bottom:20px">Some travelers come to Peru curious about ayahuasca. We treat that subject with respect. Ayahuasca is not a recreational activity — it's a traditional Amazonian plant medicine used in ceremonial settings for reflection and inner work, with a long history among Indigenous communities of the Amazon. It should be approached with preparation, honesty, and care.</p>
       <p style="color:#4A4439;font-size:16px;line-height:1.75;max-width:760px;margin-bottom:28px"><strong style="color:#061A40">Atlas does not organize or facilitate ayahuasca ceremonies.</strong> Atlas is Lima-based and focused on airport support, private guide days, and group coordination in the city. For travelers who are genuinely interested in ayahuasca, we point to a dedicated retreat center rather than treat it as an add-on to a Lima trip.</p>
@@ -373,7 +395,7 @@
         <a href="https://dreamglade.com" target="_blank" rel="noopener noreferrer" onclick="try{va('event',{name:'outbound_click',data:{cta:'dreamglade'}})}catch(e){}" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#061A40,#0A2E63);color:#fff;padding:13px 24px;border-radius:9px;font-weight:600;font-size:14.5px">Learn about Dreamglade →</a>
       </div>
 
-      <p style="color:#8A8175;font-size:13.5px;line-height:1.7;max-width:700px;margin-top:26px">Ayahuasca is not appropriate for everyone. If you're considering it, be honest with the retreat about medical history, medications, mental health background, and substance use — a reputable retreat will screen guests before accepting them. Research directly and speak with the retreat before making plans.</p>
+      <p style="color:#625B52;font-size:13.5px;line-height:1.7;max-width:700px;margin-top:26px">Ayahuasca is not appropriate for everyone. If you're considering it, be honest with the retreat about medical history, medications, mental health background, and substance use — a reputable retreat will screen guests before accepting them. Research directly and speak with the retreat before making plans.</p>
     </div>
   </section>
 
@@ -387,6 +409,7 @@
   </section>
 
   <!-- ============ FOOTER ============ -->
+</main>
   <footer style="background:#242422;padding:clamp(40px,6vw,60px) clamp(18px,5vw,64px)">
     <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
       <a href="/" style="display:flex;align-items:center;gap:11px;text-decoration:none">
@@ -394,7 +417,7 @@
         <svg width="13" height="13" viewBox="0 0 24 24" fill="#D9B77A" style="flex-shrink:0" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"></path></svg>
         <span style="font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:9px;color:#D9B77A;font-weight:600;line-height:1.35">Private<br>Journeys</span>
       </a>
-      <nav style="display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center">
+      <nav aria-label="Footer navigation" style="display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center">
         <a href="/lima-airport-transfer" style="color:rgba(255,255,255,0.55);font-size:13.5px;font-family:'Poppins',sans-serif">Airport Transfer</a>
         <a href="/private-guide-lima" style="color:rgba(255,255,255,0.55);font-size:13.5px;font-family:'Poppins',sans-serif">Private Guide</a>
         <a href="/lima-bachelor-party" style="color:rgba(255,255,255,0.55);font-size:13.5px;font-family:'Poppins',sans-serif">Bachelor Party</a>

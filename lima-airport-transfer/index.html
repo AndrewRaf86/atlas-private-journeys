@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lima Airport Transfer | Private Pickup to Miraflores</title>
   <meta name="description" content="Private Lima airport transfer with meet-and-greet at arrivals. Direct pickup to Miraflores, Barranco or San Isidro — no meters, no sharing, no stress.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://atlasjourneys.world/lima-airport-transfer">
 
   <!-- OG / Twitter -->
@@ -32,14 +33,23 @@
         "areaServed": [
           { "@type": "City", "name": "Lima" },
           { "@type": "Country", "name": "Peru" }
-        ]
+        ],
+        "employee": { "@id": "https://atlasjourneys.world/#fidel" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://atlasjourneys.world/#fidel",
+        "name": "Fidel",
+        "jobTitle": "Local guide and travel host",
+        "worksFor": { "@id": "https://atlasjourneys.world/#organization" },
+        "workLocation": { "@type": "City", "name": "Lima" }
       },
       {
         "@type": "Service",
         "@id": "https://atlasjourneys.world/lima-airport-transfer#service",
         "name": "Lima Airport Transfer",
         "provider": { "@id": "https://atlasjourneys.world/#organization" },
-        "areaServed": { "@type": "City", "name": "Lima, Peru" },
+        "areaServed": { "@type": "City", "name": "Lima", "containedInPlace": { "@type": "Country", "name": "Peru" } },
         "description": "Private airport pickup and drop-off service in Lima, Peru. Personal meet-and-greet by Fidel, direct transfer to your hotel or accommodation.",
         "url": "https://atlasjourneys.world/lima-airport-transfer"
       },
@@ -353,7 +363,7 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.04);
       border-left: 3px solid var(--gold);
     }
-    .need-card h4 { font-size: 14px; font-family: 'Arial', sans-serif; color: var(--navy); margin-bottom: 6px; font-weight: 700; letter-spacing: 0.04em; }
+    .need-card h3 { font-size: 14px; font-family: 'Arial', sans-serif; color: var(--navy); margin-bottom: 6px; font-weight: 700; letter-spacing: 0.04em; }
     .need-card p { font-size: 13px; color: var(--text-light); line-height: 1.55; }
 
     /* PRICING NOTE */
@@ -493,11 +503,14 @@
       color: rgba(255,255,255,0.35);
     }
   </style>
+  <link rel="stylesheet" href="/assets/site-enhancements.css">
+  <script defer src="/assets/site-enhancements.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <!-- NAV -->
-<nav>
+<nav aria-label="Main navigation">
   <a href="/" class="nav-logo">
     <div>
       <div class="nav-logo-text">ATLAS</div>
@@ -510,8 +523,19 @@
     <li><a href="/private-guide-lima" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_guide'}})}catch(e){}">Private Guide</a></li>
     <li><a href="/lima-bachelor-party" onclick="try{va('event',{name:'nav_service_click',data:{cta:'nav_group'}})}catch(e){}">Bachelor Party</a></li>
   </ul>
+  <details class="mobile-menu">
+    <summary aria-label="Site menu">Menu</summary>
+    <div class="mobile-menu-panel">
+      <a class="mobile-menu-cta" href="https://wa.me/51942299829?text=Hi%20Fidel%2C%20I%20arrive%20in%20Lima%20on%20%5Bdate%5D%20at%20%5Btime%5D%20with%20%5Bnumber%5D%20travelers.%20My%20hotel%20is%20in%20%5Barea%5D%2C%20and%20I%20need%20help%20with%20airport%20pickup." target="_blank" rel="noopener noreferrer">Ask Fidel on WhatsApp</a>
+      <a href="/">Home</a>
+      <a href="/lima-airport-transfer" aria-current="page">Lima Airport Transfer</a>
+      <a href="/private-guide-lima">Private Guide in Lima</a>
+      <a href="/lima-bachelor-party">Lima Group Trips</a>
+    </div>
+  </details>
 </nav>
 
+<main id="main-content" tabindex="-1">
 <!-- HERO -->
 <section class="hero">
   <img src="../public/images/fidel-and-friends-bar.jpeg" alt="Fidel with friends during a night out in Lima" loading="eager" style="object-position:center 60%">
@@ -612,19 +636,19 @@
     <h2>To arrange your transfer, have these ready</h2>
     <div class="needs-grid">
       <div class="need-card">
-        <h4>Flight number &amp; airline</h4>
+        <h3>Flight number &amp; airline</h3>
         <p>So Fidel can track your arrival in real time and adjust if your flight is delayed.</p>
       </div>
       <div class="need-card">
-        <h4>Arrival date &amp; time</h4>
+        <h3>Arrival date &amp; time</h3>
         <p>Scheduled landing time at Jorge Chávez International Airport (LIM).</p>
       </div>
       <div class="need-card">
-        <h4>Group size</h4>
+        <h3>Group size</h3>
         <p>Number of passengers travelling together so the right vehicle is arranged.</p>
       </div>
       <div class="need-card">
-        <h4>Accommodation address</h4>
+        <h3>Accommodation address</h3>
         <p>Name and address of your hotel, Airbnb, or wherever you're staying in Lima.</p>
       </div>
     </div>
@@ -733,9 +757,10 @@
 </section>
 
 <!-- FOOTER -->
+</main>
 <footer>
   <a href="/" class="footer-logo">ATLAS PRIVATE JOURNEYS</a>
-  <nav>
+  <nav aria-label="Footer navigation">
     <a href="/">Home</a>
     <a href="/lima-airport-transfer">Airport Transfer</a>
     <a href="/private-guide-lima">Private Guide</a>
