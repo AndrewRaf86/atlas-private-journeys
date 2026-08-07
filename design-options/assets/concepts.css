@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
+
+:root {
+  --navy: #061a40;
+  --navy-2: #0a2e63;
+  --gold: #d9b77a;
+  --gold-dark: #775a19;
+  --cream: #f6f1e8;
+  --paper: #fffdf8;
+  --ink: #202321;
+  --muted: #65665f;
+  --green: #275849;
+  --terracotta: #a64f32;
+  --radius: 18px;
+  --shadow: 0 26px 70px rgba(6, 26, 64, 0.14);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: 'DM Sans', sans-serif; }
+img { display: block; width: 100%; object-fit: cover; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+.shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
+.concept-label { position: fixed; left: 14px; bottom: 14px; z-index: 20; padding: 8px 12px; border-radius: 99px; background: rgba(255,255,255,.92); color: #061a40; box-shadow: 0 8px 28px rgba(0,0,0,.14); font: 700 11px/1 'DM Sans', sans-serif; letter-spacing: .12em; text-transform: uppercase; backdrop-filter: blur(10px); }
+.nav { position: relative; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 24px; }
+.brand { display: flex; align-items: center; gap: 10px; font: 600 22px/1 'Lora', serif; letter-spacing: .16em; }
+.brand small { font: 700 8px/1.35 'DM Sans', sans-serif; letter-spacing: .18em; text-transform: uppercase; }
+.nav-links { display: flex; align-items: center; gap: 24px; font-size: 13px; font-weight: 700; }
+.button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 9px; border-radius: 10px; padding: 13px 22px; font-weight: 700; transition: transform .2s ease, box-shadow .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.button-primary { background: var(--gold); color: var(--navy); box-shadow: 0 14px 38px rgba(0,0,0,.18); }
+.button-dark { background: var(--navy); color: white; }
+.eyebrow { margin: 0 0 15px; color: var(--gold-dark); font-size: 12px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
+.display { margin: 0; font: 600 clamp(42px, 7vw, 82px)/.98 'Lora', serif; letter-spacing: -.03em; }
+.lead { max-width: 660px; margin: 24px 0 0; color: inherit; font-size: clamp(17px, 2vw, 21px); line-height: 1.65; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.section { padding-block: clamp(72px, 9vw, 120px); }
+.section-title { max-width: 760px; margin: 0; color: var(--navy); font: 600 clamp(34px, 5vw, 56px)/1.05 'Lora', serif; }
+.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 42px; }
+.service { min-height: 300px; padding: 28px; border-radius: var(--radius); background: white; box-shadow: 0 22px 54px rgba(6,26,64,.07); }
+.service-number { color: var(--gold-dark); font-size: 12px; font-weight: 800; letter-spacing: .16em; }
+.service h3 { margin: 72px 0 12px; color: var(--navy); font: 600 24px/1.1 'Lora', serif; }
+.service p { margin: 0; color: var(--muted); line-height: 1.7; }
+.story { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: clamp(34px, 7vw, 90px); }
+.story img { aspect-ratio: 4/5; border-radius: var(--radius); box-shadow: var(--shadow); }
+.story-copy h2 { margin: 0; color: var(--navy); font: 600 clamp(34px, 5vw, 58px)/1.06 'Lora', serif; }
+.story-copy p { color: var(--muted); font-size: 17px; line-height: 1.75; }
+.final { padding: clamp(74px, 10vw, 130px) 20px; text-align: center; }
+.final h2 { max-width: 760px; margin: 0 auto; font: 600 clamp(36px, 5vw, 62px)/1.05 'Lora', serif; }
+.final p { margin: 20px auto 0; font-size: 18px; }
+
+/* 1 — Private concierge */
+.concept-one { background: #f4efe4; }
+.concept-one .hero { min-height: 780px; color: white; background: linear-gradient(90deg, rgba(6,26,64,.96) 0%, rgba(6,26,64,.8) 46%, rgba(6,26,64,.18) 100%), url('../../public/images/group-eating.webp') center/cover; }
+.concept-one .hero-content { max-width: 720px; padding: 116px 0 150px; }
+.concept-one .eyebrow { color: var(--gold); }
+.concept-one .secondary { border: 1px solid rgba(255,255,255,.35); color: white; background: rgba(255,255,255,.08); backdrop-filter: blur(10px); }
+.concept-one .story img { transform: translateY(-18px); }
+.concept-one .final { color: white; background: var(--navy); }
+
+/* 2 — Coastal editorial */
+.concept-two { background: var(--paper); font-family: 'Manrope', sans-serif; }
+.concept-two .nav { color: var(--navy); }
+.concept-two .hero-grid { display: grid; grid-template-columns: 1fr .88fr; min-height: 790px; }
+.concept-two .hero-copy { display: flex; align-items: center; padding: 90px clamp(30px, 7vw, 110px); background: var(--paper); }
+.concept-two .hero-photo { position: relative; min-height: 620px; background: url('../assets/external/miraflores-lighthouse.webp') center/cover; }
+.concept-two .hero-photo::after { content: 'La Marina Lighthouse · Miraflores'; position: absolute; right: 22px; bottom: 22px; padding: 10px 14px; background: rgba(255,253,248,.88); color: var(--navy); font-size: 11px; font-weight: 700; letter-spacing: .08em; backdrop-filter: blur(8px); }
+.concept-two .display, .concept-two .section-title, .concept-two .story-copy h2 { font-family: 'Playfair Display', serif; }
+.concept-two .services { gap: 0; border-top: 1px solid rgba(6,26,64,.14); }
+.concept-two .service { border-radius: 0; box-shadow: none; border-right: 1px solid rgba(6,26,64,.14); }
+.concept-two .service:last-child { border-right: 0; }
+.concept-two .story img { aspect-ratio: 5/4; border-radius: 0 90px 0 0; }
+.concept-two .final { color: var(--navy); background: #dce7e4; }
+
+/* 3 — Lima after dark */
+.concept-three { color: #f7f1e5; background: #050d1e; }
+.concept-three .hero { position: relative; min-height: 820px; overflow: hidden; background: #050d1e; }
+.concept-three .hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,13,30,.98) 0%, rgba(5,13,30,.75) 48%, rgba(5,13,30,.22) 100%), url('../../public/images/private-guide-lima-nightlife.webp') center/cover; }
+.concept-three .nav, .concept-three .hero-content { position: relative; }
+.concept-three .hero-content { max-width: 730px; padding: 135px 0 170px; }
+.concept-three .display { font-family: 'Playfair Display', serif; }
+.concept-three .eyebrow { color: #e2c48f; }
+.concept-three .secondary { border: 1px solid rgba(255,255,255,.25); color: white; }
+.concept-three .section { background: #07142c; }
+.concept-three .section-title, .concept-three .story-copy h2 { color: #fff6e8; font-family: 'Playfair Display', serif; }
+.concept-three .services { gap: 14px; }
+.concept-three .service { color: white; background: linear-gradient(145deg, rgba(255,255,255,.09), rgba(255,255,255,.035)); border: 1px solid rgba(255,255,255,.08); box-shadow: none; backdrop-filter: blur(12px); }
+.concept-three .service h3 { color: #f3d39a; }
+.concept-three .service p, .concept-three .story-copy p { color: rgba(255,255,255,.68); }
+.concept-three .story img { aspect-ratio: 16/11; border-radius: 3px; }
+.concept-three .final { background: linear-gradient(135deg, #8e5f24, #d9b77a); color: #07142c; }
+
+/* 4 — Warm Peru */
+.concept-four { background: #f7eadb; color: #352820; font-family: 'Manrope', sans-serif; }
+.concept-four .hero { padding-bottom: 90px; background: #f7eadb; }
+.concept-four .nav { color: #402b20; }
+.concept-four .hero-collage { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(30px, 6vw, 84px); align-items: center; padding-top: 70px; }
+.concept-four .display, .concept-four .section-title, .concept-four .story-copy h2 { color: #4b2d21; font-family: 'Playfair Display', serif; }
+.concept-four .collage { position: relative; min-height: 620px; }
+.concept-four .collage-main { width: 78%; height: 520px; margin-left: auto; border-radius: 180px 180px 24px 24px; object-position: center; }
+.concept-four .collage-small { position: absolute; left: 0; bottom: 0; width: 48%; height: 260px; border: 12px solid #f7eadb; border-radius: 18px; }
+.concept-four .button-primary { background: var(--terracotta); color: white; }
+.concept-four .service { background: #fff9f2; }
+.concept-four .service-number { color: var(--terracotta); }
+.concept-four .service h3 { color: #4b2d21; }
+.concept-four .story img { aspect-ratio: 16/10; border-radius: 100px 18px 18px 18px; }
+.concept-four .final { background: #4b2d21; color: #fff8ee; }
+
+/* 5 — Modern local */
+.concept-five { background: #eef4ef; color: #10231d; font-family: 'Manrope', sans-serif; }
+.concept-five .nav { color: #092e25; }
+.concept-five .hero { padding-bottom: 92px; }
+.concept-five .hero-mosaic { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(40px, 7vw, 100px); align-items: center; padding-top: 80px; }
+.concept-five .display { color: #092e25; font-family: 'Manrope', sans-serif; font-weight: 700; letter-spacing: -.055em; }
+.concept-five .eyebrow { color: #33715f; }
+.concept-five .mosaic { display: grid; grid-template-columns: 1fr .72fr; grid-template-rows: 270px 220px; gap: 12px; }
+.concept-five .mosaic img { height: 100%; border-radius: 6px; }
+.concept-five .mosaic img:first-child { grid-row: 1 / 3; }
+.concept-five .button-primary { background: #f2b949; color: #092e25; }
+.concept-five .button-dark { background: #0d4b3d; }
+.concept-five .section { background: white; }
+.concept-five .section-title, .concept-five .story-copy h2 { color: #092e25; font-family: 'Manrope', sans-serif; font-weight: 700; letter-spacing: -.04em; }
+.concept-five .services { gap: 12px; }
+.concept-five .service { border-radius: 6px; background: #eef4ef; box-shadow: none; }
+.concept-five .service h3 { color: #0d4b3d; font-family: 'Manrope', sans-serif; font-weight: 700; }
+.concept-five .story img { aspect-ratio: 1; border-radius: 50%; }
+.concept-five .final { color: white; background: #0d4b3d; }
+
+@media (max-width: 760px) {
+  .shell { width: min(100% - 30px, 1180px); }
+  .nav-links a:not(.button) { display: none; }
+  .nav-links { gap: 0; }
+  .nav-links .button { min-height: 44px; padding: 11px 14px; font-size: 13px; }
+  .brand { font-size: 18px; }
+  .display { font-size: clamp(40px, 13vw, 60px); }
+  .services, .story, .concept-two .hero-grid, .concept-four .hero-collage, .concept-five .hero-mosaic { grid-template-columns: 1fr; }
+  .service { min-height: 245px; }
+  .service h3 { margin-top: 48px; }
+  .concept-one .hero { min-height: 720px; background-position: 62% center; }
+  .concept-one .hero-content, .concept-three .hero-content { padding: 92px 0 118px; }
+  .concept-two .hero-copy { padding: 76px 22px; }
+  .concept-two .hero-photo { min-height: 580px; }
+  .concept-two .service { border-right: 0; border-bottom: 1px solid rgba(6,26,64,.14); }
+  .concept-three .hero { min-height: 740px; }
+  .concept-three .hero::before { background: linear-gradient(180deg, rgba(5,13,30,.48), rgba(5,13,30,.98) 76%), url('../../public/images/private-guide-lima-nightlife.webp') 60% center/cover; }
+  .concept-four .hero-collage, .concept-five .hero-mosaic { padding-top: 46px; }
+  .concept-four .collage { min-height: 500px; }
+  .concept-four .collage-main { height: 430px; }
+  .concept-four .collage-small { height: 210px; }
+  .concept-five .mosaic { grid-template-rows: 220px 170px; }
+  .story img { aspect-ratio: 5/4; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .button { transition: none; }
+}
