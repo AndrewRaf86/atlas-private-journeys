@@ -2,6 +2,7 @@
 AGENTS.md
 DESIGN.md
 OWNER_INPUT_REQUIRED.md
+IMAGE_SOURCES.md
 growth-audit/
 .claude/
 _computer_archive.noindex/
@@ -12,6 +13,7 @@ _computer_archive.noindex/
 .DS_Store
 *.zip
 screen.png
+design-options/
 
 # Original source photos kept in the repository but not used by the website
 bedroom 1.png
