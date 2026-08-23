@@ -19,3 +19,5 @@ Pexels permits its photographs to be used free of charge on commercial websites 
 | `sao-paulo.webp` | São Paulo skyline | Fabio Akamine | https://www.pexels.com/photo/view-of-sao-paulo-in-sunlight-25038749/ |
 
 `fidel-brazil-beach.webp` and `fidel-brazil-night.webp` were converted from Atlas source photographs already present in the repository.
+
+`fidel-clients-airport.webp` was provided by the Atlas owner for public website use on 2026-08-23 and converted from `fidel clients picture.jpeg` without embedded metadata.
