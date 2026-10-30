@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Only fixed categories are retained. Never store a URL, message or traveler detail.
   const sources = new Set(['instagram', 'facebook', 'tiktok', 'google', 'bing', 'chatgpt', 'newsletter']);
-  const campaigns = new Set(['atlas-lima', 'atlas-brazil', 'atlas-groups']);
+  const campaigns = new Set(['atlas-lima', 'atlas-brazil', 'atlas-groups', 'atlas-nightlife']);
   const storageKey = 'atlas-attribution-v1';
   const trackingAllowed = !navigator.globalPrivacyControl && navigator.doNotTrack !== '1';
   const production = ['atlasjourneys.world', 'www.atlasjourneys.world'].includes(location.hostname);
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(location.search);
     const source = params.get('utm_source')?.toLowerCase();
     const campaign = params.get('utm_campaign')?.toLowerCase();
-    const allowedAttribution = /^(direct|instagram|facebook|tiktok|google|bing|chatgpt|newsletter|other-referral)(:(atlas-lima|atlas-brazil|atlas-groups))?$/;
+    const allowedAttribution = /^(direct|instagram|facebook|tiktok|google|bing|chatgpt|newsletter|other-referral)(:(atlas-lima|atlas-brazil|atlas-groups|atlas-nightlife))?$/;
     try {
       const saved = sessionStorage.getItem(storageKey);
       if (saved && allowedAttribution.test(saved)) attribution = saved;

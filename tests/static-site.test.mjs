@@ -5,7 +5,7 @@ import path from 'node:path';
 
 const root = new URL('../', import.meta.url);
 const routes = ['', 'lima-airport-transfer', 'private-guide-lima', 'lima-bachelor-party',
-  'brazil-private-journeys', 'brazil-bachelor-party', 'privacy-policy', 'terms-of-service', 'cancellation-policy'];
+  'brazil-private-journeys', 'brazil-bachelor-party', 'nightlife-solo-travel', 'privacy-policy', 'terms-of-service', 'cancellation-policy'];
 const read = (file) => fs.readFileSync(new URL(file, root), 'utf8');
 const text = (html) => html.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&')
   .replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
@@ -72,4 +72,18 @@ test('crawler files retain production URLs and core sitemap routes', () => {
   assert.match(robots, /Sitemap: https:\/\/www.atlasjourneys.world\/sitemap.xml/);
   for (const route of routes) assert(sitemap.includes(`<loc>https://www.atlasjourneys.world/${route}</loc>`));
   assert(!/\.vercel\.app/.test(llms + sitemap));
+});
+
+test('the travel guide is discoverable from home and each commercial service page', () => {
+  for (const { route, html } of pages.filter(p => ['', 'lima-airport-transfer', 'private-guide-lima',
+    'lima-bachelor-party', 'brazil-private-journeys', 'brazil-bachelor-party'].includes(p.route))) {
+    assert(html.includes('href="/nightlife-solo-travel"'), route + ' incoming guide link');
+  }
+  const guide = read('nightlife-solo-travel/index.html');
+  for (const route of ['lima-airport-transfer', 'private-guide-lima', 'lima-bachelor-party',
+    'brazil-private-journeys', 'brazil-bachelor-party']) assert(guide.includes(`href="/${route}"`));
+  assert(guide.includes('id="passport-bros"'));
+  assert(guide.includes('https://www.atlasjourneys.world/#organization'));
+  assert(!/aggregateRating|ratingValue|reviewCount|"@type":"Person"/.test(guide));
+  assert(guide.includes('not a dating or matchmaking service'));
 });

@@ -1,0 +1,43 @@
+/* Reading layout within the existing Atlas visual system. */
+.guide-hero .page-hero-copy { padding: clamp(28px, 4.5vw, 68px); }
+.guide-hero h1 { margin-top: 0; max-width: 12ch; font-size: clamp(3.1rem, 5.4vw, 5.5rem); line-height: .98; letter-spacing: -.035em; text-wrap: balance; }
+.guide-hero .hero-actions { align-items: center; }
+.guide-hero .page-hero-image img { object-position: center; }
+.guide-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: clamp(30px, 5vw, 76px); padding: clamp(48px, 6vw, 88px) clamp(20px, 4.5vw, 68px); }
+.guide-toc nav { position: sticky; top: 24px; }
+.guide-toc h2 { font-size: 1.1rem; margin-bottom: 12px; }
+.guide-toc a { display: flex; min-height: 48px; align-items: center; padding-block: 10px; border-bottom: 1px solid #a6ada7; line-height: 1.4; font-weight: 600; }
+.guide-toc a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.travel-guide { min-width: 0; max-width: 780px; font-size: 1.08rem; line-height: 1.7; }
+.guide-update { font-size: .9rem; color: #334153; }
+.guide-answer { margin-top: 22px; font-size: 1.23rem; line-height: 1.6; }
+.travel-guide section { margin-top: 64px; scroll-margin-top: 28px; }
+.travel-guide h2 { max-width: 21ch; margin-bottom: 24px; font-family: 'Archivo Black', sans-serif; font-size: clamp(1.8rem, 3.3vw, 2.8rem); font-weight: 400; line-height: 1.12; letter-spacing: -.03em; text-wrap: balance; }
+.travel-guide h3 { margin-top: 32px; margin-bottom: 12px; font-size: 1.35rem; line-height: 1.3; }
+.travel-guide p + p { margin-top: 20px; }
+.travel-guide p a, .travel-guide li a { text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 4px; font-weight: 600; }
+.travel-guide ul { padding-left: 24px; margin-block: 22px; }
+.travel-guide li + li { margin-top: 12px; }
+.travel-guide .button { margin-top: 26px; }
+.guide-host { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 26px; align-items: start; }
+.guide-host img { height: auto; aspect-ratio: 3 / 4; }
+.guide-host figcaption { margin-top: 10px; font-size: .83rem; line-height: 1.5; }
+.travel-guide .faq-list summary { font-size: 1.05rem; }
+.travel-guide .faq-list p { font-size: 1rem; }
+@media (max-width: 1000px) {
+  .guide-layout { grid-template-columns: 1fr; }
+  .guide-toc nav { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+  .guide-toc h2 { grid-column: 1 / -1; }
+  .travel-guide { max-width: 100%; }
+}
+@media (max-width: 700px) {
+  .guide-hero .page-hero-image { min-height: 0; }
+  .guide-hero .page-hero-image img { height: auto; aspect-ratio: 4 / 3; }
+  .guide-hero h1 { font-size: clamp(2.7rem, 11vw, 4rem); }
+  .guide-layout { padding-inline: 20px; }
+  .guide-host { grid-template-columns: 1fr; }
+  .guide-host figure { max-width: 420px; }
+  .travel-guide { font-size: 1rem; }
+  .guide-answer { font-size: 1.13rem; }
+  .travel-guide section { margin-top: 48px; }
+}

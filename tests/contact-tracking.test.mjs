@@ -67,6 +67,14 @@ test('known campaign attribution survives internal navigation', () => {
   app.click(); assert.equal(app.events[0][1].data.source, 'facebook:atlas-groups');
 });
 
+test('the nightlife campaign is measured and survives navigation', () => {
+  for (const settings of [{ search: '?utm_source=instagram&utm_campaign=atlas-nightlife' },
+    { saved: 'instagram:atlas-nightlife' }]) {
+    const app = boot(settings); app.click();
+    assert.equal(app.events[0][1].data.source, 'instagram:atlas-nightlife');
+  }
+});
+
 test('arbitrary query values and tampered session values are discarded', () => {
   const app = boot({ search: '?utm_source=person@example.com&utm_campaign=private-trip', saved: 'private-name' });
   app.click(); assert.equal(app.events[0][1].data.source, 'direct');
