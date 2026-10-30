@@ -257,6 +257,8 @@ details.site-menu:not([open]) .site-menu-panel { display: none; }
 .about-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 0; margin-top: 54px; border: var(--line); }
 .about-portrait { position: relative; min-height: 610px; border-right: var(--line); overflow: hidden; }
 .about-portrait img { height: 100%; object-fit: cover; }
+.about-portrait.friend-photo { min-height: 0; }
+.about-portrait.friend-photo img { height: auto; aspect-ratio: 3 / 4; object-fit: contain; }
 .about-copy { display: grid; grid-template-rows: auto 1fr; }
 .about-copy-top { background: var(--acid); border-bottom: var(--line); padding: clamp(28px, 5vw, 64px); }
 .about-copy-top h3 { font-family: 'Archivo Black'; font-size: clamp(2.25rem, 5vw, 5rem); letter-spacing: -.06em; line-height: .9; text-transform: uppercase; }

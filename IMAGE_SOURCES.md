@@ -23,3 +23,5 @@ Pexels permits its photographs to be used free of charge on commercial websites 
 `fidel-clients-airport.webp` was provided by the Atlas owner for public website use on 2026-08-23 and converted from `fidel clients picture.jpeg` without embedded metadata.
 
 `atlas-travelers-night-out.webp` was provided by the user for website use on 2026-10-11 and converted from `WhatsApp Image 2026-10-10 at 12.02.23 PM.jpeg` without embedded metadata.
+
+`fidel-with-friend.webp` (960 × 1280) and `fidel-with-friend-480.webp` (480 × 640) were provided by the user for public homepage use on 2026-10-30. Both are optimized derivatives of `fidel with friend new.jpeg`, with metadata omitted. The photograph shows Fidel and a friend at a restaurant; no location, customer relationship or testimonial is inferred.
