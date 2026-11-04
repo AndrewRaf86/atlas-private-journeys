@@ -305,6 +305,9 @@ details.site-menu:not([open]) .site-menu-panel { display: none; }
 .destination.lima { grid-column: span 7; grid-row: span 3; }
 .destination.miraflores { grid-column: span 5; grid-row: span 2; }
 .destination.barranco { grid-column: span 5; grid-row: span 1; }
+.destination.ica { grid-column: span 6; grid-row: span 3; }
+.destination.ica-sunset img { object-position: 50% 40%; }
+.destination.ica-walk img { object-position: 50% 22%; }
 .destination.rio { grid-column: span 6; grid-row: span 3; }
 .destination.saopaulo { grid-column: span 6; grid-row: span 3; }
 
@@ -446,7 +449,7 @@ details.site-menu:not([open]) .site-menu-panel { display: none; }
   .about-copy-bottom > div:first-child, .quote:first-child { border-right: 0; border-bottom: var(--line); }
   .service-card { min-height: 330px; }
   .destination-grid { grid-template-columns: 1fr; grid-auto-rows: 320px; }
-  .destination.lima, .destination.miraflores, .destination.barranco, .destination.rio, .destination.saopaulo { grid-column: auto; grid-row: auto; }
+  .destination.lima, .destination.miraflores, .destination.barranco, .destination.ica, .destination.rio, .destination.saopaulo { grid-column: auto; grid-row: auto; }
   .destination.barranco { display: none; }
   .brazil-photos { min-height: 560px; }
   .quote { min-height: 270px; }

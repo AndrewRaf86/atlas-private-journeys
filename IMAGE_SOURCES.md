@@ -25,3 +25,5 @@ Pexels permits its photographs to be used free of charge on commercial websites 
 `atlas-travelers-night-out.webp` was provided by the user for website use on 2026-10-11 and converted from `WhatsApp Image 2026-10-10 at 12.02.23 PM.jpeg` without embedded metadata.
 
 `fidel-with-friend.webp` (960 × 1280) and `fidel-with-friend-480.webp` (480 × 640) were provided by the user for public homepage use on 2026-10-30. Both are optimized derivatives of `fidel with friend new.jpeg`, with metadata omitted. The photograph shows Fidel and a friend at a restaurant; no location, customer relationship or testimonial is inferred.
+
+`ica-dunes-sunset.webp` (960 × 1385) and `ica-dunes-walk.webp` (828 × 1600), each with a 480-wide variant, were provided by the user for public website use on 2026-11-04 from WhatsApp images taken in the sand dunes of Ica, Peru. They are optimized derivatives with metadata omitted. They show an unnamed traveler; no customer relationship, testimonial or specific tour is inferred, and the alt text describes only the scene.
