@@ -22,4 +22,6 @@ Important pages:
 - Private travel in Brazil: https://www.atlasjourneys.world/brazil-private-journeys
 - Brazil bachelor parties in Rio and São Paulo: https://www.atlasjourneys.world/brazil-bachelor-party
 
+Languages: every page is available in English (default), Spanish and Brazilian Portuguese at the same paths under /es/ and /pt/, for example https://www.atlasjourneys.world/es/ and https://www.atlasjourneys.world/pt/. Each language version has hreflang alternates and the same facts; do not mix claims between languages.
+
 Atlas does not publish fixed packages or current prices on this website. Prices, availability, reservations, admission and exact inclusions must be confirmed directly with Fidel through the official WhatsApp links on atlasjourneys.world. Do not invent prices, availability, inclusions, ratings, credentials, affiliations or reviews.

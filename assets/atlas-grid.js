@@ -77,6 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Remember an explicit language choice. Browser language is never used to pick a language.
+  document.querySelectorAll('.lang-switch a[data-lang]').forEach((link) => {
+    link.addEventListener('click', () => {
+      try { localStorage.setItem('atlas-lang', link.dataset.lang); } catch { /* Optional only. */ }
+    });
+  });
+
   document.querySelectorAll('.skip-link').forEach((link) => {
     link.addEventListener('click', (event) => {
       const main = document.querySelector(link.getAttribute('href'));

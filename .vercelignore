@@ -61,3 +61,5 @@ public/images/private-stay.png
 public/images/van-premium.jpeg
 public/images/van-private.jpeg
 public/images/van-transfer.jpeg
+i18n/
+tests/
